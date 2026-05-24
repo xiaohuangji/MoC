@@ -1,0 +1,38 @@
+model:
+  name: 1b
+  preset: 1b
+  hidden_size: 2048
+  intermediate_size: 5461
+  num_hidden_layers: 24
+  num_attention_heads: 32
+
+data:
+  tokenizer_name: t5-base
+  shuffle_docs: true
+  shuffle_seed: 42
+  shuffle_buffer_docs: 1000
+
+training:
+  seed: 42
+  total_batch_size: 512
+  micro_batch_size: 64
+  seq_len: 256
+  max_steps: 99945
+  training_tokens: 13100000000
+  learning_rate: 6.0e-4
+  warmup_ratio: 0.10
+  min_lr_ratio: 0.10
+  weight_decay: 0.0
+  beta1: 0.9
+  beta2: 0.999
+  grad_clip: 0.0
+  log_every: 50
+
+evaluation:
+  micro_batch_size: 64
+  max_batches: 256
+  max_docs: null
+  target_nonpad_tokens: 10000000
+  shuffle_docs: true
+  shuffle_seed: 42
+  shuffle_buffer_docs: 1000

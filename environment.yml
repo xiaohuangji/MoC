@@ -1,0 +1,17 @@
+name: moc
+channels:
+  - nvidia
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pytorch=2.8
+  - pytorch-cuda=12.8
+  - pyyaml
+  - tqdm
+  - pip:
+      - triton==3.4.0
+      - transformers>=4.40
+      - huggingface_hub>=0.20
+      - -e .

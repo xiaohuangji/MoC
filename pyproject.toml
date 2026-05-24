@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moc"
+version = "0.1.0"
+description = "Mixture-of-Channels modules and benchmarks"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Apache-2.0"}
+dependencies = [
+    "torch>=2.8,<2.9",
+    "triton>=3.4,<3.5; platform_system == 'Linux'",
+    "transformers>=4.40",
+    "pyyaml>=6.0",
+    "tqdm>=4.65",
+    "huggingface_hub>=0.20",
+]
+
+[tool.setuptools]
+packages = ["moc", "moc.training", "moc.inference"]
+
+[tool.setuptools.package-data]
+"moc.inference" = ["cuda/*.cpp", "cuda/*.cu"]

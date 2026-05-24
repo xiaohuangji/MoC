@@ -1,0 +1,38 @@
+model:
+  name: 60m_d512_l8
+  preset: 60m
+  hidden_size: 512
+  intermediate_size: 1376
+  num_hidden_layers: 8
+  num_attention_heads: 8
+
+data:
+  tokenizer_name: t5-base
+  shuffle_docs: true
+  shuffle_seed: 42
+  shuffle_buffer_docs: 1000
+
+training:
+  seed: 42
+  total_batch_size: 512
+  micro_batch_size: 256
+  seq_len: 256
+  max_steps: 9919
+  training_tokens: 1300000000
+  learning_rate: 2.5e-3
+  warmup_ratio: 0.10
+  min_lr_ratio: 0.10
+  weight_decay: 0.0
+  beta1: 0.9
+  beta2: 0.999
+  grad_clip: 0.0
+  log_every: 50
+
+evaluation:
+  micro_batch_size: 256
+  max_batches: 256
+  max_docs: null
+  target_nonpad_tokens: 10000000
+  shuffle_docs: true
+  shuffle_seed: 42
+  shuffle_buffer_docs: 1000
