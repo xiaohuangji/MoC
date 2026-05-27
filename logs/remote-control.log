@@ -15,3 +15,11 @@
 [2026-05-27T06:44:52Z] No commands to run.
 [2026-05-27T06:49:51Z] Pulling updates: 1722a24edd6dadb9e0921d9b2a8d9e9f139f32e4 -> 8c80e0fa8440182a0bbc3cf2ede79aa393e39c83
 [2026-05-27T06:49:59Z] No commands to run.
+[2026-05-27T06:54:39Z] Pulling updates from origin/remote-control-setup: dd5d774b555aaed40bf1d05945ac2a0be9905ca0 -> d59b11726d8093e1e0c7b9c01fc13e8d2e7cfd5f
+[2026-05-27T06:54:45Z] git pull failed
+[2026-05-27T06:54:50Z] Pulling updates from origin/remote-control-setup: dd5d774b555aaed40bf1d05945ac2a0be9905ca0 -> d59b11726d8093e1e0c7b9c01fc13e8d2e7cfd5f
+[2026-05-27T06:54:56Z] Executing commands from /data/hyh/MoC/control/commands.txt
+[2026-05-27T06:54:56Z] Command 1: echo 'full-loop test: 2026-05-27T06:54:17Z'
+[2026-05-27T06:54:56Z] Output 1: full-loop test: 2026-05-27T06:54:17Z
+[2026-05-27T06:54:56Z] Exit 1: 0
+[2026-05-27T06:54:56Z] Commands cleared.
