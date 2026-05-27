@@ -13,10 +13,15 @@ cd "$REPO_DIR"
 # 更新仓库
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   git fetch origin || true
+  BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+  UPSTREAM="$(git rev-parse --abbrev-ref --symbolic-full-name @{u} 2>/dev/null || true)"
+  if [[ -z "$UPSTREAM" ]]; then
+    UPSTREAM="origin/$BRANCH"
+  fi
   LOCAL_HEAD="$(git rev-parse HEAD)"
-  REMOTE_HEAD="$(git rev-parse origin/HEAD 2>/dev/null || true)"
+  REMOTE_HEAD="$(git rev-parse "$UPSTREAM" 2>/dev/null || true)"
   if [[ -n "$REMOTE_HEAD" && "$REMOTE_HEAD" != "$LOCAL_HEAD" ]]; then
-    log "Pulling updates: $LOCAL_HEAD -> $REMOTE_HEAD"
+    log "Pulling updates from $UPSTREAM: $LOCAL_HEAD -> $REMOTE_HEAD"
     git pull --rebase --autostash || { log "git pull failed"; exit 1; }
   else
     log "No remote updates."
