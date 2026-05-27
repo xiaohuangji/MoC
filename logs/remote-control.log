@@ -58,3 +58,31 @@
 [2026-05-27T07:35:16Z] Output 4: NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
 [2026-05-27T07:35:16Z] Exit 4: 9
 [2026-05-27T07:35:16Z] Commands cleared.
+[2026-05-27T07:40:14Z] No remote updates.
+[2026-05-27T07:40:14Z] No commands to run.
+[2026-05-27T07:45:16Z] No remote updates.
+[2026-05-27T07:45:16Z] No commands to run.
+[2026-05-27T07:50:19Z] Pulling updates from origin/remote-control-setup: b88019e778814f6fcbb39b3e5867a22f042fd284 -> 3018fb8f54760bf1cdba890f8bb1ef7fc1af7cb8
+[2026-05-27T07:50:24Z] Executing commands from /data/hyh/MoC/control/commands.txt
+[2026-05-27T07:50:24Z] Command 1: hostname
+[2026-05-27T07:50:24Z] Output 1: user
+[2026-05-27T07:50:24Z] Exit 1: 0
+[2026-05-27T07:50:24Z] Command 2: lspci | grep -i nvidia || true
+[2026-05-27T07:50:24Z] Output 2: 17:00.0 3D controller: NVIDIA Corporation GA100 [A100 PCIe 40GB] (rev a1)
+[2026-05-27T07:50:24Z] Output 2: 2a:00.0 3D controller: NVIDIA Corporation GA100 [A100 PCIe 40GB] (rev a1)
+[2026-05-27T07:50:24Z] Output 2: ab:00.0 3D controller: NVIDIA Corporation GA100 [A100 PCIe 40GB] (rev a1)
+[2026-05-27T07:50:24Z] Output 2: bd:00.0 3D controller: NVIDIA Corporation GA100 [A100 PCIe 40GB] (rev a1)
+[2026-05-27T07:50:24Z] Exit 2: 0
+[2026-05-27T07:50:24Z] Command 3: ls -l /dev/nvidia* || true
+[2026-05-27T07:50:24Z] Output 3: ls: cannot access '/dev/nvidia*': No such file or directory
+[2026-05-27T07:50:24Z] Exit 3: 0
+[2026-05-27T07:50:24Z] Command 4: which nvidia-smi || true
+[2026-05-27T07:50:24Z] Output 4: /usr/bin/nvidia-smi
+[2026-05-27T07:50:24Z] Exit 4: 0
+[2026-05-27T07:50:24Z] Command 5: nvidia-smi || true
+[2026-05-27T07:50:24Z] Output 5: NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+[2026-05-27T07:50:24Z] Exit 5: 0
+[2026-05-27T07:50:24Z] Command 6: python -c "import torch; print(torch.__version__); print(torch.cuda.is_available()); print(torch.cuda.device_count())" || true
+[2026-05-27T07:50:24Z] Output 6: bash: line 1: python: command not found
+[2026-05-27T07:50:24Z] Exit 6: 0
+[2026-05-27T07:50:24Z] Commands cleared.
