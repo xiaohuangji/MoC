@@ -86,3 +86,105 @@
 [2026-05-27T07:50:24Z] Output 6: bash: line 1: python: command not found
 [2026-05-27T07:50:24Z] Exit 6: 0
 [2026-05-27T07:50:24Z] Commands cleared.
+[2026-05-27T07:55:22Z] No remote updates.
+[2026-05-27T07:55:22Z] No commands to run.
+[2026-05-27T08:00:26Z] Pulling updates from origin/remote-control-setup: 5094d857bc9e5ae5b4d7b70e9adac7d87740c5e6 -> defd6fd1d3c685edf5fa1d6bc99b3e1dcdc5c1a6
+[2026-05-27T08:00:32Z] Executing commands from /data/hyh/MoC/control/commands.txt
+[2026-05-27T08:00:32Z] Command 1: echo "===== remote control retest start ====="
+[2026-05-27T08:00:32Z] Output 1: ===== remote control retest start =====
+[2026-05-27T08:00:32Z] Exit 1: 0
+[2026-05-27T08:00:32Z] Command 2: hostname
+[2026-05-27T08:00:32Z] Output 2: user
+[2026-05-27T08:00:32Z] Exit 2: 0
+[2026-05-27T08:00:32Z] Command 3: whoami
+[2026-05-27T08:00:32Z] Output 3: huyihan
+[2026-05-27T08:00:32Z] Exit 3: 0
+[2026-05-27T08:00:32Z] Command 4: pwd
+[2026-05-27T08:00:32Z] Output 4: /data/hyh/MoC
+[2026-05-27T08:00:32Z] Exit 4: 0
+[2026-05-27T08:00:32Z] Command 5: date
+[2026-05-27T08:00:32Z] Output 5: Wed May 27 08:00:32 AM UTC 2026
+[2026-05-27T08:00:32Z] Exit 5: 0
+[2026-05-27T08:00:32Z] Command 6: echo "PATH=$PATH"
+[2026-05-27T08:00:32Z] Output 6: PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+[2026-05-27T08:00:32Z] Exit 6: 0
+[2026-05-27T08:00:32Z] Command 7: ls -l /dev/nvidia* || true
+[2026-05-27T08:00:32Z] Output 7: crw-rw-rw- 1 root root 195,   0 May 27 07:53 /dev/nvidia0
+[2026-05-27T08:00:32Z] Output 7: crw-rw-rw- 1 root root 195,   1 May 27 07:53 /dev/nvidia1
+[2026-05-27T08:00:32Z] Output 7: crw-rw-rw- 1 root root 195,   2 May 27 07:53 /dev/nvidia2
+[2026-05-27T08:00:32Z] Output 7: crw-rw-rw- 1 root root 195,   3 May 27 07:53 /dev/nvidia3
+[2026-05-27T08:00:32Z] Output 7: crw-rw-rw- 1 root root 195, 255 May 27 07:53 /dev/nvidiactl
+[2026-05-27T08:00:32Z] Output 7: crw-rw-rw- 1 root root 506,   0 May 27 07:53 /dev/nvidia-uvm
+[2026-05-27T08:00:32Z] Output 7: crw-rw-rw- 1 root root 506,   1 May 27 07:53 /dev/nvidia-uvm-tools
+[2026-05-27T08:00:32Z] Output 7: 
+[2026-05-27T08:00:32Z] Output 7: /dev/nvidia-caps:
+[2026-05-27T08:00:32Z] Output 7: total 0
+[2026-05-27T08:00:32Z] Output 7: cr-------- 1 root root 509, 1 May 27 07:53 nvidia-cap1
+[2026-05-27T08:00:32Z] Output 7: cr--r--r-- 1 root root 509, 2 May 27 07:53 nvidia-cap2
+[2026-05-27T08:00:32Z] Exit 7: 0
+[2026-05-27T08:00:32Z] Command 8: nvidia-smi || true
+[2026-05-27T08:00:38Z] Output 8: Wed May 27 08:00:35 2026       
+[2026-05-27T08:00:38Z] Output 8: +-----------------------------------------------------------------------------------------+
+[2026-05-27T08:00:38Z] Output 8: | NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+[2026-05-27T08:00:38Z] Output 8: |-----------------------------------------+------------------------+----------------------+
+[2026-05-27T08:00:38Z] Output 8: | GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+[2026-05-27T08:00:38Z] Output 8: | Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+[2026-05-27T08:00:38Z] Output 8: |                                         |                        |               MIG M. |
+[2026-05-27T08:00:38Z] Output 8: |=========================================+========================+======================|
+[2026-05-27T08:00:38Z] Output 8: |   0  NVIDIA A100-PCIE-40GB          Off |   00000000:17:00.0 Off |                    0 |
+[2026-05-27T08:00:38Z] Output 8: | N/A   36C    P0             38W /  250W |       1MiB /  40960MiB |      0%      Default |
+[2026-05-27T08:00:38Z] Output 8: |                                         |                        |             Disabled |
+[2026-05-27T08:00:38Z] Output 8: +-----------------------------------------+------------------------+----------------------+
+[2026-05-27T08:00:38Z] Output 8: |   1  NVIDIA A100-PCIE-40GB          Off |   00000000:2A:00.0 Off |                    0 |
+[2026-05-27T08:00:38Z] Output 8: | N/A   37C    P0             38W /  250W |       1MiB /  40960MiB |      0%      Default |
+[2026-05-27T08:00:38Z] Output 8: |                                         |                        |             Disabled |
+[2026-05-27T08:00:38Z] Output 8: +-----------------------------------------+------------------------+----------------------+
+[2026-05-27T08:00:38Z] Output 8: |   2  NVIDIA A100-PCIE-40GB          Off |   00000000:AB:00.0 Off |                    0 |
+[2026-05-27T08:00:38Z] Output 8: | N/A   37C    P0             39W /  250W |       1MiB /  40960MiB |      4%      Default |
+[2026-05-27T08:00:38Z] Output 8: |                                         |                        |             Disabled |
+[2026-05-27T08:00:38Z] Output 8: +-----------------------------------------+------------------------+----------------------+
+[2026-05-27T08:00:38Z] Output 8: |   3  NVIDIA A100-PCIE-40GB          Off |   00000000:BD:00.0 Off |                    0 |
+[2026-05-27T08:00:38Z] Output 8: | N/A   37C    P0             39W /  250W |       1MiB /  40960MiB |      0%      Default |
+[2026-05-27T08:00:38Z] Output 8: |                                         |                        |             Disabled |
+[2026-05-27T08:00:38Z] Output 8: +-----------------------------------------+------------------------+----------------------+
+[2026-05-27T08:00:38Z] Output 8:                                                                                          
+[2026-05-27T08:00:38Z] Output 8: +-----------------------------------------------------------------------------------------+
+[2026-05-27T08:00:38Z] Output 8: | Processes:                                                                              |
+[2026-05-27T08:00:38Z] Output 8: |  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+[2026-05-27T08:00:38Z] Output 8: |        ID   ID                                                               Usage      |
+[2026-05-27T08:00:38Z] Output 8: |=========================================================================================|
+[2026-05-27T08:00:38Z] Output 8: |  No running processes found                                                             |
+[2026-05-27T08:00:38Z] Output 8: +-----------------------------------------------------------------------------------------+
+[2026-05-27T08:00:38Z] Exit 8: 0
+[2026-05-27T08:00:38Z] Command 9: nvidia-smi -L || true
+[2026-05-27T08:00:43Z] Output 9: GPU 0: NVIDIA A100-PCIE-40GB (UUID: GPU-39a140e5-15d3-6883-cd2e-ae3d900446cc)
+[2026-05-27T08:00:43Z] Output 9: GPU 1: NVIDIA A100-PCIE-40GB (UUID: GPU-4890048f-3c3c-a99f-76b6-f740705a5800)
+[2026-05-27T08:00:43Z] Output 9: GPU 2: NVIDIA A100-PCIE-40GB (UUID: GPU-c80bb428-0dc1-1c85-75d6-b2821e17236f)
+[2026-05-27T08:00:43Z] Output 9: GPU 3: NVIDIA A100-PCIE-40GB (UUID: GPU-9b26b854-4d93-9226-8d7c-3550edbe4728)
+[2026-05-27T08:00:43Z] Exit 9: 0
+[2026-05-27T08:00:43Z] Command 10: which python || true
+[2026-05-27T08:00:43Z] Exit 10: 0
+[2026-05-27T08:00:43Z] Command 11: python --version || true
+[2026-05-27T08:00:43Z] Output 11: bash: line 1: python: command not found
+[2026-05-27T08:00:43Z] Exit 11: 0
+[2026-05-27T08:00:43Z] Command 12: which python3 || true
+[2026-05-27T08:00:43Z] Output 12: /usr/bin/python3
+[2026-05-27T08:00:43Z] Exit 12: 0
+[2026-05-27T08:00:43Z] Command 13: python3 --version || true
+[2026-05-27T08:00:43Z] Output 13: Python 3.10.12
+[2026-05-27T08:00:43Z] Exit 13: 0
+[2026-05-27T08:00:43Z] Command 14: which conda || true
+[2026-05-27T08:00:43Z] Exit 14: 0
+[2026-05-27T08:00:43Z] Command 15: conda info --envs || true
+[2026-05-27T08:00:43Z] Output 15: bash: line 1: conda: command not found
+[2026-05-27T08:00:43Z] Exit 15: 0
+[2026-05-27T08:00:43Z] Command 16: python -c "import sys; print('python exe:', sys.executable); print('python version:', sys.version)" || true
+[2026-05-27T08:00:43Z] Output 16: bash: line 1: python: command not found
+[2026-05-27T08:00:43Z] Exit 16: 0
+[2026-05-27T08:00:43Z] Command 17: python -c "import torch; print('torch:', torch.__version__); print('cuda available:', torch.cuda.is_available()); print('cuda count:', torch.cuda.device_count()); print('cuda version:', torch.version.cuda); print('device names:', [torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())])" || true
+[2026-05-27T08:00:43Z] Output 17: bash: line 1: python: command not found
+[2026-05-27T08:00:43Z] Exit 17: 0
+[2026-05-27T08:00:43Z] Command 18: echo "===== remote control retest end ====="
+[2026-05-27T08:00:43Z] Output 18: ===== remote control retest end =====
+[2026-05-27T08:00:43Z] Exit 18: 0
+[2026-05-27T08:00:43Z] Commands cleared.
