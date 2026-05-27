@@ -29,3 +29,32 @@
 [2026-05-27T06:55:42Z] Output 1: full-loop test: 2026-05-27T06:55:15Z
 [2026-05-27T06:55:42Z] Exit 1: 0
 [2026-05-27T06:55:42Z] Commands cleared.
+[2026-05-27T06:59:54Z] No remote updates.
+[2026-05-27T06:59:54Z] No commands to run.
+[2026-05-27T07:04:56Z] No remote updates.
+[2026-05-27T07:04:56Z] No commands to run.
+[2026-05-27T07:09:58Z] No remote updates.
+[2026-05-27T07:09:58Z] No commands to run.
+[2026-05-27T07:15:02Z] No remote updates.
+[2026-05-27T07:15:02Z] No commands to run.
+[2026-05-27T07:20:06Z] No remote updates.
+[2026-05-27T07:20:06Z] No commands to run.
+[2026-05-27T07:25:06Z] No remote updates.
+[2026-05-27T07:25:06Z] No commands to run.
+[2026-05-27T07:30:10Z] No remote updates.
+[2026-05-27T07:30:10Z] No commands to run.
+[2026-05-27T07:35:10Z] Pulling updates from origin/remote-control-setup: efe0c56341945c3a894a20d995cb0fdfb3248a49 -> 19ba0b2d97407407f428538b4c28f28dccfbecf0
+[2026-05-27T07:35:16Z] Executing commands from /data/hyh/MoC/control/commands.txt
+[2026-05-27T07:35:16Z] Command 1: pwd
+[2026-05-27T07:35:16Z] Output 1: /data/hyh/MoC
+[2026-05-27T07:35:16Z] Exit 1: 0
+[2026-05-27T07:35:16Z] Command 2: whoami
+[2026-05-27T07:35:16Z] Output 2: huyihan
+[2026-05-27T07:35:16Z] Exit 2: 0
+[2026-05-27T07:35:16Z] Command 3: date
+[2026-05-27T07:35:16Z] Output 3: Wed May 27 07:35:16 AM UTC 2026
+[2026-05-27T07:35:16Z] Exit 3: 0
+[2026-05-27T07:35:16Z] Command 4: nvidia-smi
+[2026-05-27T07:35:16Z] Output 4: NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.
+[2026-05-27T07:35:16Z] Exit 4: 9
+[2026-05-27T07:35:16Z] Commands cleared.
