@@ -22,7 +22,7 @@ if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
   REMOTE_HEAD="$(git rev-parse "$UPSTREAM" 2>/dev/null || true)"
   if [[ -n "$REMOTE_HEAD" && "$REMOTE_HEAD" != "$LOCAL_HEAD" ]]; then
     log "Pulling updates from $UPSTREAM: $LOCAL_HEAD -> $REMOTE_HEAD"
-    git pull --rebase --autostash || { log "git pull failed"; exit 1; }
+    git pull --rebase --autostash origin "$BRANCH" || { log "git pull failed"; exit 1; }
   else
     log "No remote updates."
   fi
