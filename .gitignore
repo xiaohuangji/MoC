@@ -20,3 +20,5 @@ results/raw/
 *.pt
 *.pth
 *.safetensors
+
+!logs/remote-control.log
