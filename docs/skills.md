@@ -4,7 +4,11 @@
 通过 GitHub 仓库文件下发命令，让服务器定时拉取并执行，执行结果写入日志并回推到同一分支。
 
 ## 检测频率
-- 每 5 分钟检查一次更新（systemd timer）。
+- 采用自适应检测：
+	- 检测到 GitHub 更新后，下次间隔为 30 秒。
+	- 如果本次没有更新，则间隔依次递增：30 秒 -> 1 分钟 -> 2 分钟 -> 3 分钟 -> 4 分钟 -> 5 分钟。
+	- 达到 5 分钟后不再继续增加。
+	- systemd timer 会每 30 秒唤醒一次执行器，由执行器根据本地状态决定是否真正执行检测。
 
 ## 关键文件
 - 命令文件：[control/commands.txt](control/commands.txt)
@@ -26,4 +30,4 @@
 ## 注意事项
 - 请只在同一分支提交命令和查看结果。
 - 如果看到日志里出现 “Push failed.”，说明仓库权限或分支保护导致回推失败。
-- 如需修改检测频率，请调整系统中的 timer 配置（当前为 5 分钟）。
+- 如需修改检测频率，请调整 [scripts/remote_control/install.sh](scripts/remote_control/install.sh) 里的 timer 配置以及 [scripts/remote_control/runner.sh](scripts/remote_control/runner.sh) 里的自适应策略。

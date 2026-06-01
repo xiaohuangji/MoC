@@ -20,11 +20,12 @@ EOF
 
 cat > "$UNIT_DIR/moc-remote-control.timer" <<EOF
 [Unit]
-Description=Run MoC Remote Control every 5 minutes
+Description=Run MoC Remote Control with adaptive polling
 
 [Timer]
-OnBootSec=1min
-OnUnitActiveSec=5min
+OnBootSec=30s
+OnUnitActiveSec=30s
+AccuracySec=1s
 Persistent=true
 
 [Install]
