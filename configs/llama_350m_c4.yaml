@@ -1,0 +1,39 @@
+model:
+  name: 350m
+  preset: 350m
+  hidden_size: 1024
+  intermediate_size: 2736
+  num_hidden_layers: 24
+  num_attention_heads: 16
+
+data:
+  mode: t5_padding
+  tokenizer_name: t5-base
+  shuffle_docs: true
+  shuffle_seed: 42
+  shuffle_buffer_docs: 1000
+
+training:
+  seed: 0
+  total_batch_size: 512
+  micro_batch_size: 128
+  seq_len: 256
+  max_steps: 59510
+  training_tokens: 7800000000
+  learning_rate: 1.0e-3
+  warmup_steps: 5951
+  min_lr_ratio: 0.0
+  weight_decay: 0.0
+  beta1: 0.9
+  beta2: 0.999
+  grad_clip: 0.0
+  log_every: 50
+
+evaluation:
+  micro_batch_size: 128
+  max_batches: 256
+  max_docs: null
+  target_nonpad_tokens: 10000000
+  shuffle_docs: true
+  shuffle_seed: 42
+  shuffle_buffer_docs: 1000
