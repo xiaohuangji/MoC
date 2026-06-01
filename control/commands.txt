@@ -7,3 +7,4 @@ nvidia-smi -L || true
 systemctl --user is-active moc-remote-control.timer || true
 systemctl --user is-active moc-private-remote-control.timer || true
 echo MOC_REMOTE_BRANCH_TEST_20260601_1642 END
+
