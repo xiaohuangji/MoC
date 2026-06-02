@@ -12,6 +12,12 @@ MAX_INTERVAL=300
 
 mkdir -p "$STATE_DIR"
 
+exec 9>"$STATE_DIR/remote-control.lock"
+if ! flock -n 9; then
+  echo "[$(date -u '+%Y-%m-%dT%H:%M:%SZ')] Already running; exiting." | tee -a "$LOG_FILE"
+  exit 0
+fi
+
 load_state() {
   NEXT_INTERVAL_SECONDS=$DEFAULT_INTERVAL
   NEXT_CHECK_AT=0

@@ -35,4 +35,11 @@ EOF
 systemctl --user daemon-reload
 systemctl --user enable --now moc-remote-control.timer
 
+if command -v loginctl >/dev/null 2>&1; then
+	if ! loginctl show-user "$(id -un)" -p Linger --value 2>/dev/null | grep -qi '^yes$'; then
+		echo "Warning: lingering is disabled. The user timer may stop after logout."
+		echo "To keep it running after logout, run: sudo loginctl enable-linger $(id -un)"
+	fi
+fi
+
 echo "Installed and started: moc-remote-control.timer"

@@ -10,6 +10,12 @@
 	- 达到 5 分钟后不再继续增加。
 	- systemd timer 会每 30 秒唤醒一次执行器，由执行器根据本地状态决定是否真正执行检测。
 
+## 退出登录后的运行方式
+- 之前使用的是用户级 systemd timer，如果系统没有开启 lingering，那么用户退出登录后，`systemctl --user` 管理的定时器会停止。
+- 解决方式有两种：
+	1. 开启 lingering（需要管理员权限）：`sudo loginctl enable-linger huyihan`
+	2. 改用系统级 timer（推荐），通过 [scripts/remote_control/install_system.sh](scripts/remote_control/install_system.sh) 安装。
+
 ## 关键文件
 - 命令文件：[control/commands.txt](control/commands.txt)
 - 执行日志：[logs/remote-control.log](logs/remote-control.log)
