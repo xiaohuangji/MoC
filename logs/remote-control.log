@@ -415,3 +415,36 @@
 [2026-06-01T12:54:43Z] Output 1: +-----------------------------------------------------------------------------------------+
 [2026-06-01T12:54:43Z] Exit 1: 0
 [2026-06-01T12:54:43Z] Commands cleared.
+[2026-06-02T10:00:40Z] No remote updates.
+[2026-06-02T10:00:40Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-06-02T10:00:40Z] Command 1: echo MOC_REMOTE_BRANCH_TEST_20260601_1642 START
+[2026-06-02T10:00:40Z] Output 1: MOC_REMOTE_BRANCH_TEST_20260601_1642 START
+[2026-06-02T10:00:40Z] Exit 1: 0
+[2026-06-02T10:00:40Z] Command 2: hostname
+[2026-06-02T10:00:40Z] Output 2: user
+[2026-06-02T10:00:40Z] Exit 2: 0
+[2026-06-02T10:00:40Z] Command 3: whoami
+[2026-06-02T10:00:40Z] Output 3: huyihan
+[2026-06-02T10:00:40Z] Exit 3: 0
+[2026-06-02T10:00:40Z] Command 4: pwd
+[2026-06-02T10:00:40Z] Output 4: /home/huyihan/MoC
+[2026-06-02T10:00:40Z] Exit 4: 0
+[2026-06-02T10:00:40Z] Command 5: date -u
+[2026-06-02T10:00:40Z] Output 5: Tue Jun  2 10:00:40 AM UTC 2026
+[2026-06-02T10:00:40Z] Exit 5: 0
+[2026-06-02T10:00:40Z] Command 6: nvidia-smi -L || true
+[2026-06-02T10:00:46Z] Output 6: GPU 0: NVIDIA A100-PCIE-40GB (UUID: GPU-39a140e5-15d3-6883-cd2e-ae3d900446cc)
+[2026-06-02T10:00:46Z] Output 6: GPU 1: NVIDIA A100-PCIE-40GB (UUID: GPU-4890048f-3c3c-a99f-76b6-f740705a5800)
+[2026-06-02T10:00:46Z] Output 6: GPU 2: NVIDIA A100-PCIE-40GB (UUID: GPU-c80bb428-0dc1-1c85-75d6-b2821e17236f)
+[2026-06-02T10:00:46Z] Output 6: GPU 3: NVIDIA A100-PCIE-40GB (UUID: GPU-9b26b854-4d93-9226-8d7c-3550edbe4728)
+[2026-06-02T10:00:46Z] Exit 6: 0
+[2026-06-02T10:00:46Z] Command 7: systemctl --user is-active moc-remote-control.timer || true
+[2026-06-02T10:00:46Z] Output 7: active
+[2026-06-02T10:00:46Z] Exit 7: 0
+[2026-06-02T10:00:46Z] Command 8: systemctl --user is-active moc-private-remote-control.timer || true
+[2026-06-02T10:00:46Z] Output 8: inactive
+[2026-06-02T10:00:46Z] Exit 8: 0
+[2026-06-02T10:00:46Z] Command 9: echo MOC_REMOTE_BRANCH_TEST_20260601_1642 END
+[2026-06-02T10:00:46Z] Output 9: MOC_REMOTE_BRANCH_TEST_20260601_1642 END
+[2026-06-02T10:00:46Z] Exit 9: 0
+[2026-06-02T10:00:46Z] Commands cleared.
