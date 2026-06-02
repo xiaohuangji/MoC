@@ -16,6 +16,15 @@
 	1. 开启 lingering（需要管理员权限）：`sudo loginctl enable-linger huyihan`
 	2. 改用系统级 timer（推荐），通过 [scripts/remote_control/install_system.sh](scripts/remote_control/install_system.sh) 安装。
 
+## 仅使用用户级权限的离线常驻方案
+- 如果没有管理员权限，也可以使用 `nohup`/`tmux` 启动一个用户级后台守护进程。
+- 推荐脚本：
+	- 启动：[scripts/remote_control/start_user_daemon.sh](scripts/remote_control/start_user_daemon.sh)
+	- 停止：[scripts/remote_control/stop_user_daemon.sh](scripts/remote_control/stop_user_daemon.sh)
+	- 守护进程：[scripts/remote_control/user_daemon.sh](scripts/remote_control/user_daemon.sh)
+- 这种方式不需要 sudo，但前提是系统不会在注销时强制清理该用户进程。
+- 守护进程会每 30 秒调用一次执行器，执行器本身会根据自适应状态决定是否真正拉取和执行。
+
 ## 关键文件
 - 命令文件：[control/commands.txt](control/commands.txt)
 - 执行日志：[logs/remote-control.log](logs/remote-control.log)
