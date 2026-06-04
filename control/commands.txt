@@ -1,6 +1,0 @@
-echo MOC_PKU_PRIVATE_CLONE_20260604_1748 START
-target=~/MoC-remote-control; repo_url=git@github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control.git; if [ -e "$target" ] && [ ! -d "$target/.git" ]; then echo "target exists but is not a git repository: $target"; exit 2; fi; if [ -d "$target/.git" ]; then cd "$target" && git remote set-url origin "$repo_url" && git fetch origin main && git checkout main && git reset --hard origin/main; else git clone "$repo_url" "$target"; fi
-cd ~/MoC-remote-control && git rev-parse HEAD && git status --short --branch
-cd ~/MoC-remote-control && bash -n scripts/remote_control/install.sh && bash -n scripts/remote_control/runner.sh && bash -n scripts/remote_control/test_local.sh
-cd ~/MoC-remote-control && grep -R 'SERVICE_NAME=' scripts/remote_control/install.sh
-echo MOC_PKU_PRIVATE_CLONE_20260604_1748 END

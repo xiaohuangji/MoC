@@ -6460,3 +6460,39 @@
 [2026-06-04T07:31:06Z] Output 3: MOC_PKU_PRIVATE_LSREMOTE_20260604_1742 END
 [2026-06-04T07:31:06Z] Exit 3: 0
 [2026-06-04T07:31:06Z] Commands cleared.
+[2026-06-04T07:31:48Z] No remote updates.
+[2026-06-04T07:31:48Z] No commands to run.
+[2026-06-04T07:32:18Z] Not due yet; next check at 2026-06-04T07:32:42Z.
+[2026-06-04T07:32:55Z] No remote updates.
+[2026-06-04T07:32:55Z] No commands to run.
+[2026-06-04T07:33:25Z] Not due yet; next check at 2026-06-04T07:34:48Z.
+[2026-06-04T07:33:55Z] Not due yet; next check at 2026-06-04T07:34:48Z.
+[2026-06-04T07:34:25Z] Not due yet; next check at 2026-06-04T07:34:48Z.
+[2026-06-04T07:35:01Z] No remote updates.
+[2026-06-04T07:35:01Z] No commands to run.
+[2026-06-04T07:35:31Z] Not due yet; next check at 2026-06-04T07:37:55Z.
+[2026-06-04T07:36:01Z] Not due yet; next check at 2026-06-04T07:37:55Z.
+[2026-06-04T07:36:31Z] Not due yet; next check at 2026-06-04T07:37:55Z.
+[2026-06-04T07:37:01Z] Not due yet; next check at 2026-06-04T07:37:55Z.
+[2026-06-04T07:37:31Z] Not due yet; next check at 2026-06-04T07:37:55Z.
+[2026-06-04T07:38:07Z] Pulling updates from origin/remote-control-setup: 630f8184a85c2a99f53cde7a25421d9f6560dc2d -> 86eb9e2b3b3428d3eb28a85c147f01b525266e47
+[2026-06-04T07:38:13Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-06-04T07:38:13Z] Command 1: echo MOC_PKU_PRIVATE_CLONE_20260604_1748 START
+[2026-06-04T07:38:13Z] Output 1: MOC_PKU_PRIVATE_CLONE_20260604_1748 START
+[2026-06-04T07:38:13Z] Exit 1: 0
+[2026-06-04T07:38:13Z] Command 2: target=~/MoC-remote-control; repo_url=git@github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control.git; if [ -e "$target" ] && [ ! -d "$target/.git" ]; then echo "target exists but is not a git repository: $target"; exit 2; fi; if [ -d "$target/.git" ]; then cd "$target" && git remote set-url origin "$repo_url" && git fetch origin main && git checkout main && git reset --hard origin/main; else git clone "$repo_url" "$target"; fi
+[2026-06-04T07:38:20Z] Output 2: Cloning into '/home/huyihan/MoC-remote-control'...
+[2026-06-04T07:38:20Z] Exit 2: 0
+[2026-06-04T07:38:20Z] Command 3: cd ~/MoC-remote-control && git rev-parse HEAD && git status --short --branch
+[2026-06-04T07:38:20Z] Output 3: be78c814414d935f48b3e1e13ea4b0f46cadc33f
+[2026-06-04T07:38:20Z] Output 3: ## main...origin/main
+[2026-06-04T07:38:20Z] Exit 3: 0
+[2026-06-04T07:38:20Z] Command 4: cd ~/MoC-remote-control && bash -n scripts/remote_control/install.sh && bash -n scripts/remote_control/runner.sh && bash -n scripts/remote_control/test_local.sh
+[2026-06-04T07:38:20Z] Exit 4: 0
+[2026-06-04T07:38:20Z] Command 5: cd ~/MoC-remote-control && grep -R 'SERVICE_NAME=' scripts/remote_control/install.sh
+[2026-06-04T07:38:20Z] Output 5: SERVICE_NAME="moc-private-remote-control"
+[2026-06-04T07:38:20Z] Exit 5: 0
+[2026-06-04T07:38:20Z] Command 6: echo MOC_PKU_PRIVATE_CLONE_20260604_1748 END
+[2026-06-04T07:38:20Z] Output 6: MOC_PKU_PRIVATE_CLONE_20260604_1748 END
+[2026-06-04T07:38:20Z] Exit 6: 0
+[2026-06-04T07:38:20Z] Commands cleared.
