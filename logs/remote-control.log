@@ -6347,3 +6347,62 @@
 [2026-06-04T07:00:18Z] Output 9: MOC_REMOTE_BRANCH_TEST_20260604_1720 END
 [2026-06-04T07:00:18Z] Exit 9: 0
 [2026-06-04T07:00:18Z] Commands cleared.
+[2026-06-04T07:01:01Z] No remote updates.
+[2026-06-04T07:01:01Z] No commands to run.
+[2026-06-04T07:01:31Z] Not due yet; next check at 2026-06-04T07:01:55Z.
+[2026-06-04T07:02:07Z] No remote updates.
+[2026-06-04T07:02:07Z] No commands to run.
+[2026-06-04T07:02:37Z] Not due yet; next check at 2026-06-04T07:04:01Z.
+[2026-06-04T07:03:07Z] Not due yet; next check at 2026-06-04T07:04:01Z.
+[2026-06-04T07:03:37Z] Not due yet; next check at 2026-06-04T07:04:01Z.
+[2026-06-04T07:04:13Z] No remote updates.
+[2026-06-04T07:04:13Z] No commands to run.
+[2026-06-04T07:04:43Z] Not due yet; next check at 2026-06-04T07:07:07Z.
+[2026-06-04T07:05:13Z] Not due yet; next check at 2026-06-04T07:07:07Z.
+[2026-06-04T07:05:43Z] Not due yet; next check at 2026-06-04T07:07:07Z.
+[2026-06-04T07:06:13Z] Not due yet; next check at 2026-06-04T07:07:07Z.
+[2026-06-04T07:06:43Z] Not due yet; next check at 2026-06-04T07:07:07Z.
+[2026-06-04T07:07:19Z] No remote updates.
+[2026-06-04T07:07:19Z] No commands to run.
+[2026-06-04T07:07:49Z] Not due yet; next check at 2026-06-04T07:11:14Z.
+[2026-06-04T07:08:19Z] Not due yet; next check at 2026-06-04T07:11:14Z.
+[2026-06-04T07:08:49Z] Not due yet; next check at 2026-06-04T07:11:14Z.
+[2026-06-04T07:09:20Z] Not due yet; next check at 2026-06-04T07:11:14Z.
+[2026-06-04T07:09:50Z] Not due yet; next check at 2026-06-04T07:11:14Z.
+[2026-06-04T07:10:20Z] Not due yet; next check at 2026-06-04T07:11:14Z.
+[2026-06-04T07:10:50Z] Not due yet; next check at 2026-06-04T07:11:14Z.
+[2026-06-04T07:11:25Z] No remote updates.
+[2026-06-04T07:11:25Z] No commands to run.
+[2026-06-04T07:11:55Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:12:25Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:12:55Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:13:26Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:13:56Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:14:26Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:14:56Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:15:26Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:15:56Z] Not due yet; next check at 2026-06-04T07:16:20Z.
+[2026-06-04T07:16:32Z] Pulling updates from origin/remote-control-setup: 89f99f543e477649afdc5009ae9093171dcae30a -> 8dc3cf7eeed66fd090e7c35123c69091fd04abae
+[2026-06-04T07:16:39Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-06-04T07:16:39Z] Command 1: echo MOC_PKU_DEPLOY_KEY_20260604_1730 START
+[2026-06-04T07:16:40Z] Output 1: MOC_PKU_DEPLOY_KEY_20260604_1730 START
+[2026-06-04T07:16:40Z] Exit 1: 0
+[2026-06-04T07:16:40Z] Command 2: mkdir -p ~/.ssh && chmod 700 ~/.ssh
+[2026-06-04T07:16:40Z] Exit 2: 0
+[2026-06-04T07:16:40Z] Command 3: if [ ! -f ~/.ssh/moc_remote_control_pku ]; then ssh-keygen -t ed25519 -f ~/.ssh/moc_remote_control_pku -N '' -C 'pku-moc-remote-control' >/dev/null; fi
+[2026-06-04T07:16:40Z] Exit 3: 0
+[2026-06-04T07:16:40Z] Command 4: chmod 600 ~/.ssh/moc_remote_control_pku && chmod 644 ~/.ssh/moc_remote_control_pku.pub
+[2026-06-04T07:16:40Z] Exit 4: 0
+[2026-06-04T07:16:40Z] Command 5: echo MOC_PKU_DEPLOY_KEY_20260604_1730_PUBLIC_KEY_BEGIN
+[2026-06-04T07:16:40Z] Output 5: MOC_PKU_DEPLOY_KEY_20260604_1730_PUBLIC_KEY_BEGIN
+[2026-06-04T07:16:40Z] Exit 5: 0
+[2026-06-04T07:16:40Z] Command 6: cat ~/.ssh/moc_remote_control_pku.pub
+[2026-06-04T07:16:40Z] Output 6: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBaDSywwZVAyE5FNjai1QZHtxDEkMzWIg9QPCyk5dNng pku-moc-remote-control
+[2026-06-04T07:16:40Z] Exit 6: 0
+[2026-06-04T07:16:40Z] Command 7: echo MOC_PKU_DEPLOY_KEY_20260604_1730_PUBLIC_KEY_END
+[2026-06-04T07:16:40Z] Output 7: MOC_PKU_DEPLOY_KEY_20260604_1730_PUBLIC_KEY_END
+[2026-06-04T07:16:40Z] Exit 7: 0
+[2026-06-04T07:16:40Z] Command 8: echo MOC_PKU_DEPLOY_KEY_20260604_1730 END
+[2026-06-04T07:16:40Z] Output 8: MOC_PKU_DEPLOY_KEY_20260604_1730 END
+[2026-06-04T07:16:40Z] Exit 8: 0
+[2026-06-04T07:16:40Z] Commands cleared.

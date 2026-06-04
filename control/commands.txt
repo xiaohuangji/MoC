@@ -1,8 +1,0 @@
-echo MOC_PKU_DEPLOY_KEY_20260604_1730 START
-mkdir -p ~/.ssh && chmod 700 ~/.ssh
-if [ ! -f ~/.ssh/moc_remote_control_pku ]; then ssh-keygen -t ed25519 -f ~/.ssh/moc_remote_control_pku -N '' -C 'pku-moc-remote-control' >/dev/null; fi
-chmod 600 ~/.ssh/moc_remote_control_pku && chmod 644 ~/.ssh/moc_remote_control_pku.pub
-echo MOC_PKU_DEPLOY_KEY_20260604_1730_PUBLIC_KEY_BEGIN
-cat ~/.ssh/moc_remote_control_pku.pub
-echo MOC_PKU_DEPLOY_KEY_20260604_1730_PUBLIC_KEY_END
-echo MOC_PKU_DEPLOY_KEY_20260604_1730 END
