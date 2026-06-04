@@ -1,0 +1,3 @@
+echo MOC_PKU_PRIVATE_LSREMOTE_20260604_1742 START
+GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=accept-new' git ls-remote git@github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control.git HEAD refs/heads/main < /dev/null
+echo MOC_PKU_PRIVATE_LSREMOTE_20260604_1742 END
