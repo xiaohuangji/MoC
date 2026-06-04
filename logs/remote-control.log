@@ -6496,3 +6496,88 @@
 [2026-06-04T07:38:20Z] Output 6: MOC_PKU_PRIVATE_CLONE_20260604_1748 END
 [2026-06-04T07:38:20Z] Exit 6: 0
 [2026-06-04T07:38:20Z] Commands cleared.
+[2026-06-04T07:39:02Z] No remote updates.
+[2026-06-04T07:39:02Z] No commands to run.
+[2026-06-04T07:39:32Z] Not due yet; next check at 2026-06-04T07:39:56Z.
+[2026-06-04T07:40:08Z] No remote updates.
+[2026-06-04T07:40:08Z] No commands to run.
+[2026-06-04T07:40:38Z] Not due yet; next check at 2026-06-04T07:42:02Z.
+[2026-06-04T07:41:08Z] Not due yet; next check at 2026-06-04T07:42:02Z.
+[2026-06-04T07:41:38Z] Not due yet; next check at 2026-06-04T07:42:02Z.
+[2026-06-04T07:42:14Z] No remote updates.
+[2026-06-04T07:42:14Z] No commands to run.
+[2026-06-04T07:42:44Z] Not due yet; next check at 2026-06-04T07:45:08Z.
+[2026-06-04T07:43:14Z] Not due yet; next check at 2026-06-04T07:45:08Z.
+[2026-06-04T07:43:44Z] Not due yet; next check at 2026-06-04T07:45:08Z.
+[2026-06-04T07:44:14Z] Not due yet; next check at 2026-06-04T07:45:08Z.
+[2026-06-04T07:44:44Z] Not due yet; next check at 2026-06-04T07:45:08Z.
+[2026-06-04T07:45:20Z] No remote updates.
+[2026-06-04T07:45:20Z] No commands to run.
+[2026-06-04T07:45:50Z] Not due yet; next check at 2026-06-04T07:49:14Z.
+[2026-06-04T07:46:21Z] Not due yet; next check at 2026-06-04T07:49:14Z.
+[2026-06-04T07:46:51Z] Not due yet; next check at 2026-06-04T07:49:14Z.
+[2026-06-04T07:47:21Z] Not due yet; next check at 2026-06-04T07:49:14Z.
+[2026-06-04T07:47:51Z] Not due yet; next check at 2026-06-04T07:49:14Z.
+[2026-06-04T07:48:21Z] Not due yet; next check at 2026-06-04T07:49:14Z.
+[2026-06-04T07:48:51Z] Not due yet; next check at 2026-06-04T07:49:14Z.
+[2026-06-04T07:49:27Z] Pulling updates from origin/remote-control-setup: 629a1c67688ebe04c30ee264394cb31d5c1a0f4b -> 395649f0c67fafe84eefc7aab3a1d9fe3b1b6c9f
+[2026-06-04T07:49:34Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-06-04T07:49:34Z] Command 1: echo MOC_TRIGGER_PRIVATE_RUNNER_20260604_154532 START
+[2026-06-04T07:49:34Z] Output 1: MOC_TRIGGER_PRIVATE_RUNNER_20260604_154532 START
+[2026-06-04T07:49:34Z] Exit 1: 0
+[2026-06-04T07:49:34Z] Command 2: cd ~/MoC-remote-control && bash scripts/remote_control/runner.sh < /dev/null
+[2026-06-04T07:49:58Z] Output 2: From github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control
+[2026-06-04T07:49:58Z] Output 2:    be78c81..111be22  main       -> origin/main
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:41Z] Pulling updates from origin/main: be78c814414d935f48b3e1e13ea4b0f46cadc33f -> 111be2210237dcec984dcf586fe3bda2a9f07438
+[2026-06-04T07:49:58Z] Output 2: From github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control
+[2026-06-04T07:49:58Z] Output 2:  * branch            main       -> FETCH_HEAD
+[2026-06-04T07:49:58Z] Output 2: Updating be78c81..111be22
+[2026-06-04T07:49:58Z] Output 2: Created autostash: 4873531
+[2026-06-04T07:49:58Z] Output 2: Fast-forward
+[2026-06-04T07:49:58Z] Output 2:  control/commands.txt | 10 ++++++++++
+[2026-06-04T07:49:58Z] Output 2:  1 file changed, 10 insertions(+)
+[2026-06-04T07:49:58Z] Output 2: Applied autostash.
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Executing commands from /home/huyihan/MoC-remote-control/control/commands.txt
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Command 1: echo MOC_PRIVATE_RUNNER_TEST_20260604_154532 START
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Output 1: MOC_PRIVATE_RUNNER_TEST_20260604_154532 START
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Exit 1: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Command 2: hostname
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Output 2: user
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Exit 2: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Command 3: whoami
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Output 3: huyihan
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Exit 3: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Command 4: pwd
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Output 4: /home/huyihan/MoC-remote-control
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Exit 4: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Command 5: date -u
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Output 5: Thu Jun  4 07:49:47 AM UTC 2026
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Exit 5: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Command 6: git -C ~/MoC-remote-control rev-parse HEAD || true
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Output 6: 111be2210237dcec984dcf586fe3bda2a9f07438
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Exit 6: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:47Z] Command 7: nvidia-smi --query-gpu=index,name,memory.total --format=csv,noheader
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Output 7: 0, NVIDIA A100-PCIE-40GB, 40960 MiB
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Output 7: 1, NVIDIA A100-PCIE-40GB, 40960 MiB
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Output 7: 2, NVIDIA A100-PCIE-40GB, 40960 MiB
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Output 7: 3, NVIDIA A100-PCIE-40GB, 40960 MiB
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Exit 7: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Command 8: systemctl --user is-active moc-remote-control.timer || true
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Output 8: active
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Exit 8: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Command 9: systemctl --user is-active moc-private-remote-control.timer || true
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Output 9: inactive
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Exit 9: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Command 10: echo MOC_PRIVATE_RUNNER_TEST_20260604_154532 END
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Output 10: MOC_PRIVATE_RUNNER_TEST_20260604_154532 END
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Exit 10: 0
+[2026-06-04T07:49:58Z] Output 2: [2026-06-04T07:49:52Z] Commands cleared.
+[2026-06-04T07:49:58Z] Output 2: [main fc9f0eb] chore: update remote control log
+[2026-06-04T07:49:58Z] Output 2:  2 files changed, 36 insertions(+), 10 deletions(-)
+[2026-06-04T07:49:58Z] Output 2: To github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control.git
+[2026-06-04T07:49:58Z] Output 2:    111be22..fc9f0eb  main -> main
+[2026-06-04T07:49:58Z] Exit 2: 0
+[2026-06-04T07:49:58Z] Command 3: echo MOC_TRIGGER_PRIVATE_RUNNER_20260604_154532 END
+[2026-06-04T07:49:58Z] Output 3: MOC_TRIGGER_PRIVATE_RUNNER_20260604_154532 END
+[2026-06-04T07:49:58Z] Exit 3: 0
+[2026-06-04T07:49:58Z] Commands cleared.
