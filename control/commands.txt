@@ -1,0 +1,3 @@
+echo MOC_TRIGGER_PRIVATE_RUNNER_20260604_154532 START
+cd ~/MoC-remote-control && bash scripts/remote_control/runner.sh < /dev/null
+echo MOC_TRIGGER_PRIVATE_RUNNER_20260604_154532 END
