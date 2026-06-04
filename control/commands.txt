@@ -1,0 +1,6 @@
+echo MOC_INSTALL_PRIVATE_TIMER_20260604_155000 START
+cd ~/MoC-remote-control && git pull --ff-only && bash scripts/remote_control/install.sh < /dev/null
+systemctl --user is-active moc-private-remote-control.timer || true
+systemctl --user is-active moc-remote-control.timer || true
+systemctl --user list-timers --all | grep -E 'moc-(private-)?remote-control' || true
+echo MOC_INSTALL_PRIVATE_TIMER_20260604_155000 END
