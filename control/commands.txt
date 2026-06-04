@@ -1,0 +1,9 @@
+echo MOC_REMOTE_BRANCH_TEST_20260604_1720 START
+hostname
+whoami
+pwd
+date -u
+nvidia-smi -L || true
+systemctl --user is-active moc-remote-control.timer || true
+systemctl --user is-active moc-private-remote-control.timer || true
+echo MOC_REMOTE_BRANCH_TEST_20260604_1720 END
