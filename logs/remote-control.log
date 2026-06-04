@@ -6581,3 +6581,35 @@
 [2026-06-04T07:49:58Z] Output 3: MOC_TRIGGER_PRIVATE_RUNNER_20260604_154532 END
 [2026-06-04T07:49:58Z] Exit 3: 0
 [2026-06-04T07:49:58Z] Commands cleared.
+[2026-06-04T07:50:41Z] No remote updates.
+[2026-06-04T07:50:41Z] No commands to run.
+[2026-06-04T07:51:11Z] Not due yet; next check at 2026-06-04T07:51:35Z.
+[2026-06-04T07:51:47Z] No remote updates.
+[2026-06-04T07:51:47Z] No commands to run.
+[2026-06-04T07:52:17Z] Not due yet; next check at 2026-06-04T07:53:41Z.
+[2026-06-04T07:52:47Z] Not due yet; next check at 2026-06-04T07:53:41Z.
+[2026-06-04T07:53:17Z] Not due yet; next check at 2026-06-04T07:53:41Z.
+[2026-06-04T07:53:53Z] Pulling updates from origin/remote-control-setup: e2622e0842cb5eea41b49e0609abb2cd38247493 -> aab2b21c23329c666073444a5c5414794c671054
+[2026-06-04T07:54:00Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-06-04T07:54:00Z] Command 1: echo MOC_INSTALL_PRIVATE_TIMER_20260604_155000 START
+[2026-06-04T07:54:00Z] Output 1: MOC_INSTALL_PRIVATE_TIMER_20260604_155000 START
+[2026-06-04T07:54:00Z] Exit 1: 0
+[2026-06-04T07:54:00Z] Command 2: cd ~/MoC-remote-control && git pull --ff-only && bash scripts/remote_control/install.sh < /dev/null
+[2026-06-04T07:54:06Z] Output 2: Already up to date.
+[2026-06-04T07:54:06Z] Output 2: Created symlink /home/huyihan/.config/systemd/user/timers.target.wants/moc-private-remote-control.timer → /home/huyihan/.config/systemd/user/moc-private-remote-control.timer.
+[2026-06-04T07:54:06Z] Output 2: Installed and started: moc-private-remote-control.timer
+[2026-06-04T07:54:06Z] Exit 2: 0
+[2026-06-04T07:54:06Z] Command 3: systemctl --user is-active moc-private-remote-control.timer || true
+[2026-06-04T07:54:06Z] Output 3: active
+[2026-06-04T07:54:06Z] Exit 3: 0
+[2026-06-04T07:54:06Z] Command 4: systemctl --user is-active moc-remote-control.timer || true
+[2026-06-04T07:54:06Z] Output 4: active
+[2026-06-04T07:54:06Z] Exit 4: 0
+[2026-06-04T07:54:06Z] Command 5: systemctl --user list-timers --all | grep -E 'moc-(private-)?remote-control' || true
+[2026-06-04T07:54:06Z] Output 5: n/a  n/a  Thu 2026-06-04 07:54:06 UTC 71ms ago   moc-private-remote-control.timer moc-private-remote-control.service
+[2026-06-04T07:54:06Z] Output 5: n/a  n/a  Mon 2026-06-01 14:47:16 UTC 2 days ago moc-remote-control.timer         moc-remote-control.service
+[2026-06-04T07:54:06Z] Exit 5: 0
+[2026-06-04T07:54:06Z] Command 6: echo MOC_INSTALL_PRIVATE_TIMER_20260604_155000 END
+[2026-06-04T07:54:06Z] Output 6: MOC_INSTALL_PRIVATE_TIMER_20260604_155000 END
+[2026-06-04T07:54:06Z] Exit 6: 0
+[2026-06-04T07:54:06Z] Commands cleared.
