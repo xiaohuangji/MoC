@@ -6406,3 +6406,29 @@
 [2026-06-04T07:16:40Z] Output 8: MOC_PKU_DEPLOY_KEY_20260604_1730 END
 [2026-06-04T07:16:40Z] Exit 8: 0
 [2026-06-04T07:16:40Z] Commands cleared.
+[2026-06-04T07:17:22Z] No remote updates.
+[2026-06-04T07:17:22Z] No commands to run.
+[2026-06-04T07:17:52Z] Not due yet; next check at 2026-06-04T07:18:16Z.
+[2026-06-04T07:18:28Z] No remote updates.
+[2026-06-04T07:18:28Z] No commands to run.
+[2026-06-04T07:18:58Z] Not due yet; next check at 2026-06-04T07:20:22Z.
+[2026-06-04T07:19:28Z] Not due yet; next check at 2026-06-04T07:20:22Z.
+[2026-06-04T07:19:58Z] Not due yet; next check at 2026-06-04T07:20:22Z.
+[2026-06-04T07:20:34Z] No remote updates.
+[2026-06-04T07:20:34Z] No commands to run.
+[2026-06-04T07:21:04Z] Not due yet; next check at 2026-06-04T07:23:28Z.
+[2026-06-04T07:21:34Z] Not due yet; next check at 2026-06-04T07:23:28Z.
+[2026-06-04T07:22:04Z] Not due yet; next check at 2026-06-04T07:23:28Z.
+[2026-06-04T07:22:34Z] Not due yet; next check at 2026-06-04T07:23:28Z.
+[2026-06-04T07:23:04Z] Not due yet; next check at 2026-06-04T07:23:28Z.
+[2026-06-04T07:23:40Z] Pulling updates from origin/remote-control-setup: 0a868fbf8dc39c79f2337d11e0dcd1849bf9b93e -> 596c4d8993644bd3cba9846233efc7976be57350
+[2026-06-04T07:23:46Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-06-04T07:23:46Z] Command 1: echo MOC_PKU_PRIVATE_ACCESS_20260604_1734 START
+[2026-06-04T07:23:46Z] Output 1: MOC_PKU_PRIVATE_ACCESS_20260604_1734 START
+[2026-06-04T07:23:46Z] Exit 1: 0
+[2026-06-04T07:23:46Z] Command 2: touch ~/.ssh/config && chmod 600 ~/.ssh/config && grep -q '^Host github.com-moc-remote-control-pku$' ~/.ssh/config 2>/dev/null || printf '\nHost github.com-moc-remote-control-pku\n  HostName github.com\n  User git\n  IdentityFile ~/.ssh/moc_remote_control_pku\n  IdentitiesOnly yes\n' >> ~/.ssh/config
+[2026-06-04T07:23:46Z] Exit 2: 0
+[2026-06-04T07:23:46Z] Command 3: ssh -o StrictHostKeyChecking=accept-new -T github.com-moc-remote-control-pku || true
+[2026-06-04T07:23:51Z] Output 3: Hi xiaohuangji/MoC-remote-control! You've successfully authenticated, but GitHub does not provide shell access.
+[2026-06-04T07:23:51Z] Exit 3: 0
+[2026-06-04T07:23:51Z] Commands cleared.

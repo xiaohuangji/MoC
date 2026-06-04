@@ -1,5 +1,0 @@
-echo MOC_PKU_PRIVATE_ACCESS_20260604_1734 START
-touch ~/.ssh/config && chmod 600 ~/.ssh/config && grep -q '^Host github.com-moc-remote-control-pku$' ~/.ssh/config 2>/dev/null || printf '\nHost github.com-moc-remote-control-pku\n  HostName github.com\n  User git\n  IdentityFile ~/.ssh/moc_remote_control_pku\n  IdentitiesOnly yes\n' >> ~/.ssh/config
-ssh -o StrictHostKeyChecking=accept-new -T github.com-moc-remote-control-pku || true
-git ls-remote git@github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control.git HEAD refs/heads/main
-echo MOC_PKU_PRIVATE_ACCESS_20260604_1734 END
