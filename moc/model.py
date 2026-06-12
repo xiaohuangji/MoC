@@ -93,10 +93,12 @@ class LLaMAModel(nn.Module):
             "dense",
             "moc",
             "moc_gcp",
+            "moc_2_8",
+            "moc_post_silu",
         ):
             raise ValueError(
-                "ffn_type must be 'dense', 'moc', or 'moc_gcp', "
-                f"got {ffn_type!r}"
+                "ffn_type must be 'dense', 'moc', 'moc_gcp', 'moc_2_8', "
+                f"or 'moc_post_silu', got {ffn_type!r}"
             )
         self.config = config
         self.ffn_type = ffn_type
@@ -133,9 +135,10 @@ class LLaMAModel(nn.Module):
             logits = self.lm_head(x)
         if labels is None:
             return logits
+        # Shifted causal LM loss: the logits at position t predict token t+1.
         loss = F.cross_entropy(
-            logits.reshape(-1, logits.shape[-1]),
-            labels.reshape(-1),
+            logits[:, :-1].reshape(-1, logits.shape[-1]),
+            labels[:, 1:].reshape(-1),
             ignore_index=-100,
         )
         return logits, loss
