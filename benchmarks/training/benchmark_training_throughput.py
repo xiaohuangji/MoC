@@ -52,13 +52,17 @@ def run_method(args, method: str, batches):
     device = torch.device(args.device)
     dtype = torch.bfloat16 if args.dtype == "bf16" else torch.float16
     config = PRESETS[args.preset]
-    ffn_type = {"dense": "dense", "moc": "moc"}[method]
+    ffn_type = {"dense": "dense", "moc": "moc", "moc_2_8": "moc_2_8"}[method]
 
     cleanup(device)
     if device.type == "cuda":
         torch.cuda.reset_peak_memory_stats(device)
 
-    model = build_model(config, ffn_type=ffn_type).to(device=device, dtype=dtype)
+    if args.param_dtype == "fp32":
+        # Mixed precision: FP32 parameters and optimizer states, autocast compute.
+        model = build_model(config, ffn_type=ffn_type).to(device=device)
+    else:
+        model = build_model(config, ffn_type=ffn_type).to(device=device, dtype=dtype)
     optimizer = torch.optim.AdamW(
         model.parameters(),
         lr=args.lr if args.lr is not None else DEFAULT_LR.get(args.preset, 1.0e-3),
@@ -67,10 +71,13 @@ def run_method(args, method: str, batches):
         fused=False,
     )
 
+    autocast_enabled = args.param_dtype == "fp32" and device.type == "cuda"
+
     def one_step(ids_cpu, labels_cpu):
         ids = ids_cpu.to(device, non_blocking=True)
         labels = labels_cpu.to(device, non_blocking=True)
-        _, loss = model(ids, labels=labels)
+        with torch.autocast(device_type=device.type, dtype=dtype, enabled=autocast_enabled):
+            _, loss = model(ids, labels=labels)
         loss.backward()
         optimizer.step()
         optimizer.zero_grad(set_to_none=True)
@@ -98,6 +105,8 @@ def run_method(args, method: str, batches):
         "method": method,
         "preset": args.preset,
         "parameters": count_parameters(config),
+        "dtype": args.dtype,
+        "param_dtype": args.param_dtype,
         "batch_size": args.batch_size,
         "seq_len": args.seq_len,
         "measure_steps": args.measure_steps,
@@ -114,10 +123,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--methods", default="dense,moc")
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--dtype", choices=["bf16", "fp16"], default="bf16")
+    parser.add_argument(
+        "--param-dtype",
+        choices=["bf16", "fp32"],
+        default="bf16",
+        help="bf16: parameters cast to --dtype (no autocast); "
+        "fp32: FP32 parameters/optimizer states with --dtype autocast compute.",
+    )
     parser.add_argument("--batch-size", type=int, default=None)
     parser.add_argument("--seq-len", type=int, default=256)
     parser.add_argument("--warmup-steps", type=int, default=5)
-    parser.add_argument("--measure-steps", type=int, default=100)
+    parser.add_argument("--measure-steps", type=int, default=1000)
     parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--out", default="results/training_throughput.json")
     return parser.parse_args()
