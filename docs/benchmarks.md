@@ -2,7 +2,7 @@
 
 ## Environment
 
-The benchmark runs use:
+Unless a result page states otherwise, the benchmark runs use:
 
 - NVIDIA A800-SXM4-80GB;
 - CUDA 12.8;
@@ -49,7 +49,7 @@ Inference latency is measured with CUDA events after warmup.
 
 ## PPL
 
-PPL runs train the selected preset on C4 with the schedule in `configs/`, then evaluate validation perplexity with the batch-mean validation protocol. The JSON output also includes token-weighted PPL. The training entry point is:
+PPL runs train the selected preset on C4 with the schedule in `configs/`, then report validation perplexity as `val_ppl`. The PPL entry point uses standard BF16 mixed precision: FP32 master weights and optimizer states with BF16 autocast compute; it does not expose FP16 or pure-BF16-parameter training modes. The training entry point is:
 
 ```bash
 CONFIG=configs/llama_60m_c4.yaml FFN_TYPE=moc bash scripts/run_ppl.sh
