@@ -4,7 +4,6 @@ set -euo pipefail
 CONFIG="${CONFIG:-configs/llama_60m_c4.yaml}"
 FFN_TYPE="${FFN_TYPE:-moc}"
 OUTPUT_DIR="${OUTPUT_DIR:-data/checkpoints/ppl_$(basename "$CONFIG" .yaml)_${FFN_TYPE}}"
-DTYPE="${DTYPE:-bf16}"
 NUM_WORKERS="${NUM_WORKERS:-2}"
 SAVE_EVERY="${SAVE_EVERY:-1000}"
 SAVE_LATEST="${SAVE_LATEST:-1}"
@@ -15,7 +14,6 @@ ARGS=(
   --config "$CONFIG"
   --ffn-type "$FFN_TYPE"
   --output-dir "$OUTPUT_DIR"
-  --dtype "$DTYPE"
   --num-workers "$NUM_WORKERS"
   --save-every "$SAVE_EVERY"
 )

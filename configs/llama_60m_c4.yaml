@@ -18,10 +18,10 @@ training:
   total_batch_size: 512
   micro_batch_size: 256
   seq_len: 256
-  max_steps: 11000
-  training_tokens: 1441792000
+  max_steps: 10000
+  training_tokens: 1310720000
   learning_rate: 2.5e-3
-  warmup_steps: 1100
+  warmup_steps: 1000
   min_lr_ratio: 0.0
   weight_decay: 0.0
   beta1: 0.9

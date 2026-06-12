@@ -77,7 +77,12 @@ class C4DocumentDataset(IterableDataset):
         rng = random.Random(self.seed + worker_id)
         shards = list_c4_shards(self.split)
         if self.shuffle_docs:
-            rng.shuffle(shards)
+            if num_workers > 1:
+                # Workers must slice one shared permutation; per-worker shuffles
+                # would not partition the shard list (duplicates and gaps).
+                random.Random(self.seed).shuffle(shards)
+            else:
+                rng.shuffle(shards)
         shards = shards[worker_id::num_workers]
 
         emitted = 0
@@ -207,11 +212,11 @@ def causal_lm_loss(logits: torch.Tensor, labels: torch.Tensor) -> torch.Tensor:
 def evaluate(model, loader, device, dtype, max_batches: int, target_nonpad_tokens: int) -> dict:
     model.eval()
     batch_losses: list[float] = []
-    weighted_loss = 0.0
     total_loss_tokens = 0
     total_nonpad_tokens = 0
+    use_token_target = target_nonpad_tokens > 0
     for batch_idx, batch in enumerate(loader):
-        if batch_idx >= max_batches:
+        if not use_token_target and batch_idx >= max_batches:
             break
         ids = batch["input_ids"].to(device, non_blocking=True)
         labels = batch["labels"].to(device, non_blocking=True)
@@ -222,32 +227,23 @@ def evaluate(model, loader, device, dtype, max_batches: int, target_nonpad_token
         nonpad_tokens = int((labels != -100).sum().item())
         loss_value = float(loss.item())
         batch_losses.append(loss_value)
-        weighted_loss += loss_value * loss_tokens
         total_loss_tokens += loss_tokens
         total_nonpad_tokens += nonpad_tokens
-        if target_nonpad_tokens > 0 and total_nonpad_tokens >= target_nonpad_tokens:
+        if use_token_target and total_nonpad_tokens >= target_nonpad_tokens:
             break
     model.train()
     if not batch_losses:
         raise RuntimeError("evaluation produced zero batches")
-    token_weighted_loss = weighted_loss / max(total_loss_tokens, 1)
-    batch_mean_loss = sum(batch_losses) / len(batch_losses)
     public_loss = sum(batch_losses) / (len(batch_losses) + 1)
     return {
-        "eval_main": "batch_mean_nplus1",
         "val_loss": public_loss,
         "val_ppl": math.exp(min(public_loss, 20.0)),
-        "batch_mean_nplus1_loss": public_loss,
-        "batch_mean_nplus1_ppl": math.exp(min(public_loss, 20.0)),
-        "token_weighted_loss": token_weighted_loss,
-        "token_weighted_ppl": math.exp(min(token_weighted_loss, 20.0)),
-        "batch_mean_loss": batch_mean_loss,
-        "batch_mean_ppl": math.exp(min(batch_mean_loss, 20.0)),
-        "batch_loss_min": min(batch_losses),
-        "batch_loss_max": max(batch_losses),
         "eval_loss_tokens": total_loss_tokens,
         "eval_nonpad_tokens": total_nonpad_tokens,
         "eval_batches": len(batch_losses),
+        "eval_target_nonpad_tokens": target_nonpad_tokens,
+        "eval_target_reached": total_nonpad_tokens >= target_nonpad_tokens if use_token_target else None,
+        "eval_max_batches": max_batches,
     }
 
 
@@ -290,9 +286,8 @@ def load_checkpoint(path: Path, model, optimizer, scheduler, device) -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True, type=Path)
-    parser.add_argument("--ffn-type", required=True, choices=["dense", "moc", "moc_gcp"])
+    parser.add_argument("--ffn-type", required=True, choices=["dense", "moc", "moc_gcp", "moc_2_8", "moc_post_silu"])
     parser.add_argument("--output-dir", required=True, type=Path)
-    parser.add_argument("--dtype", choices=["bf16", "fp16", "fp32"], default="bf16")
     parser.add_argument("--num-workers", type=int, default=2)
     parser.add_argument("--max-steps", type=int, default=None)
     parser.add_argument("--stop-at-step", type=int, default=None)
@@ -334,7 +329,7 @@ def main() -> None:
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    dtype = {"bf16": torch.bfloat16, "fp16": torch.float16, "fp32": torch.float32}[args.dtype]
+    dtype = torch.bfloat16
 
     tokenizer = load_local_tokenizer(seq_len)
     train_loader = build_loader(
@@ -360,7 +355,9 @@ def main() -> None:
         cfg=val_cfg,
     )
 
-    model = build_model(model_config, ffn_type=args.ffn_type).to(device=device, dtype=dtype)
+    # Parameters and optimizer states stay in FP32; `dtype` only controls the
+    # BF16 autocast compute path used by training and evaluation.
+    model = build_model(model_config, ffn_type=args.ffn_type).to(device=device)
     optimizer = torch.optim.AdamW(
         model.parameters(),
         lr=float(train_cfg["learning_rate"]),
@@ -380,8 +377,12 @@ def main() -> None:
         "model_name": model_name,
         "model_config": asdict(model_config),
         "ffn_type": args.ffn_type,
+        # Actual per-token selected-channel count of the FFN; differs from
+        # model_config.k for structure-determined modes such as moc_2_8.
+        "ffn_k_effective": getattr(model.blocks[0].ffn, "k_effective", None),
         "parameters": count_parameters(model_config),
-        "dtype": args.dtype,
+        "dtype": "bf16",
+        "param_dtype": "fp32",
         "training": train_cfg,
         "data": {
             **data_cfg,
@@ -426,7 +427,7 @@ def main() -> None:
     signal.signal(signal.SIGINT, handle_sigint)
 
     log(f"model={model_name} ffn_type={args.ffn_type} params={count_parameters(model_config)/1e6:.2f}M")
-    log(f"device={device} dtype={args.dtype} total_batch={total_batch_size} micro_batch={micro_batch_size}")
+    log(f"device={device} dtype=bf16 param_dtype=fp32 total_batch={total_batch_size} micro_batch={micro_batch_size}")
     log(f"max_steps={max_steps} train_until_step={train_until_step} lr={train_cfg['learning_rate']}")
 
     train_iter = iter(train_loader)
