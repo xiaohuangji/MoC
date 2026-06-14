@@ -1,2 +1,0 @@
-# fallback link test 2026-06-14
-echo "MOC_FALLBACK_LINKTEST_20260614 $(date -Is)"; systemctl --user is-active moc-private-remote-control.timer moc-remote-control.timer; systemctl --user is-active moc-public-postsilu-abs-ablation-20260613_130916_r2.service; nvidia-smi --query-gpu=index,memory.used,utilization.gpu --format=csv,noheader; echo "MOC_FALLBACK_LINKTEST_20260614 done"
