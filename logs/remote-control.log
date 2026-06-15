@@ -37318,3 +37318,62 @@
 [2026-06-15T04:11:45Z] Output 1: MOC_PRIVFIX_20260615 done
 [2026-06-15T04:11:45Z] Exit 1: 0
 [2026-06-15T04:11:45Z] Commands cleared.
+[2026-06-15T04:12:26Z] No remote updates.
+[2026-06-15T04:12:26Z] No commands to run.
+[2026-06-15T04:12:56Z] Not due yet; next check at 2026-06-15T04:13:21Z.
+[2026-06-15T04:13:31Z] No remote updates.
+[2026-06-15T04:13:31Z] No commands to run.
+[2026-06-15T04:14:01Z] Not due yet; next check at 2026-06-15T04:15:26Z.
+[2026-06-15T04:14:31Z] Not due yet; next check at 2026-06-15T04:15:26Z.
+[2026-06-15T04:15:01Z] Not due yet; next check at 2026-06-15T04:15:26Z.
+[2026-06-15T04:15:37Z] No remote updates.
+[2026-06-15T04:15:37Z] No commands to run.
+[2026-06-15T04:16:07Z] Not due yet; next check at 2026-06-15T04:18:31Z.
+[2026-06-15T04:16:37Z] Not due yet; next check at 2026-06-15T04:18:31Z.
+[2026-06-15T04:17:07Z] Not due yet; next check at 2026-06-15T04:18:31Z.
+[2026-06-15T04:17:37Z] Not due yet; next check at 2026-06-15T04:18:31Z.
+[2026-06-15T04:18:07Z] Not due yet; next check at 2026-06-15T04:18:31Z.
+[2026-06-15T04:18:42Z] No remote updates.
+[2026-06-15T04:18:42Z] No commands to run.
+[2026-06-15T04:19:12Z] Not due yet; next check at 2026-06-15T04:22:37Z.
+[2026-06-15T04:19:42Z] Not due yet; next check at 2026-06-15T04:22:37Z.
+[2026-06-15T04:20:12Z] Not due yet; next check at 2026-06-15T04:22:37Z.
+[2026-06-15T04:20:42Z] Not due yet; next check at 2026-06-15T04:22:37Z.
+[2026-06-15T04:21:12Z] Not due yet; next check at 2026-06-15T04:22:37Z.
+[2026-06-15T04:21:42Z] Not due yet; next check at 2026-06-15T04:22:37Z.
+[2026-06-15T04:22:12Z] Not due yet; next check at 2026-06-15T04:22:37Z.
+[2026-06-15T04:22:47Z] No remote updates.
+[2026-06-15T04:22:47Z] No commands to run.
+[2026-06-15T04:23:17Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:23:47Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:24:17Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:24:47Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:25:17Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:25:47Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:26:17Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:26:47Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:27:17Z] Not due yet; next check at 2026-06-15T04:27:42Z.
+[2026-06-15T04:27:53Z] Pulling updates from origin/remote-control-setup: 134f2ecf69acc87fa1112db0fea2c742f047c645 -> 810c4eac41594fd87ed8d20bd69ede869bcceb8c
+[2026-06-15T04:27:58Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-06-15T04:27:58Z] Command 1: echo "MOC_PRIVFIX2_20260615 start $(date -Is)"; systemctl --user daemon-reload; systemctl --user reset-failed moc-private-remote-control.timer moc-private-remote-control.service 2>/dev/null || true; systemctl --user stop moc-private-remote-control.timer 2>/dev/null || true; systemctl --user start moc-private-remote-control.timer; echo "[timer-active]"; systemctl --user is-active moc-private-remote-control.timer; echo "[list-timers]"; systemctl --user list-timers --all 2>/dev/null | grep -i "private\|NEXT" | head -5; echo "[manual-run-to-collect]"; systemctl --user start moc-private-remote-control.service; sleep 12; echo "[service-result]"; systemctl --user show moc-private-remote-control.service --no-pager -p Result -p ExecMainStatus -p ActiveState; echo "[journal-after]"; journalctl --user -u moc-private-remote-control.service -n 6 --no-pager 2>&1 | tail -6; echo "MOC_PRIVFIX2_20260615 done"
+[2026-06-15T04:28:32Z] Output 1: MOC_PRIVFIX2_20260615 start 2026-06-15T04:27:58+00:00
+[2026-06-15T04:28:32Z] Output 1: [timer-active]
+[2026-06-15T04:28:32Z] Output 1: active
+[2026-06-15T04:28:32Z] Output 1: [list-timers]
+[2026-06-15T04:28:32Z] Output 1: NEXT LEFT LAST                        PASSED            UNIT                             ACTIVATES
+[2026-06-15T04:28:32Z] Output 1: n/a  n/a  Sat 2026-06-13 14:06:30 UTC 1 day 14h ago     moc-private-remote-control.timer moc-private-remote-control.service
+[2026-06-15T04:28:32Z] Output 1: [manual-run-to-collect]
+[2026-06-15T04:28:32Z] Output 1: [service-result]
+[2026-06-15T04:28:32Z] Output 1: Result=success
+[2026-06-15T04:28:32Z] Output 1: ExecMainStatus=0
+[2026-06-15T04:28:32Z] Output 1: ActiveState=inactive
+[2026-06-15T04:28:32Z] Output 1: [journal-after]
+[2026-06-15T04:28:32Z] Output 1: Jun 15 04:28:14 user runner.sh[28102]: [main e8cbabb] chore: update remote control log
+[2026-06-15T04:28:32Z] Output 1: Jun 15 04:28:14 user runner.sh[28102]:  2 files changed, 41 insertions(+), 2 deletions(-)
+[2026-06-15T04:28:32Z] Output 1: Jun 15 04:28:14 user runner.sh[28102]:  rewrite control/commands.txt (100%)
+[2026-06-15T04:28:32Z] Output 1: Jun 15 04:28:20 user runner.sh[28104]: To github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control.git
+[2026-06-15T04:28:32Z] Output 1: Jun 15 04:28:20 user runner.sh[28104]:    ad11400..e8cbabb  main -> main
+[2026-06-15T04:28:32Z] Output 1: Jun 15 04:28:20 user systemd[2719]: Finished MoC Remote Control Runner.
+[2026-06-15T04:28:32Z] Output 1: MOC_PRIVFIX2_20260615 done
+[2026-06-15T04:28:32Z] Exit 1: 0
+[2026-06-15T04:28:32Z] Commands cleared.
