@@ -154,7 +154,8 @@ See [results/training_speed.md](results/training_speed.md).
 
 The PPL benchmark trains a selected preset with the C4 training schedule in [configs](configs), then evaluates validation perplexity with shifted causal-LM loss and padding labels ignored. The PPL entry point uses standard BF16 mixed precision (FP32 master weights and optimizer states, BF16 autocast compute), and reports `val_ppl` as the public validation perplexity.
 
-See [results/ppl.md](results/ppl.md).
+See [results/ppl.md](results/ppl.md). Ablations on the number of activated
+channels and the Top-K position are in [results/ablations.md](results/ablations.md).
 
 ### FFN Inference Latency
 
