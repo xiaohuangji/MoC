@@ -286,7 +286,7 @@ def load_checkpoint(path: Path, model, optimizer, scheduler, device) -> int:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True, type=Path)
-    parser.add_argument("--ffn-type", required=True, choices=["dense", "moc", "moc_gcp", "moc_2_8", "moc_post_silu"])
+    parser.add_argument("--ffn-type", required=True, choices=["dense", "moc", "moc_gcp", "moc_2_8", "moc_post_silu_abs"])
     parser.add_argument("--output-dir", required=True, type=Path)
     parser.add_argument("--num-workers", type=int, default=2)
     parser.add_argument("--max-steps", type=int, default=None)

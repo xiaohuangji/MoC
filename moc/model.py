@@ -94,11 +94,11 @@ class LLaMAModel(nn.Module):
             "moc",
             "moc_gcp",
             "moc_2_8",
-            "moc_post_silu",
+            "moc_post_silu_abs",
         ):
             raise ValueError(
                 "ffn_type must be 'dense', 'moc', 'moc_gcp', 'moc_2_8', "
-                f"or 'moc_post_silu', got {ffn_type!r}"
+                f"or 'moc_post_silu_abs', got {ffn_type!r}"
             )
         self.config = config
         self.ffn_type = ffn_type

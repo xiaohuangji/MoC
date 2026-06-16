@@ -313,12 +313,14 @@ class _MoC28Function(torch.autograd.Function):
 class _MoCPostSiluFunction(torch.autograd.Function):
     """MoC with post-SiLU top-K selection; reuses the MoC backward path.
 
-    SiLU(g) is used only to pick channel indices; the values handed to the
-    shared sparse machinery are the pre-SiLU gate values at those indices.
+    Indices are the top-K largest |SiLU(g)| (magnitude of the activated output);
+    the values handed to the shared sparse machinery are the pre-SiLU gate
+    values at those indices.
     """
 
     @staticmethod
-    def forward(ctx, x, gate_w, up_w, down_w, k, index_save_dtype=None, use_triton_aux=False):
+    def forward(ctx, x, gate_w, up_w, down_w, k, index_save_dtype=None,
+                use_triton_aux=False):
         inter = gate_w.shape[0]
         if use_triton_aux:
             if index_save_dtype != torch.int16:
@@ -330,9 +332,9 @@ class _MoCPostSiluFunction(torch.autograd.Function):
             triton_kernels = None
 
         g = x @ gate_w.t()
-        s_full = F.silu(g)
-        _, topk_idx = torch.topk(s_full, k, dim=-1, largest=True, sorted=False)
-        del s_full
+        score = F.silu(g).abs()
+        _, topk_idx = torch.topk(score, k, dim=-1, largest=True, sorted=False)
+        del score
         topk_vals = torch.gather(g, -1, topk_idx)
         del g
         u = x @ up_w.t()
@@ -512,14 +514,14 @@ class MoCSwiGLUFFN(nn.Module):
             "moc_gcp_triton_aux",
             "moc_2_8",
             "moc_2_8_triton_aux",
-            "moc_post_silu",
-            "moc_post_silu_triton_aux",
+            "moc_post_silu_abs",
+            "moc_post_silu_abs_triton_aux",
         ):
             raise ValueError(
                 f"Unknown mode '{mode}'. Use 'moc', 'moc_gcp', "
                 "'moc_triton_aux', 'moc_gcp_triton_aux', "
                 "'moc_2_8', 'moc_2_8_triton_aux', "
-                "'moc_post_silu', or 'moc_post_silu_triton_aux'."
+                "'moc_post_silu_abs', or 'moc_post_silu_abs_triton_aux'."
             )
         self.mode = mode
         self.requested_k = k
@@ -558,7 +560,7 @@ class MoCSwiGLUFFN(nn.Module):
                 self.index_save_dtype,
                 self.mode == "moc_2_8_triton_aux",
             )
-        if self.mode in ("moc_post_silu", "moc_post_silu_triton_aux"):
+        if self.mode in ("moc_post_silu_abs", "moc_post_silu_abs_triton_aux"):
             return _MoCPostSiluFunction.apply(
                 x,
                 self.gate_proj.weight,
@@ -566,7 +568,7 @@ class MoCSwiGLUFFN(nn.Module):
                 self.down_proj.weight,
                 self.k,
                 self.index_save_dtype,
-                self.mode == "moc_post_silu_triton_aux",
+                self.mode == "moc_post_silu_abs_triton_aux",
             )
         return _MoCFunction.apply(
             x,
@@ -588,14 +590,14 @@ def build_ffn(hidden_size: int, intermediate_size: int,
     """
     if ffn_type == "dense":
         return StandardSwiGLUFFN(hidden_size, intermediate_size)
-    if ffn_type in ("moc", "moc_gcp", "moc_2_8", "moc_post_silu"):
+    if ffn_type in ("moc", "moc_gcp", "moc_2_8", "moc_post_silu_abs"):
         if k is None and ffn_type != "moc_2_8":
             raise ValueError("MoC FFN requires `k`")
         mode = {
             "moc": "moc_triton_aux",
             "moc_gcp": "moc_gcp_triton_aux",
             "moc_2_8": "moc_2_8_triton_aux",
-            "moc_post_silu": "moc_post_silu_triton_aux",
+            "moc_post_silu_abs": "moc_post_silu_abs_triton_aux",
         }[ffn_type]
         return MoCSwiGLUFFN(
             hidden_size,
