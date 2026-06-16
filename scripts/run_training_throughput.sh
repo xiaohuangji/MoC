@@ -3,7 +3,7 @@ set -euo pipefail
 
 PRESET="${PRESET:-1b}"
 METHODS="${METHODS:-dense,moc}"
-PARAM_DTYPE="${PARAM_DTYPE:-bf16}"
+PARAM_DTYPE="${PARAM_DTYPE:-fp32}"
 MEASURE_STEPS="${MEASURE_STEPS:-1000}"
 OUT="${OUT:-results/training_throughput.json}"
 
