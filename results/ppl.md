@@ -12,7 +12,7 @@ PPL runs use standard BF16 mixed precision: trainable parameters and AdamW optim
 
 The C4 schedule keeps `total_batch_size=512`, `seq_len=256`, seed `0`, deterministic data shuffling with seed `42`, and the configured cosine scheduler horizon for each preset. The reported evaluation targets approximately 10M non-padding validation tokens.
 
-The completed 60M and 130M rows below used `training.micro_batch_size=128` on A100 40GB and `evaluation.micro_batch_size=256`.
+The completed rows were trained on a single A100 40GB; the micro batch size per row is given in the Notes column (gradient accumulation keeps `total_batch_size=512`).
 
 Command:
 
@@ -41,7 +41,7 @@ bash scripts/run_ppl.sh
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
 | 60M | 1.31B | 10,000 | 28.71 | 29.11 | 29.28 | BF16 mixed precision (FP32 master weights), train micro batch 128, eval micro batch 256 |
 | 130M | 2.62B | 20,000 | 21.47 | 21.76 | 21.85 | BF16 mixed precision (FP32 master weights), train micro batch 128, eval micro batch 256 |
-| 350M | 7.8B | - | - | - | - | Not run |
+| 350M | 7.8B | 59,510 | 16.04 | 16.19 | 16.31 | BF16 mixed precision (FP32 master weights), train micro batch 64, eval micro batch 64 |
 | 1B | 13.1B | - | - | - | - | Not run |
 
 The MoC row uses the same public `ffn_type="moc"` training path as the memory and training-throughput benchmarks.
