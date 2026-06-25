@@ -12,7 +12,7 @@ PPL runs use standard BF16 mixed precision: trainable parameters and AdamW optim
 
 The C4 schedule keeps `total_batch_size=512`, `seq_len=256`, seed `0`, deterministic data shuffling with seed `42`, and the configured cosine scheduler horizon for each preset. The reported evaluation targets approximately 10M non-padding validation tokens.
 
-The completed rows were each trained on a single A800 80GB GPU; the micro batch size per row is given in the Notes column (gradient accumulation keeps `total_batch_size=512`).
+The completed rows were each trained on a single A100-PCIE-40GB GPU; the micro batch size per row is given in the Notes column (gradient accumulation keeps `total_batch_size=512`).
 
 Command:
 
