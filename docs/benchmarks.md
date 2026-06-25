@@ -34,8 +34,8 @@ The C4 run configs in `configs/` cover all four presets:
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | `llama_60m_c4.yaml` | `60m` | 512 | 256 | 256 | 10,000 | 1.31B | 2.5e-3 |
 | `llama_130m_c4.yaml` | `130m` | 512 | 256 | 256 | 20,000 | 2.62B | 2.5e-3 |
-| `llama_350m_c4.yaml` | `350m` | 512 | 128 | 256 | 59,510 | 7.80B | 1.0e-3 |
-| `llama_1b_c4.yaml` | `1b` | 512 | 64 | 256 | 99,945 | 13.10B | 6.0e-4 |
+| `llama_350m_c4.yaml` | `350m` | 512 | 128 | 256 | 60,000 | 7.86B | 1.0e-3 |
+| `llama_1b_c4.yaml` | `1b` | 512 | 64 | 256 | 100,000 | 13.11B | 6.0e-4 |
 
 The `1b` executable preset is `24` decoder layers and `32` attention heads.
 
