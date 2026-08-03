@@ -1,0 +1,1 @@
+git -C /home/huyihan/MoC-remote-control pull --ff-only origin main && bash /home/huyihan/MoC-remote-control/control/payloads/pku_llama31_access_preflight_20260803/preflight.sh
