@@ -191669,3 +191669,91 @@
 [2026-08-03T18:55:59Z] Output 1: [curl] model-00002-of-00004.safetensors http=200 bytes=4999802720 speed=20441623B/s time=244.589319s
 [2026-08-03T18:55:59Z] Exit 1: 0
 [2026-08-03T18:55:59Z] Commands cleared.
+[2026-08-03T18:56:42Z] No remote updates.
+[2026-08-03T18:56:42Z] No commands to run.
+[2026-08-03T18:57:12Z] Not due yet; next check at 2026-08-03T18:57:37Z.
+[2026-08-03T18:57:47Z] No remote updates.
+[2026-08-03T18:57:47Z] No commands to run.
+[2026-08-03T18:58:17Z] Not due yet; next check at 2026-08-03T18:59:42Z.
+[2026-08-03T18:58:47Z] Not due yet; next check at 2026-08-03T18:59:42Z.
+[2026-08-03T18:59:17Z] Not due yet; next check at 2026-08-03T18:59:42Z.
+[2026-08-03T18:59:53Z] Pulling updates from origin/remote-control-setup: c7eea02cfb3d96ded30f99e830842280d6c9b482 -> f4390018d7b17057a29b83073bfbfbf3b77d2abd
+[2026-08-03T18:59:59Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-08-03T18:59:59Z] Command 1: echo '[download service]'; systemctl --user show moc-llama31-base-download-20260804.service --no-pager -p ActiveState -p SubState -p MainPID -p Result -p ExecMainStatus -p StateChangeTimestamp 2>&1 || true; echo '[related processes]'; ps -eo pid,ppid,stat,etimes,cmd | grep -E '[s]ystemd-run --user --unit=moc-llama31-base-download-20260804|[d]ownload_base.sh|[c]url .*Meta-Llama-3.1-8B' || true; echo '[run artifacts]'; find /home/huyihan/runs/moc_llama31_8b_base_download_20260804 -maxdepth 1 -type f -printf '%f %s bytes\n' 2>/dev/null | sort; echo '[target artifacts]'; find /data/hyh/models/Meta-Llama-3.1-8B-base -maxdepth 1 -type f -printf '%f %s bytes\n' 2>/dev/null | sort; echo '[download log tail]'; tail -40 /home/huyihan/runs/moc_llama31_8b_base_download_20260804/download.log 2>/dev/null || true
+[2026-08-03T18:59:59Z] Output 1: [download service]
+[2026-08-03T18:59:59Z] Output 1: MainPID=3584161
+[2026-08-03T18:59:59Z] Output 1: Result=success
+[2026-08-03T18:59:59Z] Output 1: ExecMainStatus=0
+[2026-08-03T18:59:59Z] Output 1: ActiveState=activating
+[2026-08-03T18:59:59Z] Output 1: SubState=start
+[2026-08-03T18:59:59Z] Output 1: StateChangeTimestamp=Mon 2026-08-03 18:47:11 UTC
+[2026-08-03T18:59:59Z] Output 1: [related processes]
+[2026-08-03T18:59:59Z] Output 1: 3584157 3584156 S        767 systemd-run --user --unit=moc-llama31-base-download-20260804.service --property=Type=oneshot --property=RuntimeMaxSec=43200 /usr/bin/env bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_base_download_20260804/download_base.sh
+[2026-08-03T18:59:59Z] Output 1: 3584161    2719 Ss       767 bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_base_download_20260804/download_base.sh
+[2026-08-03T18:59:59Z] Output 1: 3584163 3584161 S        767 bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_base_download_20260804/download_base.sh
+[2026-08-03T18:59:59Z] Output 1: 3584922 3584161 S          2 curl -fL --silent --show-error --connect-timeout 15 --retry 20 --retry-delay 5 --retry-max-time 7200 --retry-all-errors --speed-time 180 --speed-limit 1024 -C - -o /data/hyh/models/Meta-Llama-3.1-8B-base/model-00004-of-00004.safetensors.part -w [curl] model-00004-of-00004.safetensors http=%{http_code} bytes=%{size_download} speed=%{speed_download}B/s time=%{time_total}s\n https://www.modelscope.cn/models/LLM-Research/Meta-Llama-3.1-8B/resolve/master/model-00004-of-00004.safetensors
+[2026-08-03T18:59:59Z] Output 1: [run artifacts]
+[2026-08-03T18:59:59Z] Output 1: download.log 3703 bytes
+[2026-08-03T18:59:59Z] Output 1: repo_manifest.latest.json 7250 bytes
+[2026-08-03T18:59:59Z] Output 1: RUNNING 0 bytes
+[2026-08-03T18:59:59Z] Output 1: selected_manifest.tsv 1390 bytes
+[2026-08-03T18:59:59Z] Output 1: source_model_id.txt 31 bytes
+[2026-08-03T18:59:59Z] Output 1: target_dir.txt 40 bytes
+[2026-08-03T18:59:59Z] Output 1: [target artifacts]
+[2026-08-03T18:59:59Z] Output 1: config.json 826 bytes
+[2026-08-03T18:59:59Z] Output 1: configuration.json 73 bytes
+[2026-08-03T18:59:59Z] Output 1: generation_config.json 185 bytes
+[2026-08-03T18:59:59Z] Output 1: LICENSE 7627 bytes
+[2026-08-03T18:59:59Z] Output 1: model-00001-of-00004.safetensors 4976698672 bytes
+[2026-08-03T18:59:59Z] Output 1: model-00002-of-00004.safetensors 4999802720 bytes
+[2026-08-03T18:59:59Z] Output 1: model-00003-of-00004.safetensors 4915916176 bytes
+[2026-08-03T18:59:59Z] Output 1: model-00004-of-00004.safetensors.part 23293952 bytes
+[2026-08-03T18:59:59Z] Output 1: model.safetensors.index.json 23950 bytes
+[2026-08-03T18:59:59Z] Output 1: README.md 40883 bytes
+[2026-08-03T18:59:59Z] Output 1: special_tokens_map.json 73 bytes
+[2026-08-03T18:59:59Z] Output 1: tokenizer_config.json 50500 bytes
+[2026-08-03T18:59:59Z] Output 1: tokenizer.json 9085658 bytes
+[2026-08-03T18:59:59Z] Output 1: USE_POLICY.md 4691 bytes
+[2026-08-03T18:59:59Z] Output 1: [download log tail]
+[2026-08-03T18:59:59Z] Output 1: [curl] config.json http=200 bytes=826 speed=4363B/s time=0.189319s
+[2026-08-03T18:59:59Z] Output 1: [verified] config.json bytes=826 sha256=54acfad3cffe057640904ca8a1e83525e6551c70c7a04c641f5a9eda0bbf64bd
+[2026-08-03T18:59:59Z] Output 1: [download] tokenizer_config.json expected_bytes=50500
+[2026-08-03T18:59:59Z] Output 1: [curl] tokenizer_config.json http=200 bytes=50500 speed=270428B/s time=0.186741s
+[2026-08-03T18:59:59Z] Output 1: [verified] tokenizer_config.json bytes=50500 sha256=8004530facf809ac432114de2a4dcc65fcb632da5ec16d666091aeb6a2ee444a
+[2026-08-03T18:59:59Z] Output 1: [download] special_tokens_map.json expected_bytes=73
+[2026-08-03T18:59:59Z] Output 1: [curl] special_tokens_map.json http=200 bytes=73 speed=347B/s time=0.209998s
+[2026-08-03T18:59:59Z] Output 1: [verified] special_tokens_map.json bytes=73 sha256=462d91939dbc37178aa5a3eae7068d1990ccc92e09f288cc71f42cdf139d69cc
+[2026-08-03T18:59:59Z] Output 1: [download] tokenizer.json expected_bytes=9085658
+[2026-08-03T18:59:59Z] Output 1: [curl] tokenizer.json http=200 bytes=9085658 speed=12452845B/s time=0.729605s
+[2026-08-03T18:59:59Z] Output 1: [verified] tokenizer.json bytes=9085658 sha256=76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa
+[2026-08-03T18:59:59Z] Output 1: [download] generation_config.json expected_bytes=185
+[2026-08-03T18:59:59Z] Output 1: [curl] generation_config.json http=200 bytes=185 speed=986B/s time=0.187480s
+[2026-08-03T18:59:59Z] Output 1: [verified] generation_config.json bytes=185 sha256=e645194d2dd27c86ed34a5a23f306c1a0fd79a42123c26551b7251c700a3379d
+[2026-08-03T18:59:59Z] Output 1: [download] configuration.json expected_bytes=73
+[2026-08-03T18:59:59Z] Output 1: [curl] configuration.json http=200 bytes=73 speed=43B/s time=1.693817s
+[2026-08-03T18:59:59Z] Output 1: [verified] configuration.json bytes=73 sha256=f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9
+[2026-08-03T18:59:59Z] Output 1: [download] model.safetensors.index.json expected_bytes=23950
+[2026-08-03T18:59:59Z] Output 1: [curl] model.safetensors.index.json http=200 bytes=23950 speed=128714B/s time=0.186070s
+[2026-08-03T18:59:59Z] Output 1: [verified] model.safetensors.index.json bytes=23950 sha256=146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b
+[2026-08-03T18:59:59Z] Output 1: [download] LICENSE expected_bytes=7627
+[2026-08-03T18:59:59Z] Output 1: [curl] LICENSE http=200 bytes=7627 speed=39980B/s time=0.190767s
+[2026-08-03T18:59:59Z] Output 1: [verified] LICENSE bytes=7627 sha256=64e1b2889b7892e6bbe7a7ed5bfe6ff793c61f9d584345f8f41cf9f5cb30a369
+[2026-08-03T18:59:59Z] Output 1: [download] README.md expected_bytes=40883
+[2026-08-03T18:59:59Z] Output 1: [curl] README.md http=200 bytes=40883 speed=200412B/s time=0.203994s
+[2026-08-03T18:59:59Z] Output 1: [verified] README.md bytes=40883 sha256=6615eaa410934067ed31834ab66285acb0dc2d0a36056771601dad47efce194a
+[2026-08-03T18:59:59Z] Output 1: [download] USE_POLICY.md expected_bytes=4691
+[2026-08-03T18:59:59Z] Output 1: [curl] USE_POLICY.md http=200 bytes=4691 speed=24564B/s time=0.190970s
+[2026-08-03T18:59:59Z] Output 1: [verified] USE_POLICY.md bytes=4691 sha256=a568f2ebc73cec3fd74ba2afd992d4e945a8c7a9d851f9b66163aac834b7b859
+[2026-08-03T18:59:59Z] Output 1: [identity] confirmed Llama-3.1-8B Base BF16 config; no chat template
+[2026-08-03T18:59:59Z] Output 1: [download] model-00001-of-00004.safetensors expected_bytes=4976698672
+[2026-08-03T18:59:59Z] Output 1: [curl] model-00001-of-00004.safetensors http=200 bytes=4976698672 speed=20595864B/s time=241.635823s
+[2026-08-03T18:59:59Z] Output 1: [verified] model-00001-of-00004.safetensors bytes=4976698672 sha256=f8b9704ab09cdeb097aa4a0a24bca96f906eec36bad63ab495bc21475058601b
+[2026-08-03T18:59:59Z] Output 1: [download] model-00002-of-00004.safetensors expected_bytes=4999802720
+[2026-08-03T18:59:59Z] Output 1: [curl] model-00002-of-00004.safetensors http=200 bytes=4999802720 speed=20441623B/s time=244.589319s
+[2026-08-03T18:59:59Z] Output 1: [verified] model-00002-of-00004.safetensors bytes=4999802720 sha256=c28b25e7541751056ee126627e007f8d4288319733285e9f7b17b9ff6eb313f0
+[2026-08-03T18:59:59Z] Output 1: [download] model-00003-of-00004.safetensors expected_bytes=4915916176
+[2026-08-03T18:59:59Z] Output 1: [curl] model-00003-of-00004.safetensors http=200 bytes=4915916176 speed=22549013B/s time=218.010256s
+[2026-08-03T18:59:59Z] Output 1: [verified] model-00003-of-00004.safetensors bytes=4915916176 sha256=d8e9504dd4e4a146d484c52a97584ec14dac92237c46b064934af67a85e7d383
+[2026-08-03T18:59:59Z] Output 1: [download] model-00004-of-00004.safetensors expected_bytes=1168138808
+[2026-08-03T18:59:59Z] Exit 1: 0
+[2026-08-03T18:59:59Z] Commands cleared.
