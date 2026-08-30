@@ -16,7 +16,7 @@ data:
 training:
   seed: 0
   total_batch_size: 512
-  micro_batch_size: 64
+  micro_batch_size: 16
   seq_len: 256
   max_steps: 100000
   training_tokens: 13107200000

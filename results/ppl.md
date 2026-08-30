@@ -42,7 +42,7 @@ bash scripts/run_ppl.sh
 | 60M | 1.31B | 10,000 | 28.71 | 29.11 | 29.28 | BF16 mixed precision (FP32 master weights), train micro batch 128, eval micro batch 256 |
 | 130M | 2.62B | 20,000 | 21.47 | 21.76 | 21.85 | BF16 mixed precision (FP32 master weights), train micro batch 128, eval micro batch 256 |
 | 350M | 7.86B | 60,000 | 16.02 | 16.18 | 16.29 | BF16 mixed precision (FP32 master weights), train micro batch 64, eval micro batch 64 |
-| 1B | 13.11B | - | - | - | - | Not run |
+| 1B | 13.11B | 100,000 | 13.00 | 13.16 | 13.21 | BF16 mixed precision (FP32 master weights), train micro batch 16, eval micro batch 64 |
 
 The MoC row uses the same public `ffn_type="moc"` training path as the memory and training-throughput benchmarks.
 Completed rows evaluate approximately 10M non-padding validation tokens.
