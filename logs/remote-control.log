@@ -283304,3 +283304,359 @@
 [2026-09-02T05:23:32Z] Output 1: [service-started] unit=moc-native-1b-downstream-lora-20260902-r1.service run_root=/home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1
 [2026-09-02T05:23:32Z] Exit 1: 0
 [2026-09-02T05:23:32Z] Commands cleared.
+[2026-09-02T05:24:17Z] No remote updates.
+[2026-09-02T05:24:17Z] No commands to run.
+[2026-09-02T05:24:47Z] Not due yet; next check at 2026-09-02T05:25:12Z.
+[2026-09-02T05:25:22Z] No remote updates.
+[2026-09-02T05:25:22Z] No commands to run.
+[2026-09-02T05:25:52Z] Not due yet; next check at 2026-09-02T05:27:17Z.
+[2026-09-02T05:26:22Z] Not due yet; next check at 2026-09-02T05:27:17Z.
+[2026-09-02T05:26:52Z] Not due yet; next check at 2026-09-02T05:27:17Z.
+[2026-09-02T05:27:28Z] Pulling updates from origin/remote-control-setup: e9879e93775b3bbe1f5a22a929228e629d9a2a47 -> 8c81bd111790dcefabe3262ce3339cb837b13c7d
+[2026-09-02T05:27:34Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-09-02T05:27:34Z] Command 1: bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_gate_lora_20260902/inspect.sh
+[2026-09-02T05:27:34Z] Output 1: [inspect] 2026-09-02T05:27:34+00:00
+[2026-09-02T05:27:34Z] Output 1: Result=success
+[2026-09-02T05:27:34Z] Output 1: ExecMainStatus=0
+[2026-09-02T05:27:34Z] Output 1: ActiveState=active
+[2026-09-02T05:27:34Z] Output 1: SubState=running
+[2026-09-02T05:27:34Z] Output 1: StateChangeTimestamp=Wed 2026-09-02 04:54:41 UTC
+[2026-09-02T05:27:34Z] Output 1: [gpu]
+[2026-09-02T05:27:34Z] Output 1: 0, NVIDIA A100-PCIE-40GB, 28027 MiB, 40960 MiB, 98 %
+[2026-09-02T05:27:34Z] Output 1: 1, NVIDIA A100-PCIE-40GB, 28139 MiB, 40960 MiB, 100 %
+[2026-09-02T05:27:34Z] Output 1: 2, NVIDIA A100-PCIE-40GB, 28027 MiB, 40960 MiB, 100 %
+[2026-09-02T05:27:34Z] Output 1: 3, NVIDIA A100-PCIE-40GB, 12417 MiB, 40960 MiB, 97 %
+[2026-09-02T05:27:34Z] Output 1: [processes]
+[2026-09-02T05:27:34Z] Output 1: GPU-39a140e5-15d3-6883-cd2e-ae3d900446cc, 1624655, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28018 MiB
+[2026-09-02T05:27:34Z] Output 1: GPU-4890048f-3c3c-a99f-76b6-f740705a5800, 1624656, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28130 MiB
+[2026-09-02T05:27:34Z] Output 1: GPU-c80bb428-0dc1-1c85-75d6-b2821e17236f, 1624657, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28018 MiB
+[2026-09-02T05:27:34Z] Output 1: GPU-9b26b854-4d93-9226-8d7c-3550edbe4728, 1626686, /data/hyh/envs/moc-repro-py312/bin/python, 12408 MiB
+[2026-09-02T05:27:34Z] Output 1: [coordinator-tail]
+[2026-09-02T05:27:34Z] Output 1: tokenized 141312/170420
+[2026-09-02T05:27:34Z] Output 1: tokenized 141824/170420
+[2026-09-02T05:27:34Z] Output 1: tokenized 142336/170420
+[2026-09-02T05:27:34Z] Output 1: tokenized 142848/170420
+[2026-09-02T05:27:34Z] Output 1: tokenized 143360/170420
+[2026-09-02T05:27:34Z] Output 1: tokenized 143872/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 144384/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 144896/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 145408/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 145920/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 146432/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 146944/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 147456/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 147968/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 148480/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 148992/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 149504/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 150016/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 150528/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 151040/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 151552/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 152064/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 152576/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 153088/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 153600/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 154112/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 154624/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 155136/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 155648/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 156160/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 156672/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 157184/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 157696/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 158208/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 158720/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 159232/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 159744/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 160256/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 160768/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 161280/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 161792/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 162304/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 162816/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 163328/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 163840/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 164352/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 164864/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 165376/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 165888/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 166400/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 166912/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 167424/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 167936/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 168448/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 168960/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 169472/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 169984/170420
+[2026-09-02T05:27:35Z] Output 1: tokenized 170420/170420
+[2026-09-02T05:27:35Z] Output 1: {
+[2026-09-02T05:27:35Z] Output 1:   "source_sha256": "687b018be6b4665590772b03d96ceec63926a99573a174f4c8891cce0af53b73",
+[2026-09-02T05:27:35Z] Output 1:   "source_rows": 170420,
+[2026-09-02T05:27:35Z] Output 1:   "max_length": 256,
+[2026-09-02T05:27:35Z] Output 1:   "validation_size": 120,
+[2026-09-02T05:27:35Z] Output 1:   "split_seed": 42,
+[2026-09-02T05:27:35Z] Output 1:   "protocol": "nvidia_commonsense170k_public_right_truncation",
+[2026-09-02T05:27:35Z] Output 1:   "tokenizer_class": "TokenizersBackend",
+[2026-09-02T05:27:35Z] Output 1:   "tokenizer_vocab_size": 128256,
+[2026-09-02T05:27:35Z] Output 1:   "eos_token_id": 128001,
+[2026-09-02T05:27:35Z] Output 1:   "pad_token_id": 0,
+[2026-09-02T05:27:35Z] Output 1:   "padding_side": "left",
+[2026-09-02T05:27:35Z] Output 1:   "truncation_side": "right",
+[2026-09-02T05:27:35Z] Output 1:   "train_rows": 170300,
+[2026-09-02T05:27:35Z] Output 1:   "validation_rows": 120,
+[2026-09-02T05:27:35Z] Output 1:   "train_indices_sha256": "fdc3de35dcc836da5b84e88bed0c046ff9ccf3f37f57e197f3e6fc349c6a79f8",
+[2026-09-02T05:27:35Z] Output 1:   "val_indices_sha256": "0a8336859f741710331ee7f82408f0deac3df223d254289a31cbb589a8754fa4",
+[2026-09-02T05:27:35Z] Output 1:   "eos_appended": 146013,
+[2026-09-02T05:27:35Z] Output 1:   "rows_at_cutoff": 24498
+[2026-09-02T05:27:35Z] Output 1: }
+[2026-09-02T05:27:35Z] Output 1: smoke-pass
+[2026-09-02T05:27:35Z] Output 1: [smoke-pass] 2026-09-02T04:56:16+00:00
+[2026-09-02T05:27:35Z] Output 1: [smoke-dense]
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:55:53] loading model=/data/hyh/models/Meta-Llama-3.1-8B-base method=dense
+[2026-09-02T05:27:35Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-02T05:27:35Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 12905.82it/s]
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:55:59] ready train=32 val=120 steps=2/2 trainable=75,497,472
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:01] epoch=1/1 step=1/2 loss=3.415287 lr=3.000e-04 k=14336 peak=23.17GiB
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:03] epoch=1/1 step=2/2 loss=3.233302 lr=0.000e+00 k=14336 peak=23.75GiB
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:06] selected step=2 val_loss=2.693897 selection=minimum_validation_loss_eligible_checkpoint final_k=14336
+[2026-09-02T05:27:35Z] Output 1: [transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[2026-09-02T05:27:35Z] Output 1: [transformers] Passing `generation_config` together with generation-related arguments=({'max_new_tokens', 'return_dict_in_generate', 'output_scores'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[2026-09-02T05:27:35Z] Output 1: [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:07] eval done task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:07] eval done task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:08] eval done task=social_i_qa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:08] eval done task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:09] eval done task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:09] eval done task=ARC-Challenge accuracy=1.000000 correct=2/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] eval done task=ARC-Easy accuracy=1.000000 correct=2/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] eval done task=openbookqa accuracy=1.000000 correct=2/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] done average_accuracy=0.625000
+[2026-09-02T05:27:35Z] Output 1: {"decoding": "canonical_legal_answer_prefix_constraint", "done": true, "gate_lora_parameter_count": 64, "invalid": 0, "method": "dense", "targets": ["q_proj", "k_proj", "v_proj", "gate_proj", "up_proj", "down_proj"], "trainable_parameters": 75497472}
+[2026-09-02T05:27:35Z] Output 1: [smoke-fixed_k]
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:55:53] loading model=/data/hyh/models/Meta-Llama-3.1-8B-base method=fixed_k
+[2026-09-02T05:27:35Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-02T05:27:35Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 9573.26it/s]
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:55:59] ready train=32 val=120 steps=2/2 trainable=75,497,472
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:01] epoch=1/1 step=1/2 loss=12.321510 lr=3.000e-04 k=2048 peak=23.17GiB
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:03] epoch=1/1 step=2/2 loss=12.396287 lr=0.000e+00 k=2048 peak=23.75GiB
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:06] selected step=2 val_loss=9.960834 selection=minimum_validation_loss_eligible_checkpoint final_k=2048
+[2026-09-02T05:27:35Z] Output 1: [transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[2026-09-02T05:27:35Z] Output 1: [transformers] Passing `generation_config` together with generation-related arguments=({'return_dict_in_generate', 'max_new_tokens', 'output_scores'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[2026-09-02T05:27:35Z] Output 1: [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:07] eval done task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:07] eval done task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:08] eval done task=social_i_qa accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:09] eval done task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:09] eval done task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:09] eval done task=ARC-Challenge accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] eval done task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] eval done task=openbookqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] done average_accuracy=0.375000
+[2026-09-02T05:27:35Z] Output 1: {"decoding": "canonical_legal_answer_prefix_constraint", "done": true, "gate_lora_parameter_count": 64, "invalid": 0, "method": "fixed_k", "targets": ["q_proj", "k_proj", "v_proj", "gate_proj", "up_proj", "down_proj"], "trainable_parameters": 75497472}
+[2026-09-02T05:27:35Z] Output 1: [smoke-k_anneal]
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:55:53] loading model=/data/hyh/models/Meta-Llama-3.1-8B-base method=k_anneal
+[2026-09-02T05:27:35Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-02T05:27:35Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 10395.56it/s]
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:55:59] ready train=32 val=120 steps=2/2 trainable=75,497,472
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:01] epoch=1/1 step=1/2 loss=3.415287 lr=3.000e-04 k=2048 peak=23.17GiB
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:03] epoch=1/1 step=2/2 loss=12.396287 lr=0.000e+00 k=2048 peak=23.75GiB
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:07] selected step=2 val_loss=9.852821 selection=minimum_validation_loss_eligible_checkpoint final_k=2048
+[2026-09-02T05:27:35Z] Output 1: [transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[2026-09-02T05:27:35Z] Output 1: [transformers] Passing `generation_config` together with generation-related arguments=({'output_scores', 'return_dict_in_generate', 'max_new_tokens'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[2026-09-02T05:27:35Z] Output 1: [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:07] eval done task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:08] eval done task=piqa accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:08] eval done task=social_i_qa accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:09] eval done task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:09] eval done task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] eval done task=ARC-Challenge accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:10] eval done task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:11] eval done task=openbookqa accuracy=1.000000 correct=2/2 invalid=0
+[2026-09-02T05:27:35Z] Output 1: [2026-09-02 04:56:11] done average_accuracy=0.375000
+[2026-09-02T05:27:35Z] Output 1: {"decoding": "canonical_legal_answer_prefix_constraint", "done": true, "gate_lora_parameter_count": 64, "invalid": 0, "method": "k_anneal", "targets": ["q_proj", "k_proj", "v_proj", "gate_proj", "up_proj", "down_proj"], "trainable_parameters": 75497472}
+[2026-09-02T05:27:35Z] Exit 1: 0
+[2026-09-02T05:27:35Z] Command 2: bash /home/huyihan/MoC-remote-control/control/payloads/moc_native_1b_downstream_20260902/inspect.sh
+[2026-09-02T05:27:35Z] Output 2: [inspect] 2026-09-02T05:27:35+00:00
+[2026-09-02T05:27:35Z] Output 2: Result=success
+[2026-09-02T05:27:35Z] Output 2: ExecMainStatus=0
+[2026-09-02T05:27:35Z] Output 2: ActiveState=active
+[2026-09-02T05:27:35Z] Output 2: SubState=running
+[2026-09-02T05:27:35Z] Output 2: StateChangeTimestamp=Wed 2026-09-02 05:23:32 UTC
+[2026-09-02T05:27:35Z] Output 2: [gpu]
+[2026-09-02T05:27:35Z] Output 2: 0, NVIDIA A100-PCIE-40GB, 28027 MiB, 40960 MiB, 100 %
+[2026-09-02T05:27:35Z] Output 2: 1, NVIDIA A100-PCIE-40GB, 28139 MiB, 40960 MiB, 100 %
+[2026-09-02T05:27:35Z] Output 2: 2, NVIDIA A100-PCIE-40GB, 28027 MiB, 40960 MiB, 100 %
+[2026-09-02T05:27:35Z] Output 2: 3, NVIDIA A100-PCIE-40GB, 12417 MiB, 40960 MiB, 98 %
+[2026-09-02T05:27:35Z] Output 2: [processes]
+[2026-09-02T05:27:35Z] Output 2: GPU-39a140e5-15d3-6883-cd2e-ae3d900446cc, 1624655, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28018 MiB
+[2026-09-02T05:27:35Z] Output 2: GPU-4890048f-3c3c-a99f-76b6-f740705a5800, 1624656, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28130 MiB
+[2026-09-02T05:27:35Z] Output 2: GPU-c80bb428-0dc1-1c85-75d6-b2821e17236f, 1624657, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28018 MiB
+[2026-09-02T05:27:35Z] Output 2: GPU-9b26b854-4d93-9226-8d7c-3550edbe4728, 1626686, /data/hyh/envs/moc-repro-py312/bin/python, 12408 MiB
+[2026-09-02T05:27:35Z] Output 2: [coordinator-tail]
+[2026-09-02T05:27:35Z] Output 2: tokenized 130560/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 131072/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 131584/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 132096/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 132608/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 133120/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 133632/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 134144/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 134656/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 135168/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 135680/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 136192/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 136704/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 137216/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 137728/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 138240/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 138752/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 139264/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 139776/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 140288/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 140800/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 141312/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 141824/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 142336/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 142848/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 143360/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 143872/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 144384/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 144896/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 145408/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 145920/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 146432/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 146944/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 147456/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 147968/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 148480/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 148992/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 149504/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 150016/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 150528/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 151040/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 151552/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 152064/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 152576/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 153088/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 153600/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 154112/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 154624/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 155136/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 155648/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 156160/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 156672/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 157184/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 157696/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 158208/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 158720/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 159232/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 159744/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 160256/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 160768/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 161280/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 161792/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 162304/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 162816/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 163328/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 163840/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 164352/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 164864/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 165376/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 165888/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 166400/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 166912/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 167424/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 167936/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 168448/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 168960/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 169472/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 169984/170420
+[2026-09-02T05:27:35Z] Output 2: tokenized 170420/170420
+[2026-09-02T05:27:35Z] Output 2: {
+[2026-09-02T05:27:35Z] Output 2:   "source_sha256": "687b018be6b4665590772b03d96ceec63926a99573a174f4c8891cce0af53b73",
+[2026-09-02T05:27:35Z] Output 2:   "source_rows": 170420,
+[2026-09-02T05:27:35Z] Output 2:   "max_length": 256,
+[2026-09-02T05:27:35Z] Output 2:   "validation_size": 120,
+[2026-09-02T05:27:35Z] Output 2:   "split_seed": 42,
+[2026-09-02T05:27:35Z] Output 2:   "protocol": "nvidia_commonsense170k_public_right_truncation",
+[2026-09-02T05:27:35Z] Output 2:   "tokenizer_class": "T5Tokenizer",
+[2026-09-02T05:27:35Z] Output 2:   "tokenizer_vocab_size": 32100,
+[2026-09-02T05:27:35Z] Output 2:   "eos_token_id": 1,
+[2026-09-02T05:27:35Z] Output 2:   "pad_token_id": 0,
+[2026-09-02T05:27:35Z] Output 2:   "padding_side": "left",
+[2026-09-02T05:27:35Z] Output 2:   "truncation_side": "right",
+[2026-09-02T05:27:35Z] Output 2:   "train_rows": 170300,
+[2026-09-02T05:27:35Z] Output 2:   "validation_rows": 120,
+[2026-09-02T05:27:35Z] Output 2:   "train_indices_sha256": "fdc3de35dcc836da5b84e88bed0c046ff9ccf3f37f57e197f3e6fc349c6a79f8",
+[2026-09-02T05:27:35Z] Output 2:   "val_indices_sha256": "0a8336859f741710331ee7f82408f0deac3df223d254289a31cbb589a8754fa4",
+[2026-09-02T05:27:35Z] Output 2:   "eos_appended": 0,
+[2026-09-02T05:27:35Z] Output 2:   "rows_at_cutoff": 25421
+[2026-09-02T05:27:35Z] Output 2: }
+[2026-09-02T05:27:35Z] Output 2: native-1b-smoke-pass
+[2026-09-02T05:27:35Z] Output 2: [smoke/dense]
+[2026-09-02T05:27:35Z] Output 2: {"average_accuracy": 0.375, "checkpoint": {"checkpoint_reason": "completed", "ffn_type": "dense", "run_fingerprint": "df2c9cb1575a5ca9299bf162e1199f3d79a51ab035cd247c655b3b6fcc94075b", "step": 100000}, "done": true, "gate_lora_parameter_count": 48, "method": "dense", "optimizer_steps": 2, "steps": 2, "trainable_parameters": 26737920}
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:47] loading strict checkpoint=/home/huyihan/runs/moc_1b_resumable_pretrain_20260804/outputs/dense/latest.pt method=dense
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:48] ready steps=2/2 trainable=26,737,920 replacements=120
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:49] epoch=1/1 step=1/2 loss=3.648293 peak=10.74GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:49] epoch=1/1 step=2/2 loss=3.356249 peak=10.85GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:50] selected step=2 val_loss=3.428189
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:50] eval task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:50] eval task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:51] eval task=social_i_qa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:51] eval task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:51] eval task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:51] eval task=ARC-Challenge accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:51] eval task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:51] eval task=openbookqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:24:51] done average_accuracy=0.375000
+[2026-09-02T05:27:35Z] Output 2: [smoke/moc]
+[2026-09-02T05:27:35Z] Output 2: {"average_accuracy": 0.4375, "checkpoint": {"checkpoint_reason": "completed", "ffn_type": "moc", "run_fingerprint": "f28e93a9a6a89a111727f5204da63ca6e3fa7399e2f5b103948e61f543ad5ae5", "step": 100000}, "done": true, "gate_lora_parameter_count": 48, "method": "moc", "optimizer_steps": 2, "steps": 2, "trainable_parameters": 26737920}
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:08] loading strict checkpoint=/home/huyihan/runs/moc_1b_resumable_pretrain_20260804/outputs/moc/latest.pt method=moc
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:08] ready steps=2/2 trainable=26,737,920 replacements=120
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:10] epoch=1/1 step=1/2 loss=3.653249 peak=9.15GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:11] epoch=1/1 step=2/2 loss=3.365396 peak=9.25GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:13] selected step=2 val_loss=3.448010
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:13] eval task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:14] eval task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:14] eval task=social_i_qa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:14] eval task=hellaswag accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:14] eval task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:15] eval task=ARC-Challenge accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:15] eval task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:15] eval task=openbookqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:15] done average_accuracy=0.437500
+[2026-09-02T05:27:35Z] Output 2: [outputs/formal_dense]
+[2026-09-02T05:27:35Z] Output 2: {"checkpoint": {"checkpoint_reason": "completed", "ffn_type": "dense", "run_fingerprint": "df2c9cb1575a5ca9299bf162e1199f3d79a51ab035cd247c655b3b6fcc94075b", "step": 100000}, "done": false, "gate_lora_parameter_count": 48, "method": "dense", "steps": 31932, "trainable_parameters": 26737920}
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:32] loading strict checkpoint=/home/huyihan/runs/moc_1b_resumable_pretrain_20260804/outputs/dense/latest.pt method=dense
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:33] ready steps=31932/31932 trainable=26,737,920 replacements=120
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:33] epoch=1/3 step=1/31932 loss=3.262289 peak=10.80GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:37] epoch=1/3 step=10/31932 loss=3.348195 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:42] epoch=1/3 step=20/31932 loss=3.282859 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:47] epoch=1/3 step=30/31932 loss=3.121596 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:51] epoch=1/3 step=40/31932 loss=2.528434 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:25:55] epoch=1/3 step=50/31932 loss=1.798143 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:00] epoch=1/3 step=60/31932 loss=1.599042 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:04] epoch=1/3 step=70/31932 loss=1.385607 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:08] epoch=1/3 step=80/31932 loss=1.300567 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:14] epoch=1/3 step=90/31932 loss=1.353388 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:19] epoch=1/3 step=100/31932 loss=1.466063 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:23] epoch=1/3 step=110/31932 loss=1.274229 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:27] epoch=1/3 step=120/31932 loss=1.205305 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:32] epoch=1/3 step=130/31932 loss=1.275400 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:37] epoch=1/3 step=140/31932 loss=1.312437 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:41] epoch=1/3 step=150/31932 loss=1.213510 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:46] epoch=1/3 step=160/31932 loss=1.315251 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:52] epoch=1/3 step=170/31932 loss=1.289134 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:26:56] epoch=1/3 step=180/31932 loss=1.255181 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:01] epoch=1/3 step=190/31932 loss=1.220154 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:05] epoch=1/3 step=200/31932 loss=1.255081 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:10] epoch=1/3 step=210/31932 loss=1.202489 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:14] epoch=1/3 step=220/31932 loss=1.170400 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:19] epoch=1/3 step=230/31932 loss=1.176869 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:23] epoch=1/3 step=240/31932 loss=1.160824 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:29] epoch=1/3 step=250/31932 loss=1.290015 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [2026-09-02 05:27:34] epoch=1/3 step=260/31932 loss=1.289931 peak=10.90GiB
+[2026-09-02T05:27:35Z] Output 2: [outputs/formal_moc]
+[2026-09-02T05:27:35Z] Exit 2: 0
+[2026-09-02T05:27:35Z] Commands cleared.
