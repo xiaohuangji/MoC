@@ -283660,3 +283660,134 @@
 [2026-09-02T05:27:35Z] Output 2: [outputs/formal_moc]
 [2026-09-02T05:27:35Z] Exit 2: 0
 [2026-09-02T05:27:35Z] Commands cleared.
+[2026-09-02T05:28:19Z] No remote updates.
+[2026-09-02T05:28:19Z] No commands to run.
+[2026-09-02T05:28:49Z] Not due yet; next check at 2026-09-02T05:29:14Z.
+[2026-09-02T05:29:24Z] No remote updates.
+[2026-09-02T05:29:24Z] No commands to run.
+[2026-09-02T05:29:54Z] Not due yet; next check at 2026-09-02T05:31:19Z.
+[2026-09-02T05:30:24Z] Not due yet; next check at 2026-09-02T05:31:19Z.
+[2026-09-02T05:30:54Z] Not due yet; next check at 2026-09-02T05:31:19Z.
+[2026-09-02T05:31:30Z] Pulling updates from origin/remote-control-setup: ccfe36e0fd69594c2dbe5f6e0da5969f9e143346 -> b5c789d32bad505b0e80a6c1346fa4c4eec32886
+[2026-09-02T05:31:35Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-09-02T05:31:35Z] Command 1: echo '[private timer read-only]'; systemctl --user show moc-private-remote-control.timer --no-pager -p ActiveState -p SubState -p Result -p LastTriggerUSec -p NextElapseUSecRealtime 2>&1 || true; echo '[8b formal dense]'; tail -n 25 /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/logs/formal_dense.log 2>/dev/null || true; echo '[8b formal fixed]'; tail -n 25 /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/logs/formal_fixed_k.log 2>/dev/null || true; echo '[8b formal anneal]'; tail -n 25 /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/logs/formal_k_anneal.log 2>/dev/null || true; echo '[1b formal dense]'; tail -n 25 /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/logs/formal_dense.log 2>/dev/null || true; echo '[disk]'; df -h /; echo '[gpu]'; nvidia-smi --query-gpu=index,memory.used,memory.total,utilization.gpu --format=csv,noheader
+[2026-09-02T05:31:35Z] Output 1: [private timer read-only]
+[2026-09-02T05:31:35Z] Output 1: NextElapseUSecRealtime=
+[2026-09-02T05:31:35Z] Output 1: LastTriggerUSec=Wed 2026-09-02 05:04:01 UTC
+[2026-09-02T05:31:35Z] Output 1: Result=success
+[2026-09-02T05:31:35Z] Output 1: ActiveState=active
+[2026-09-02T05:31:36Z] Output 1: SubState=running
+[2026-09-02T05:31:36Z] Output 1: [8b formal dense]
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:25:56] epoch=1/3 step=1090/31932 loss=1.161623 lr=2.907e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:11] epoch=1/3 step=1100/31932 loss=1.064421 lr=2.906e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:27] epoch=1/3 step=1110/31932 loss=1.165116 lr=2.905e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:41] epoch=1/3 step=1120/31932 loss=1.053139 lr=2.904e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:45] validation step=1120 loss=1.049749 eligible=True best=False
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:00] epoch=1/3 step=1130/31932 loss=1.117829 lr=2.903e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:15] epoch=1/3 step=1140/31932 loss=1.048626 lr=2.902e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:31] epoch=1/3 step=1150/31932 loss=1.061613 lr=2.901e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:47] epoch=1/3 step=1160/31932 loss=1.069687 lr=2.900e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:03] epoch=1/3 step=1170/31932 loss=1.094779 lr=2.899e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:18] epoch=1/3 step=1180/31932 loss=1.106826 lr=2.898e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:34] epoch=1/3 step=1190/31932 loss=1.025808 lr=2.897e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:49] epoch=1/3 step=1200/31932 loss=1.109109 lr=2.896e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:53] validation step=1200 loss=1.043876 eligible=True best=True
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:09] epoch=1/3 step=1210/31932 loss=1.138671 lr=2.895e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:24] epoch=1/3 step=1220/31932 loss=1.127218 lr=2.894e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:39] epoch=1/3 step=1230/31932 loss=1.026427 lr=2.894e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:55] epoch=1/3 step=1240/31932 loss=1.010145 lr=2.893e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:10] epoch=1/3 step=1250/31932 loss=1.146554 lr=2.892e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:26] epoch=1/3 step=1260/31932 loss=1.123134 lr=2.891e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:42] epoch=1/3 step=1270/31932 loss=1.093969 lr=2.890e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:58] epoch=1/3 step=1280/31932 loss=1.142893 lr=2.889e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:01] validation step=1280 loss=1.049995 eligible=True best=False
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:17] epoch=1/3 step=1290/31932 loss=1.141091 lr=2.888e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:33] epoch=1/3 step=1300/31932 loss=1.162448 lr=2.887e-04 k=14336 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [8b formal fixed]
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:25:41] epoch=1/3 step=1030/31932 loss=1.141333 lr=2.912e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:25:57] epoch=1/3 step=1040/31932 loss=1.347861 lr=2.911e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:01] validation step=1040 loss=1.151694 eligible=True best=True
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:18] epoch=1/3 step=1050/31932 loss=1.218581 lr=2.910e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:34] epoch=1/3 step=1060/31932 loss=1.239360 lr=2.910e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:50] epoch=1/3 step=1070/31932 loss=1.345783 lr=2.909e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:06] epoch=1/3 step=1080/31932 loss=1.238851 lr=2.908e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:23] epoch=1/3 step=1090/31932 loss=1.287566 lr=2.907e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:39] epoch=1/3 step=1100/31932 loss=1.175743 lr=2.906e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:56] epoch=1/3 step=1110/31932 loss=1.289148 lr=2.905e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:11] epoch=1/3 step=1120/31932 loss=1.161058 lr=2.904e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:15] validation step=1120 loss=1.148414 eligible=True best=True
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:31] epoch=1/3 step=1130/31932 loss=1.229139 lr=2.903e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:47] epoch=1/3 step=1140/31932 loss=1.159626 lr=2.902e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:03] epoch=1/3 step=1150/31932 loss=1.180911 lr=2.901e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:20] epoch=1/3 step=1160/31932 loss=1.189625 lr=2.900e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:36] epoch=1/3 step=1170/31932 loss=1.217235 lr=2.899e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:53] epoch=1/3 step=1180/31932 loss=1.207525 lr=2.898e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:09] epoch=1/3 step=1190/31932 loss=1.137046 lr=2.897e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:26] epoch=1/3 step=1200/31932 loss=1.227025 lr=2.896e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:29] validation step=1200 loss=1.152024 eligible=True best=False
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:46] epoch=1/3 step=1210/31932 loss=1.258813 lr=2.895e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:02] epoch=1/3 step=1220/31932 loss=1.252769 lr=2.894e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:18] epoch=1/3 step=1230/31932 loss=1.132677 lr=2.894e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:34] epoch=1/3 step=1240/31932 loss=1.113779 lr=2.893e-04 k=2048 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [8b formal anneal]
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:24:52] epoch=1/3 step=1020/31932 loss=1.131288 lr=2.913e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:25:11] epoch=1/3 step=1030/31932 loss=1.047909 lr=2.912e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:25:29] epoch=1/3 step=1040/31932 loss=1.241452 lr=2.911e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:25:33] validation step=1040 loss=1.069623 eligible=False best=False
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:25:52] epoch=1/3 step=1050/31932 loss=1.129703 lr=2.910e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:10] epoch=1/3 step=1060/31932 loss=1.146455 lr=2.910e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:28] epoch=1/3 step=1070/31932 loss=1.243160 lr=2.909e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:26:46] epoch=1/3 step=1080/31932 loss=1.149181 lr=2.908e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:04] epoch=1/3 step=1090/31932 loss=1.188299 lr=2.907e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:22] epoch=1/3 step=1100/31932 loss=1.092544 lr=2.906e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:40] epoch=1/3 step=1110/31932 loss=1.193805 lr=2.905e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:27:57] epoch=1/3 step=1120/31932 loss=1.075012 lr=2.904e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:01] validation step=1120 loss=1.067154 eligible=False best=False
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:19] epoch=1/3 step=1130/31932 loss=1.137891 lr=2.903e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:37] epoch=1/3 step=1140/31932 loss=1.071727 lr=2.902e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:28:55] epoch=1/3 step=1150/31932 loss=1.082766 lr=2.901e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:14] epoch=1/3 step=1160/31932 loss=1.094516 lr=2.900e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:32] epoch=1/3 step=1170/31932 loss=1.118742 lr=2.899e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:50] epoch=1/3 step=1180/31932 loss=1.127115 lr=2.898e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:08] epoch=1/3 step=1190/31932 loss=1.049265 lr=2.897e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:27] epoch=1/3 step=1200/31932 loss=1.131286 lr=2.896e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:30] validation step=1200 loss=1.062199 eligible=False best=False
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:49] epoch=1/3 step=1210/31932 loss=1.160826 lr=2.895e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:07] epoch=1/3 step=1220/31932 loss=1.153625 lr=2.894e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:25] epoch=1/3 step=1230/31932 loss=1.046676 lr=2.894e-04 k=14080 peak=23.75GiB
+[2026-09-02T05:31:36Z] Output 1: [1b formal dense]
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:42] epoch=1/3 step=530/31932 loss=1.116469 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:46] epoch=1/3 step=540/31932 loss=1.120332 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:50] epoch=1/3 step=550/31932 loss=1.157447 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:29:55] epoch=1/3 step=560/31932 loss=1.174138 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:01] epoch=1/3 step=570/31932 loss=1.220564 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:06] epoch=1/3 step=580/31932 loss=1.198983 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:11] epoch=1/3 step=590/31932 loss=1.160247 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:15] epoch=1/3 step=600/31932 loss=1.244407 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:19] epoch=1/3 step=610/31932 loss=1.108558 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:23] epoch=1/3 step=620/31932 loss=1.081667 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:28] epoch=1/3 step=630/31932 loss=1.155076 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:32] epoch=1/3 step=640/31932 loss=1.148053 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:38] epoch=1/3 step=650/31932 loss=1.138388 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:42] epoch=1/3 step=660/31932 loss=1.071883 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:47] epoch=1/3 step=670/31932 loss=1.183924 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:52] epoch=1/3 step=680/31932 loss=1.182621 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:30:56] epoch=1/3 step=690/31932 loss=1.168417 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:01] epoch=1/3 step=700/31932 loss=1.158520 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:05] epoch=1/3 step=710/31932 loss=1.116925 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:10] epoch=1/3 step=720/31932 loss=1.255477 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:16] epoch=1/3 step=730/31932 loss=1.246208 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:21] epoch=1/3 step=740/31932 loss=1.089118 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:25] epoch=1/3 step=750/31932 loss=1.129761 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:30] epoch=1/3 step=760/31932 loss=1.181149 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [2026-09-02 05:31:34] epoch=1/3 step=770/31932 loss=1.131125 peak=10.90GiB
+[2026-09-02T05:31:36Z] Output 1: [disk]
+[2026-09-02T05:31:36Z] Output 1: Filesystem      Size  Used Avail Use% Mounted on
+[2026-09-02T05:31:36Z] Output 1: /dev/sda2       879G  581G  253G  70% /
+[2026-09-02T05:31:36Z] Output 1: [gpu]
+[2026-09-02T05:31:36Z] Output 1: 0, 28027 MiB, 40960 MiB, 100 %
+[2026-09-02T05:31:36Z] Output 1: 1, 28139 MiB, 40960 MiB, 100 %
+[2026-09-02T05:31:36Z] Output 1: 2, 28027 MiB, 40960 MiB, 100 %
+[2026-09-02T05:31:36Z] Output 1: 3, 12417 MiB, 40960 MiB, 98 %
+[2026-09-02T05:31:36Z] Exit 1: 0
+[2026-09-02T05:31:36Z] Commands cleared.
