@@ -283791,3 +283791,362 @@
 [2026-09-02T05:31:36Z] Output 1: 3, 12417 MiB, 40960 MiB, 98 %
 [2026-09-02T05:31:36Z] Exit 1: 0
 [2026-09-02T05:31:36Z] Commands cleared.
+[2026-09-02T05:32:19Z] No remote updates.
+[2026-09-02T05:32:19Z] No commands to run.
+[2026-09-02T05:32:49Z] Not due yet; next check at 2026-09-02T05:33:14Z.
+[2026-09-02T05:33:24Z] No remote updates.
+[2026-09-02T05:33:24Z] No commands to run.
+[2026-09-02T05:33:54Z] Not due yet; next check at 2026-09-02T05:35:19Z.
+[2026-09-02T05:34:24Z] Not due yet; next check at 2026-09-02T05:35:19Z.
+[2026-09-02T05:34:54Z] Not due yet; next check at 2026-09-02T05:35:19Z.
+[2026-09-02T05:35:29Z] No remote updates.
+[2026-09-02T05:35:29Z] No commands to run.
+[2026-09-02T05:35:59Z] Not due yet; next check at 2026-09-02T05:38:24Z.
+[2026-09-02T05:36:29Z] Not due yet; next check at 2026-09-02T05:38:24Z.
+[2026-09-02T05:36:59Z] Not due yet; next check at 2026-09-02T05:38:24Z.
+[2026-09-02T05:37:29Z] Not due yet; next check at 2026-09-02T05:38:24Z.
+[2026-09-02T05:37:59Z] Not due yet; next check at 2026-09-02T05:38:24Z.
+[2026-09-02T05:38:35Z] No remote updates.
+[2026-09-02T05:38:35Z] No commands to run.
+[2026-09-02T05:39:05Z] Not due yet; next check at 2026-09-02T05:42:29Z.
+[2026-09-02T05:39:35Z] Not due yet; next check at 2026-09-02T05:42:29Z.
+[2026-09-02T05:40:05Z] Not due yet; next check at 2026-09-02T05:42:29Z.
+[2026-09-02T05:40:35Z] Not due yet; next check at 2026-09-02T05:42:29Z.
+[2026-09-02T05:41:05Z] Not due yet; next check at 2026-09-02T05:42:29Z.
+[2026-09-02T05:41:35Z] Not due yet; next check at 2026-09-02T05:42:29Z.
+[2026-09-02T05:42:05Z] Not due yet; next check at 2026-09-02T05:42:29Z.
+[2026-09-02T05:42:41Z] No remote updates.
+[2026-09-02T05:42:41Z] No commands to run.
+[2026-09-02T05:43:11Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:43:41Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:44:11Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:44:41Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:45:11Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:45:41Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:46:11Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:46:41Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:47:11Z] Not due yet; next check at 2026-09-02T05:47:35Z.
+[2026-09-02T05:47:46Z] No remote updates.
+[2026-09-02T05:47:46Z] No commands to run.
+[2026-09-02T05:48:16Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:48:46Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:49:16Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:49:46Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:50:16Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:50:46Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:51:16Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:51:46Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:52:16Z] Not due yet; next check at 2026-09-02T05:52:41Z.
+[2026-09-02T05:52:51Z] No remote updates.
+[2026-09-02T05:52:51Z] No commands to run.
+[2026-09-02T05:53:21Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:53:51Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:54:21Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:54:51Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:55:21Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:55:51Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:56:21Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:56:51Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:57:21Z] Not due yet; next check at 2026-09-02T05:57:46Z.
+[2026-09-02T05:57:56Z] No remote updates.
+[2026-09-02T05:57:56Z] No commands to run.
+[2026-09-02T05:58:26Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T05:58:56Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T05:59:26Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T05:59:56Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T06:00:26Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T06:00:56Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T06:01:26Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T06:01:56Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T06:02:26Z] Not due yet; next check at 2026-09-02T06:02:51Z.
+[2026-09-02T06:03:02Z] No remote updates.
+[2026-09-02T06:03:02Z] No commands to run.
+[2026-09-02T06:03:32Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:04:02Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:04:32Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:05:02Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:05:32Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:06:02Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:06:32Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:07:02Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:07:32Z] Not due yet; next check at 2026-09-02T06:07:56Z.
+[2026-09-02T06:08:07Z] No remote updates.
+[2026-09-02T06:08:07Z] No commands to run.
+[2026-09-02T06:08:37Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:09:07Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:09:37Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:10:07Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:10:37Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:11:07Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:11:37Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:12:07Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:12:37Z] Not due yet; next check at 2026-09-02T06:13:02Z.
+[2026-09-02T06:13:12Z] No remote updates.
+[2026-09-02T06:13:12Z] No commands to run.
+[2026-09-02T06:13:42Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:14:12Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:14:42Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:15:12Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:15:43Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:16:13Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:16:43Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:17:13Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:17:43Z] Not due yet; next check at 2026-09-02T06:18:07Z.
+[2026-09-02T06:18:18Z] No remote updates.
+[2026-09-02T06:18:18Z] No commands to run.
+[2026-09-02T06:18:48Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:19:18Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:19:48Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:20:18Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:20:48Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:21:18Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:21:48Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:22:18Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:22:48Z] Not due yet; next check at 2026-09-02T06:23:13Z.
+[2026-09-02T06:23:23Z] No remote updates.
+[2026-09-02T06:23:23Z] No commands to run.
+[2026-09-02T06:23:53Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:24:23Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:24:53Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:25:23Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:25:53Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:26:23Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:26:53Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:27:23Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:27:53Z] Not due yet; next check at 2026-09-02T06:28:18Z.
+[2026-09-02T06:28:28Z] No remote updates.
+[2026-09-02T06:28:28Z] No commands to run.
+[2026-09-02T06:28:58Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:29:29Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:29:59Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:30:29Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:30:59Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:31:29Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:31:59Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:32:29Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:32:59Z] Not due yet; next check at 2026-09-02T06:33:23Z.
+[2026-09-02T06:33:34Z] No remote updates.
+[2026-09-02T06:33:34Z] No commands to run.
+[2026-09-02T06:34:04Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:34:34Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:35:04Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:35:34Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:36:04Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:36:34Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:37:04Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:37:34Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:38:04Z] Not due yet; next check at 2026-09-02T06:38:29Z.
+[2026-09-02T06:38:39Z] No remote updates.
+[2026-09-02T06:38:39Z] No commands to run.
+[2026-09-02T06:39:09Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:39:39Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:40:09Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:40:39Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:41:09Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:41:39Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:42:09Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:42:39Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:43:09Z] Not due yet; next check at 2026-09-02T06:43:34Z.
+[2026-09-02T06:43:45Z] No remote updates.
+[2026-09-02T06:43:45Z] No commands to run.
+[2026-09-02T06:44:15Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:44:45Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:45:15Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:45:45Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:46:15Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:46:45Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:47:15Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:47:45Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:48:15Z] Not due yet; next check at 2026-09-02T06:48:39Z.
+[2026-09-02T06:48:50Z] No remote updates.
+[2026-09-02T06:48:50Z] No commands to run.
+[2026-09-02T06:49:20Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:49:50Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:50:20Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:50:50Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:51:20Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:51:50Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:52:20Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:52:50Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:53:20Z] Not due yet; next check at 2026-09-02T06:53:45Z.
+[2026-09-02T06:53:56Z] Pulling updates from origin/remote-control-setup: d66c222dbfc31fa84dfe38a82a8ce71b0c6abb55 -> bd9814fc54a2447cc4496685812e7b7bb056222a
+[2026-09-02T06:54:02Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-09-02T06:54:02Z] Command 1: echo '[time]'; date -Is; echo '[services]'; systemctl --user show moc-llama31-8b-gate-lora-bf16-20260902-r1.service moc-native-1b-downstream-lora-20260902-r1.service --no-pager -p Id -p ActiveState -p SubState -p Result -p ExecMainStatus -p MainPID -p StateChangeTimestamp 2>&1 || true; echo '[8b markers]'; find /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1 -maxdepth 3 -type f \( -name DONE -o -name summary.json \) -printf '%p %s bytes\n' 2>/dev/null | sort; for m in dense fixed_k k_anneal; do echo "[8b ${m}]"; tail -n 30 "/home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/logs/formal_${m}.log" 2>/dev/null || true; done; echo '[1b markers]'; find /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1 -maxdepth 3 -type f \( -name DONE -o -name summary.json \) -printf '%p %s bytes\n' 2>/dev/null | sort; echo '[1b dense]'; tail -n 35 /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/logs/formal_dense.log 2>/dev/null || true; echo '[1b moc]'; tail -n 35 /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/logs/formal_moc.log 2>/dev/null || true; echo '[stderr]'; for f in /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/logs/systemd.stderr.log /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/logs/systemd.stderr.log; do echo "---${f}"; tail -n 30 "${f}" 2>/dev/null || true; done; echo '[gpu]'; nvidia-smi --query-gpu=index,name,memory.used,memory.total,utilization.gpu --format=csv,noheader; echo '[processes]'; nvidia-smi --query-compute-apps=gpu_uuid,pid,process_name,used_memory --format=csv,noheader 2>/dev/null || true; echo '[disk]'; df -h /
+[2026-09-02T06:54:02Z] Output 1: [time]
+[2026-09-02T06:54:02Z] Output 1: 2026-09-02T06:54:02+00:00
+[2026-09-02T06:54:02Z] Output 1: [services]
+[2026-09-02T06:54:02Z] Output 1: MainPID=1623459
+[2026-09-02T06:54:02Z] Output 1: Result=success
+[2026-09-02T06:54:02Z] Output 1: ExecMainStatus=0
+[2026-09-02T06:54:02Z] Output 1: Id=moc-llama31-8b-gate-lora-bf16-20260902-r1.service
+[2026-09-02T06:54:02Z] Output 1: ActiveState=active
+[2026-09-02T06:54:02Z] Output 1: SubState=running
+[2026-09-02T06:54:02Z] Output 1: StateChangeTimestamp=Wed 2026-09-02 04:54:41 UTC
+[2026-09-02T06:54:02Z] Output 1: 
+[2026-09-02T06:54:02Z] Output 1: MainPID=1626026
+[2026-09-02T06:54:02Z] Output 1: Result=success
+[2026-09-02T06:54:02Z] Output 1: ExecMainStatus=0
+[2026-09-02T06:54:02Z] Output 1: Id=moc-native-1b-downstream-lora-20260902-r1.service
+[2026-09-02T06:54:02Z] Output 1: ActiveState=active
+[2026-09-02T06:54:02Z] Output 1: SubState=running
+[2026-09-02T06:54:02Z] Output 1: StateChangeTimestamp=Wed 2026-09-02 05:23:32 UTC
+[2026-09-02T06:54:02Z] Output 1: [8b markers]
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/smoke/dense/DONE 25 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/smoke/dense/summary.json 3022 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/smoke/fixed_k/DONE 25 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/smoke/fixed_k/summary.json 3017 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/smoke/k_anneal/DONE 25 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/smoke/k_anneal/summary.json 3015 bytes
+[2026-09-02T06:54:02Z] Output 1: [8b dense]
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:00] epoch=1/3 step=4130/31932 loss=1.090770 lr=2.620e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:15] epoch=1/3 step=4140/31932 loss=1.050101 lr=2.619e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:31] epoch=1/3 step=4150/31932 loss=1.061419 lr=2.618e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:47] epoch=1/3 step=4160/31932 loss=1.110179 lr=2.617e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:50] validation step=4160 loss=1.018811 eligible=True best=False
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:06] epoch=1/3 step=4170/31932 loss=1.095886 lr=2.616e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:22] epoch=1/3 step=4180/31932 loss=1.157124 lr=2.615e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:38] epoch=1/3 step=4190/31932 loss=1.116187 lr=2.615e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:53] epoch=1/3 step=4200/31932 loss=1.101922 lr=2.614e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:09] epoch=1/3 step=4210/31932 loss=1.128046 lr=2.613e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:25] epoch=1/3 step=4220/31932 loss=1.097729 lr=2.612e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:41] epoch=1/3 step=4230/31932 loss=1.140470 lr=2.611e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:56] epoch=1/3 step=4240/31932 loss=1.080576 lr=2.610e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:00] validation step=4240 loss=1.016427 eligible=True best=False
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:14] epoch=1/3 step=4250/31932 loss=1.055421 lr=2.609e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:30] epoch=1/3 step=4260/31932 loss=1.024401 lr=2.608e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:45] epoch=1/3 step=4270/31932 loss=1.119239 lr=2.607e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:01] epoch=1/3 step=4280/31932 loss=1.148619 lr=2.606e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:17] epoch=1/3 step=4290/31932 loss=1.085264 lr=2.605e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:33] epoch=1/3 step=4300/31932 loss=1.150414 lr=2.604e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:48] epoch=1/3 step=4310/31932 loss=1.072997 lr=2.603e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:05] epoch=1/3 step=4320/31932 loss=1.049696 lr=2.602e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:08] validation step=4320 loss=1.013552 eligible=True best=True
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:24] epoch=1/3 step=4330/31932 loss=1.025953 lr=2.601e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:38] epoch=1/3 step=4340/31932 loss=1.081227 lr=2.600e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:54] epoch=1/3 step=4350/31932 loss=1.086334 lr=2.599e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:09] epoch=1/3 step=4360/31932 loss=1.129825 lr=2.599e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:24] epoch=1/3 step=4370/31932 loss=1.077635 lr=2.598e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:40] epoch=1/3 step=4380/31932 loss=1.140009 lr=2.597e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:56] epoch=1/3 step=4390/31932 loss=1.101841 lr=2.596e-04 k=14336 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [8b fixed_k]
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:46:35] validation step=3920 loss=1.107713 eligible=True best=False
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:46:51] epoch=1/3 step=3930/31932 loss=1.232872 lr=2.639e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:08] epoch=1/3 step=3940/31932 loss=1.141235 lr=2.638e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:24] epoch=1/3 step=3950/31932 loss=1.249004 lr=2.637e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:41] epoch=1/3 step=3960/31932 loss=1.303559 lr=2.636e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:57] epoch=1/3 step=3970/31932 loss=1.215660 lr=2.635e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:14] epoch=1/3 step=3980/31932 loss=1.281728 lr=2.634e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:31] epoch=1/3 step=3990/31932 loss=1.174988 lr=2.633e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:47] epoch=1/3 step=4000/31932 loss=1.161438 lr=2.632e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:51] validation step=4000 loss=1.101481 eligible=True best=True
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:07] epoch=1/3 step=4010/31932 loss=1.191562 lr=2.632e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:24] epoch=1/3 step=4020/31932 loss=1.270724 lr=2.631e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:41] epoch=1/3 step=4030/31932 loss=1.183236 lr=2.630e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:57] epoch=1/3 step=4040/31932 loss=1.155525 lr=2.629e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:13] epoch=1/3 step=4050/31932 loss=1.268608 lr=2.628e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:29] epoch=1/3 step=4060/31932 loss=1.030758 lr=2.627e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:44] epoch=1/3 step=4070/31932 loss=1.061758 lr=2.626e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:00] epoch=1/3 step=4080/31932 loss=1.186741 lr=2.625e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:04] validation step=4080 loss=1.106251 eligible=True best=False
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:20] epoch=1/3 step=4090/31932 loss=1.186939 lr=2.624e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:36] epoch=1/3 step=4100/31932 loss=1.141002 lr=2.623e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:53] epoch=1/3 step=4110/31932 loss=1.210940 lr=2.622e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:10] epoch=1/3 step=4120/31932 loss=1.212435 lr=2.621e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:26] epoch=1/3 step=4130/31932 loss=1.169950 lr=2.620e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:42] epoch=1/3 step=4140/31932 loss=1.125444 lr=2.619e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:58] epoch=1/3 step=4150/31932 loss=1.149523 lr=2.618e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:15] epoch=1/3 step=4160/31932 loss=1.195379 lr=2.617e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:19] validation step=4160 loss=1.101431 eligible=True best=True
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:35] epoch=1/3 step=4170/31932 loss=1.181092 lr=2.616e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:52] epoch=1/3 step=4180/31932 loss=1.241732 lr=2.615e-04 k=2048 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [8b k_anneal]
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:45:54] epoch=1/3 step=3640/31932 loss=1.209904 lr=2.666e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:46:13] epoch=1/3 step=3650/31932 loss=1.123474 lr=2.665e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:46:31] epoch=1/3 step=3660/31932 loss=1.178660 lr=2.664e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:46:49] epoch=1/3 step=3670/31932 loss=1.074963 lr=2.664e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:07] epoch=1/3 step=3680/31932 loss=1.211289 lr=2.663e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:11] validation step=3680 loss=1.068118 eligible=False best=False
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:29] epoch=1/3 step=3690/31932 loss=1.104789 lr=2.662e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:47:46] epoch=1/3 step=3700/31932 loss=1.065445 lr=2.661e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:05] epoch=1/3 step=3710/31932 loss=1.215029 lr=2.660e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:23] epoch=1/3 step=3720/31932 loss=1.167319 lr=2.659e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:41] epoch=1/3 step=3730/31932 loss=1.132501 lr=2.658e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:48:59] epoch=1/3 step=3740/31932 loss=1.048227 lr=2.657e-04 k=12032 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:17] epoch=1/3 step=3750/31932 loss=1.121089 lr=2.656e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:36] epoch=1/3 step=3760/31932 loss=1.130711 lr=2.655e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:39] validation step=3760 loss=1.072500 eligible=False best=False
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:49:58] epoch=1/3 step=3770/31932 loss=1.157110 lr=2.654e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:16] epoch=1/3 step=3780/31932 loss=1.185202 lr=2.653e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:34] epoch=1/3 step=3790/31932 loss=1.133136 lr=2.652e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:50:53] epoch=1/3 step=3800/31932 loss=1.136645 lr=2.651e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:10] epoch=1/3 step=3810/31932 loss=1.233493 lr=2.650e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:28] epoch=1/3 step=3820/31932 loss=1.223258 lr=2.649e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:47] epoch=1/3 step=3830/31932 loss=1.180072 lr=2.648e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:05] epoch=1/3 step=3840/31932 loss=1.063701 lr=2.648e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:08] validation step=3840 loss=1.070753 eligible=False best=False
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:26] epoch=1/3 step=3850/31932 loss=1.111100 lr=2.647e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:44] epoch=1/3 step=3860/31932 loss=1.120333 lr=2.646e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:01] epoch=1/3 step=3870/31932 loss=1.069485 lr=2.645e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:19] epoch=1/3 step=3880/31932 loss=1.117124 lr=2.644e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:37] epoch=1/3 step=3890/31932 loss=1.110938 lr=2.643e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:55] epoch=1/3 step=3900/31932 loss=1.109859 lr=2.642e-04 k=11776 peak=23.75GiB
+[2026-09-02T06:54:02Z] Output 1: [1b markers]
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/smoke/dense/DONE 25 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/smoke/dense/summary.json 2559 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/smoke/moc/DONE 25 bytes
+[2026-09-02T06:54:02Z] Output 1: /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/smoke/moc/summary.json 2552 bytes
+[2026-09-02T06:54:02Z] Output 1: [1b dense]
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:21] epoch=2/3 step=10910/31932 loss=1.048983 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:25] epoch=2/3 step=10920/31932 loss=1.066287 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:30] epoch=2/3 step=10930/31932 loss=1.061275 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:34] epoch=2/3 step=10940/31932 loss=0.987528 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:39] epoch=2/3 step=10950/31932 loss=1.054086 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:43] epoch=2/3 step=10960/31932 loss=1.048666 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:50] epoch=2/3 step=10970/31932 loss=1.117817 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:54] epoch=2/3 step=10980/31932 loss=1.077369 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:51:59] epoch=2/3 step=10990/31932 loss=1.053605 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:03] epoch=2/3 step=11000/31932 loss=1.043072 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:08] epoch=2/3 step=11010/31932 loss=0.925544 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:12] epoch=2/3 step=11020/31932 loss=1.039513 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:17] epoch=2/3 step=11030/31932 loss=1.051666 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:21] epoch=2/3 step=11040/31932 loss=0.971838 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:27] epoch=2/3 step=11050/31932 loss=1.027764 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:31] epoch=2/3 step=11060/31932 loss=1.054546 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:36] epoch=2/3 step=11070/31932 loss=1.029284 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:41] epoch=2/3 step=11080/31932 loss=1.129039 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:45] epoch=2/3 step=11090/31932 loss=0.996922 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:49] epoch=2/3 step=11100/31932 loss=0.977230 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:54] epoch=2/3 step=11110/31932 loss=1.059288 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:52:58] epoch=2/3 step=11120/31932 loss=1.017215 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:04] epoch=2/3 step=11130/31932 loss=1.168758 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:09] epoch=2/3 step=11140/31932 loss=1.044585 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:14] epoch=2/3 step=11150/31932 loss=1.034974 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:18] epoch=2/3 step=11160/31932 loss=0.982946 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:23] epoch=2/3 step=11170/31932 loss=1.105587 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:27] epoch=2/3 step=11180/31932 loss=1.001700 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:32] epoch=2/3 step=11190/31932 loss=1.080574 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:36] epoch=2/3 step=11200/31932 loss=1.099332 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:42] epoch=2/3 step=11210/31932 loss=1.050621 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:47] epoch=2/3 step=11220/31932 loss=0.987101 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:51] epoch=2/3 step=11230/31932 loss=1.104662 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:53:56] epoch=2/3 step=11240/31932 loss=1.111430 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [2026-09-02 06:54:00] epoch=2/3 step=11250/31932 loss=1.005636 peak=10.90GiB
+[2026-09-02T06:54:02Z] Output 1: [1b moc]
+[2026-09-02T06:54:02Z] Output 1: [stderr]
+[2026-09-02T06:54:02Z] Output 1: ---/home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/logs/systemd.stderr.log
+[2026-09-02T06:54:02Z] Output 1: ---/home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/logs/systemd.stderr.log
+[2026-09-02T06:54:02Z] Output 1: [gpu]
+[2026-09-02T06:54:02Z] Output 1: 0, NVIDIA A100-PCIE-40GB, 28027 MiB, 40960 MiB, 100 %
+[2026-09-02T06:54:02Z] Output 1: 1, NVIDIA A100-PCIE-40GB, 28139 MiB, 40960 MiB, 100 %
+[2026-09-02T06:54:02Z] Output 1: 2, NVIDIA A100-PCIE-40GB, 28027 MiB, 40960 MiB, 100 %
+[2026-09-02T06:54:02Z] Output 1: 3, NVIDIA A100-PCIE-40GB, 12417 MiB, 40960 MiB, 99 %
+[2026-09-02T06:54:02Z] Output 1: [processes]
+[2026-09-02T06:54:02Z] Output 1: GPU-39a140e5-15d3-6883-cd2e-ae3d900446cc, 1624655, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28018 MiB
+[2026-09-02T06:54:02Z] Output 1: GPU-4890048f-3c3c-a99f-76b6-f740705a5800, 1624656, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28130 MiB
+[2026-09-02T06:54:02Z] Output 1: GPU-c80bb428-0dc1-1c85-75d6-b2821e17236f, 1624657, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28018 MiB
+[2026-09-02T06:54:02Z] Output 1: GPU-9b26b854-4d93-9226-8d7c-3550edbe4728, 1626686, /data/hyh/envs/moc-repro-py312/bin/python, 12408 MiB
+[2026-09-02T06:54:02Z] Output 1: [disk]
+[2026-09-02T06:54:02Z] Output 1: Filesystem      Size  Used Avail Use% Mounted on
+[2026-09-02T06:54:02Z] Output 1: /dev/sda2       879G  581G  253G  70% /
+[2026-09-02T06:54:02Z] Exit 1: 0
+[2026-09-02T06:54:02Z] Commands cleared.
