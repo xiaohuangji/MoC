@@ -1,0 +1,2 @@
+bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_gate_lora_20260902/inspect.sh
+bash /home/huyihan/MoC-remote-control/control/payloads/moc_native_1b_downstream_20260902/inspect.sh
