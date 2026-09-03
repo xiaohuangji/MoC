@@ -287721,3 +287721,93 @@
 [2026-09-03T03:45:23Z] Output 1: /dev/sda2       879G  582G  252G  70% /
 [2026-09-03T03:45:23Z] Exit 1: 0
 [2026-09-03T03:45:23Z] Commands cleared.
+[2026-09-03T03:46:09Z] No remote updates.
+[2026-09-03T03:46:09Z] No commands to run.
+[2026-09-03T03:46:39Z] Not due yet; next check at 2026-09-03T03:47:01Z.
+[2026-09-03T03:47:14Z] No remote updates.
+[2026-09-03T03:47:14Z] No commands to run.
+[2026-09-03T03:47:44Z] Not due yet; next check at 2026-09-03T03:49:09Z.
+[2026-09-03T03:48:14Z] Not due yet; next check at 2026-09-03T03:49:09Z.
+[2026-09-03T03:48:44Z] Not due yet; next check at 2026-09-03T03:49:09Z.
+[2026-09-03T03:49:20Z] No remote updates.
+[2026-09-03T03:49:20Z] No commands to run.
+[2026-09-03T03:49:50Z] Not due yet; next check at 2026-09-03T03:52:14Z.
+[2026-09-03T03:50:20Z] Not due yet; next check at 2026-09-03T03:52:14Z.
+[2026-09-03T03:50:50Z] Not due yet; next check at 2026-09-03T03:52:14Z.
+[2026-09-03T03:51:20Z] Not due yet; next check at 2026-09-03T03:52:14Z.
+[2026-09-03T03:51:50Z] Not due yet; next check at 2026-09-03T03:52:14Z.
+[2026-09-03T03:52:25Z] No remote updates.
+[2026-09-03T03:52:25Z] No commands to run.
+[2026-09-03T03:52:55Z] Not due yet; next check at 2026-09-03T03:56:20Z.
+[2026-09-03T03:53:25Z] Not due yet; next check at 2026-09-03T03:56:20Z.
+[2026-09-03T03:53:55Z] Not due yet; next check at 2026-09-03T03:56:20Z.
+[2026-09-03T03:54:26Z] Not due yet; next check at 2026-09-03T03:56:20Z.
+[2026-09-03T03:54:56Z] Not due yet; next check at 2026-09-03T03:56:20Z.
+[2026-09-03T03:55:26Z] Not due yet; next check at 2026-09-03T03:56:20Z.
+[2026-09-03T03:55:56Z] Not due yet; next check at 2026-09-03T03:56:20Z.
+[2026-09-03T03:56:31Z] No remote updates.
+[2026-09-03T03:56:31Z] No commands to run.
+[2026-09-03T03:57:01Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T03:57:31Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T03:58:01Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T03:58:31Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T03:59:01Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T03:59:31Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T04:00:01Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T04:00:31Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T04:01:01Z] Not due yet; next check at 2026-09-03T04:01:26Z.
+[2026-09-03T04:01:36Z] No remote updates.
+[2026-09-03T04:01:36Z] No commands to run.
+[2026-09-03T04:02:06Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:02:36Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:03:06Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:03:36Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:04:06Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:04:36Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:05:06Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:05:36Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:06:06Z] Not due yet; next check at 2026-09-03T04:06:31Z.
+[2026-09-03T04:06:42Z] No remote updates.
+[2026-09-03T04:06:42Z] No commands to run.
+[2026-09-03T04:07:12Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:07:42Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:08:12Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:08:42Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:09:12Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:09:42Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:10:12Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:10:42Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:11:12Z] Not due yet; next check at 2026-09-03T04:11:36Z.
+[2026-09-03T04:11:47Z] No remote updates.
+[2026-09-03T04:11:47Z] No commands to run.
+[2026-09-03T04:12:17Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:12:47Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:13:17Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:13:47Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:14:17Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:14:47Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:15:17Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:15:47Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:16:17Z] Not due yet; next check at 2026-09-03T04:16:42Z.
+[2026-09-03T04:16:53Z] Pulling updates from origin/remote-control-setup: d9e2fb7c240f2cd170f93a7be6164b01fa55e426 -> 737e7de20470d1f967f74a58562a515d49cd7c3e
+[2026-09-03T04:16:59Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-09-03T04:16:59Z] Command 1: git -C /home/huyihan/MoC-remote-control pull --ff-only origin main && bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_ranking_noise_20260903/preflight.sh
+[2026-09-03T04:17:30Z] Output 1: From github.com-moc-remote-control-pku:xiaohuangji/MoC-remote-control
+[2026-09-03T04:17:30Z] Output 1:  * branch            main       -> FETCH_HEAD
+[2026-09-03T04:17:30Z] Output 1: Already up to date.
+[2026-09-03T04:17:30Z] Output 1: [preflight] 2026-09-03T04:17:05+00:00
+[2026-09-03T04:17:30Z] Output 1: self-test passed
+[2026-09-03T04:17:30Z] Output 1: imports-pass
+[2026-09-03T04:17:30Z] Output 1: bf16-supported True
+[2026-09-03T04:17:30Z] Output 1: [gpu]
+[2026-09-03T04:17:30Z] Output 1: 0, GPU-39a140e5-15d3-6883-cd2e-ae3d900446cc, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 0 %
+[2026-09-03T04:17:30Z] Output 1: 1, GPU-4890048f-3c3c-a99f-76b6-f740705a5800, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 3 %
+[2026-09-03T04:17:30Z] Output 1: 2, GPU-c80bb428-0dc1-1c85-75d6-b2821e17236f, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 0 %
+[2026-09-03T04:17:30Z] Output 1: 3, GPU-9b26b854-4d93-9226-8d7c-3550edbe4728, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 0 %
+[2026-09-03T04:17:30Z] Output 1: [processes]
+[2026-09-03T04:17:30Z] Output 1: [disk]
+[2026-09-03T04:17:30Z] Output 1: Filesystem      Size  Used Avail Use% Mounted on
+[2026-09-03T04:17:30Z] Output 1: /dev/sda2       879G  583G  252G  70% /
+[2026-09-03T04:17:30Z] Output 1: [preflight-pass] archive=c0a481c61983beebd2281cf0c143d7e5bcfc706835fc222c6cfab11f26df2196
+[2026-09-03T04:17:30Z] Exit 1: 0
+[2026-09-03T04:17:30Z] Commands cleared.
