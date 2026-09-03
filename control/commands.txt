@@ -1,1 +1,0 @@
-git -C /home/huyihan/MoC-remote-control pull --ff-only origin main && bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_ranking_noise_20260903/launch.sh
