@@ -1,1 +1,0 @@
-bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_ranking_noise_20260903/inspect.sh

@@ -287837,3 +287837,410 @@
 [2026-09-03T04:21:59Z] Output 1: [service-started] unit=moc-llama31-8b-ranking-noise-20260903-r1.service run_root=/home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1
 [2026-09-03T04:21:59Z] Exit 1: 0
 [2026-09-03T04:21:59Z] Commands cleared.
+[2026-09-03T04:22:43Z] No remote updates.
+[2026-09-03T04:22:43Z] No commands to run.
+[2026-09-03T04:23:13Z] Not due yet; next check at 2026-09-03T04:23:38Z.
+[2026-09-03T04:23:48Z] No remote updates.
+[2026-09-03T04:23:48Z] No commands to run.
+[2026-09-03T04:24:18Z] Not due yet; next check at 2026-09-03T04:25:43Z.
+[2026-09-03T04:24:48Z] Not due yet; next check at 2026-09-03T04:25:43Z.
+[2026-09-03T04:25:18Z] Not due yet; next check at 2026-09-03T04:25:43Z.
+[2026-09-03T04:25:54Z] No remote updates.
+[2026-09-03T04:25:54Z] No commands to run.
+[2026-09-03T04:26:24Z] Not due yet; next check at 2026-09-03T04:28:48Z.
+[2026-09-03T04:26:54Z] Not due yet; next check at 2026-09-03T04:28:48Z.
+[2026-09-03T04:27:24Z] Not due yet; next check at 2026-09-03T04:28:48Z.
+[2026-09-03T04:27:54Z] Not due yet; next check at 2026-09-03T04:28:48Z.
+[2026-09-03T04:28:24Z] Not due yet; next check at 2026-09-03T04:28:48Z.
+[2026-09-03T04:29:00Z] Pulling updates from origin/remote-control-setup: c326f17f1ad0a4b04bae3f65159833f6356ddf3f -> 340813419822272b7b10874761f1b703b505456d
+[2026-09-03T04:29:06Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-09-03T04:29:06Z] Command 1: bash /home/huyihan/MoC-remote-control/control/payloads/moc_llama31_8b_ranking_noise_20260903/inspect.sh
+[2026-09-03T04:29:06Z] Output 1: [inspect moc_llama31_8b_ranking_noise_20260903_r1] 2026-09-03T04:29:06+00:00
+[2026-09-03T04:29:06Z] Output 1: MainPID=1709195
+[2026-09-03T04:29:06Z] Output 1: Result=success
+[2026-09-03T04:29:06Z] Output 1: ExecMainStatus=0
+[2026-09-03T04:29:06Z] Output 1: ActiveState=active
+[2026-09-03T04:29:06Z] Output 1: SubState=running
+[2026-09-03T04:29:06Z] Output 1: [markers]
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:22:47.2080189930 714 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/token_cache/metadata.json
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:50.3430907190 25 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/noise_020/DONE
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:50.3430907190 3164 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/noise_020/summary.json
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:51.3030766040 25 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/noise_005/DONE
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:51.3030766040 3167 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/noise_005/summary.json
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:51.4550743690 25 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/fixed_k/DONE
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:51.4550743690 3160 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/fixed_k/summary.json
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:51.5190734270 25 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/noise_040/DONE
+[2026-09-03T04:29:06Z] Output 1: 2026-09-03T04:23:51.5190734270 3163 /home/huyihan/runs/moc_llama31_8b_ranking_noise_20260903_r1/smoke/noise_040/summary.json
+[2026-09-03T04:29:06Z] Output 1: [noise-overlap-profile]
+[2026-09-03T04:29:06Z] Output 1: {
+[2026-09-03T04:29:06Z] Output 1:   "seed": 42,
+[2026-09-03T04:29:06Z] Output 1:   "layers": [
+[2026-09-03T04:29:06Z] Output 1:     0,
+[2026-09-03T04:29:06Z] Output 1:     15,
+[2026-09-03T04:29:06Z] Output 1:     31
+[2026-09-03T04:29:06Z] Output 1:   ],
+[2026-09-03T04:29:06Z] Output 1:   "noise_scales": [
+[2026-09-03T04:29:06Z] Output 1:     0.05,
+[2026-09-03T04:29:06Z] Output 1:     0.2,
+[2026-09-03T04:29:06Z] Output 1:     0.4
+[2026-09-03T04:29:06Z] Output 1:   ],
+[2026-09-03T04:29:06Z] Output 1:   "normalization": "per_token_gate_standard_deviation",
+[2026-09-03T04:29:06Z] Output 1:   "rows": [
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 0,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.05,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.9644457101821899,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 0,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.2,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.8617580533027649,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 0,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.4,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.7396823763847351,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 15,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.05,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.9650029540061951,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 15,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.2,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.86366868019104,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 15,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.4,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.7443264126777649,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 31,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.05,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.948481023311615,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 31,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.2,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.806056797504425,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 31,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.4,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.6555759310722351,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     }
+[2026-09-03T04:29:06Z] Output 1:   ]
+[2026-09-03T04:29:06Z] Output 1: }
+[2026-09-03T04:29:06Z] Output 1: [latest-training-metrics]
+[2026-09-03T04:29:06Z] Output 1: --- fixed_k ---
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 140, "planned_total_steps": 31932, "loss": 1.4463231325149537, "grad_norm": 0.6541128158569336, "lr": 0.0002996230208595124, "schedule": {"phase": "fixed", "ramp": 0.0002963924176049293, "ranking_noise_scale": 0.0, "initial_ranking_noise_scale": 0.0, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.750729084014893, "elapsed_seconds": 229.73374772071838}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 150, "planned_total_steps": 31932, "loss": 1.3108188569545747, "grad_norm": 0.864949107170105, "lr": 0.00029952877607439054, "schedule": {"phase": "fixed", "ramp": 0.0003402414234804918, "ranking_noise_scale": 0.0, "initial_ranking_noise_scale": 0.0, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.750729084014893, "elapsed_seconds": 245.49663066864014}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 160, "planned_total_steps": 31932, "loss": 1.4202558994293213, "grad_norm": 0.5571395754814148, "lr": 0.00029943453128926866, "schedule": {"phase": "fixed", "ramp": 0.0003871130808442147, "ranking_noise_scale": 0.0, "initial_ranking_noise_scale": 0.0, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.750729084014893, "elapsed_seconds": 262.22454595565796}
+[2026-09-03T04:29:06Z] Output 1: {"event": "validation", "step": 160, "val_loss": 1.2730831623077392, "eligible_for_best": true, "new_best": true, "schedule": {"phase": "fixed", "ramp": 0.0003871130808442147, "ranking_noise_scale": 0.0, "initial_ranking_noise_scale": 0.0, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "elapsed_seconds": 266.03642177581787}
+[2026-09-03T04:29:06Z] Output 1: --- noise_005 ---
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 120, "planned_total_steps": 31932, "loss": 1.3623523592948914, "grad_norm": 0.7238311767578125, "lr": 0.0002998115104297562, "schedule": {"phase": "noise_transition", "ramp": 0.00021776340307555486, "ranking_noise_scale": 0.04998911182984622, "initial_ranking_noise_scale": 0.05, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 206.66475677490234}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 130, "planned_total_steps": 31932, "loss": 1.4041518926620484, "grad_norm": 0.6338151097297668, "lr": 0.0002997172656446343, "schedule": {"phase": "noise_transition", "ramp": 0.00025556632847856253, "ranking_noise_scale": 0.049987221683576076, "initial_ranking_noise_scale": 0.05, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 224.25097155570984}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 140, "planned_total_steps": 31932, "loss": 1.4542270660400392, "grad_norm": 0.6814778447151184, "lr": 0.0002996230208595124, "schedule": {"phase": "noise_transition", "ramp": 0.0002963924176049293, "ranking_noise_scale": 0.049985180379119754, "initial_ranking_noise_scale": 0.05, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 241.86705589294434}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 150, "planned_total_steps": 31932, "loss": 1.320069044828415, "grad_norm": 0.6040520668029785, "lr": 0.00029952877607439054, "schedule": {"phase": "noise_transition", "ramp": 0.0003402414234804918, "ranking_noise_scale": 0.049982987928825974, "initial_ranking_noise_scale": 0.05, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 258.4711458683014}
+[2026-09-03T04:29:06Z] Output 1: --- noise_020 ---
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 120, "planned_total_steps": 31932, "loss": 1.3366231143474578, "grad_norm": 0.7033262848854065, "lr": 0.0002998115104297562, "schedule": {"phase": "noise_transition", "ramp": 0.00021776340307555486, "ranking_noise_scale": 0.1999564473193849, "initial_ranking_noise_scale": 0.2, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 205.67202472686768}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 130, "planned_total_steps": 31932, "loss": 1.400642991065979, "grad_norm": 0.7431875467300415, "lr": 0.0002997172656446343, "schedule": {"phase": "noise_transition", "ramp": 0.00025556632847856253, "ranking_noise_scale": 0.1999488867343043, "initial_ranking_noise_scale": 0.2, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 223.16743659973145}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 140, "planned_total_steps": 31932, "loss": 1.4452985405921936, "grad_norm": 0.6231249570846558, "lr": 0.0002996230208595124, "schedule": {"phase": "noise_transition", "ramp": 0.0002963924176049293, "ranking_noise_scale": 0.19994072151647901, "initial_ranking_noise_scale": 0.2, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 240.6959445476532}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 150, "planned_total_steps": 31932, "loss": 1.315095454454422, "grad_norm": 0.6208562850952148, "lr": 0.00029952877607439054, "schedule": {"phase": "noise_transition", "ramp": 0.0003402414234804918, "ranking_noise_scale": 0.1999319517153039, "initial_ranking_noise_scale": 0.2, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 257.21854758262634}
+[2026-09-03T04:29:06Z] Output 1: --- noise_040 ---
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 120, "planned_total_steps": 31932, "loss": 1.3559698641300202, "grad_norm": 0.6962208151817322, "lr": 0.0002998115104297562, "schedule": {"phase": "noise_transition", "ramp": 0.00021776340307555486, "ranking_noise_scale": 0.3999128946387698, "initial_ranking_noise_scale": 0.4, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 206.6072735786438}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 130, "planned_total_steps": 31932, "loss": 1.4132341027259827, "grad_norm": 0.6229397654533386, "lr": 0.0002997172656446343, "schedule": {"phase": "noise_transition", "ramp": 0.00025556632847856253, "ranking_noise_scale": 0.3998977734686086, "initial_ranking_noise_scale": 0.4, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 224.21629905700684}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 140, "planned_total_steps": 31932, "loss": 1.4588085055351256, "grad_norm": 0.6357920169830322, "lr": 0.0002996230208595124, "schedule": {"phase": "noise_transition", "ramp": 0.0002963924176049293, "ranking_noise_scale": 0.39988144303295803, "initial_ranking_noise_scale": 0.4, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 241.85458183288574}
+[2026-09-03T04:29:06Z] Output 1: {"event": "train", "epoch": 1, "step": 150, "planned_total_steps": 31932, "loss": 1.3266880691051484, "grad_norm": 0.6394476890563965, "lr": 0.00029952877607439054, "schedule": {"phase": "noise_transition", "ramp": 0.0003402414234804918, "ranking_noise_scale": 0.3998639034306078, "initial_ranking_noise_scale": 0.4, "k_min": 2048, "k_max": 2048, "k_sum": 65536, "transition_steps": 12773, "transition_fraction": 0.4}, "peak_allocated_gib": 23.749752521514893, "elapsed_seconds": 258.48452520370483}
+[2026-09-03T04:29:06Z] Output 1: [coordinator-tail]
+[2026-09-03T04:29:06Z] Output 1:     0.4
+[2026-09-03T04:29:06Z] Output 1:   ],
+[2026-09-03T04:29:06Z] Output 1:   "normalization": "per_token_gate_standard_deviation",
+[2026-09-03T04:29:06Z] Output 1:   "rows": [
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 0,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.05,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.9644457101821899,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 0,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.2,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.8617580533027649,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 0,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.4,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.7396823763847351,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 15,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.05,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.9650029540061951,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 15,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.2,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.86366868019104,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 15,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.4,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.7443264126777649,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 31,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.05,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.948481023311615,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 31,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.2,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.806056797504425,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     },
+[2026-09-03T04:29:06Z] Output 1:     {
+[2026-09-03T04:29:06Z] Output 1:       "layer": 31,
+[2026-09-03T04:29:06Z] Output 1:       "noise_scale": 0.4,
+[2026-09-03T04:29:06Z] Output 1:       "clean_topk_retention": 0.6555759310722351,
+[2026-09-03T04:29:06Z] Output 1:       "tokens": 92,
+[2026-09-03T04:29:06Z] Output 1:       "intermediate_size": 14336,
+[2026-09-03T04:29:06Z] Output 1:       "target_k": 2048
+[2026-09-03T04:29:06Z] Output 1:     }
+[2026-09-03T04:29:06Z] Output 1:   ]
+[2026-09-03T04:29:06Z] Output 1: }
+[2026-09-03T04:29:06Z] Output 1: smoke-pass
+[2026-09-03T04:29:06Z] Output 1: [smoke-pass] 2026-09-03T04:23:56+00:00
+[2026-09-03T04:29:06Z] Output 1: [smoke-log-tails]
+[2026-09-03T04:29:06Z] Output 1: --- fixed_k ---
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:29] loading model=/data/hyh/models/Meta-Llama-3.1-8B-base method=fixed_k
+[2026-09-03T04:29:06Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-03T04:29:06Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 10750.08it/s]
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:39] ready train=32 val=120 steps=2/2 trainable=75,497,472
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:41] epoch=1/1 step=1/2 loss=12.321510 lr=3.000e-04 k=2048 noise=0.000000 peak=23.17GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:43] epoch=1/1 step=2/2 loss=12.396287 lr=0.000e+00 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:47] selected step=2 val_loss=9.960834 selection=minimum_validation_loss_eligible_checkpoint final_k=2048 final_noise=0.000000
+[2026-09-03T04:29:06Z] Output 1: [transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Passing `generation_config` together with generation-related arguments=({'max_new_tokens', 'return_dict_in_generate', 'output_scores'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:47] eval done task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=social_i_qa accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] eval done task=ARC-Challenge accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] eval done task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:51] eval done task=openbookqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:51] done average_accuracy=0.375000
+[2026-09-03T04:29:06Z] Output 1: --- noise_005 ---
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:29] loading model=/data/hyh/models/Meta-Llama-3.1-8B-base method=noise_anneal
+[2026-09-03T04:29:06Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-03T04:29:06Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 22929.17it/s]
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:39] ready train=32 val=120 steps=2/2 trainable=75,497,472
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:41] epoch=1/1 step=1/2 loss=12.375935 lr=3.000e-04 k=2048 noise=0.000000 peak=23.17GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:43] epoch=1/1 step=2/2 loss=12.396287 lr=0.000e+00 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:47] selected step=2 val_loss=9.953921 selection=minimum_validation_loss_eligible_checkpoint final_k=2048 final_noise=0.000000
+[2026-09-03T04:29:06Z] Output 1: [transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Passing `generation_config` together with generation-related arguments=({'max_new_tokens', 'output_scores', 'return_dict_in_generate'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:47] eval done task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=social_i_qa accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] eval done task=ARC-Challenge accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] eval done task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:51] eval done task=openbookqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:51] done average_accuracy=0.375000
+[2026-09-03T04:29:06Z] Output 1: --- noise_020 ---
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:29] loading model=/data/hyh/models/Meta-Llama-3.1-8B-base method=noise_anneal
+[2026-09-03T04:29:06Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-03T04:29:06Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 13135.13it/s]
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:38] ready train=32 val=120 steps=2/2 trainable=75,497,472
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:40] epoch=1/1 step=1/2 loss=12.445039 lr=3.000e-04 k=2048 noise=0.000000 peak=23.17GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:42] epoch=1/1 step=2/2 loss=12.396287 lr=0.000e+00 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:46] selected step=2 val_loss=9.977562 selection=minimum_validation_loss_eligible_checkpoint final_k=2048 final_noise=0.000000
+[2026-09-03T04:29:06Z] Output 1: [transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Passing `generation_config` together with generation-related arguments=({'max_new_tokens', 'output_scores', 'return_dict_in_generate'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:46] eval done task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:47] eval done task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:47] eval done task=social_i_qa accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=ARC-Challenge accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] eval done task=openbookqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] done average_accuracy=0.375000
+[2026-09-03T04:29:06Z] Output 1: --- noise_040 ---
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:29] loading model=/data/hyh/models/Meta-Llama-3.1-8B-base method=noise_anneal
+[2026-09-03T04:29:06Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-03T04:29:06Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 10219.56it/s]
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:39] ready train=32 val=120 steps=2/2 trainable=75,497,472
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:41] epoch=1/1 step=1/2 loss=12.480822 lr=3.000e-04 k=2048 noise=0.000000 peak=23.17GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:43] epoch=1/1 step=2/2 loss=12.396287 lr=0.000e+00 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:47] selected step=2 val_loss=10.045731 selection=minimum_validation_loss_eligible_checkpoint final_k=2048 final_noise=0.000000
+[2026-09-03T04:29:06Z] Output 1: [transformers] The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Passing `generation_config` together with generation-related arguments=({'return_dict_in_generate', 'max_new_tokens', 'output_scores'}) is deprecated and will be removed in future versions. Please pass either a `generation_config` object OR all generation parameters explicitly, but not both.
+[2026-09-03T04:29:06Z] Output 1: [transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=boolq accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:48] eval done task=piqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=social_i_qa accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:49] eval done task=hellaswag accuracy=0.000000 correct=0/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] eval done task=winogrande accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:50] eval done task=ARC-Challenge accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:51] eval done task=ARC-Easy accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:51] eval done task=openbookqa accuracy=0.500000 correct=1/2 invalid=0
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:23:51] done average_accuracy=0.375000
+[2026-09-03T04:29:06Z] Output 1: [formal-log-tails]
+[2026-09-03T04:29:06Z] Output 1: --- fixed_k ---
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:24:32] ready train=170300 val=120 steps=31932/31932 trainable=75,497,472
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:24:34] epoch=1/3 step=1/31932 loss=12.297662 lr=3.000e-06 k=2048 noise=0.000000 peak=23.17GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:24:49] epoch=1/3 step=10/31932 loss=11.418974 lr=3.000e-05 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:05] epoch=1/3 step=20/31932 loss=8.902284 lr=6.000e-05 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:21] epoch=1/3 step=30/31932 loss=6.989492 lr=9.000e-05 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:36] epoch=1/3 step=40/31932 loss=5.675590 lr=1.200e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:51] epoch=1/3 step=50/31932 loss=4.940492 lr=1.500e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:08] epoch=1/3 step=60/31932 loss=4.318234 lr=1.800e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:23] epoch=1/3 step=70/31932 loss=3.240125 lr=2.100e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:40] epoch=1/3 step=80/31932 loss=2.280688 lr=2.400e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:44] validation step=80 loss=1.792583 eligible=True best=True
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:00] epoch=1/3 step=90/31932 loss=1.761443 lr=2.700e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:16] epoch=1/3 step=100/31932 loss=1.733298 lr=3.000e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:32] epoch=1/3 step=110/31932 loss=1.445597 lr=2.999e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:48] epoch=1/3 step=120/31932 loss=1.337886 lr=2.998e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:28:05] epoch=1/3 step=130/31932 loss=1.400066 lr=2.997e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:28:22] epoch=1/3 step=140/31932 loss=1.446323 lr=2.996e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:28:37] epoch=1/3 step=150/31932 loss=1.310819 lr=2.995e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:28:54] epoch=1/3 step=160/31932 loss=1.420256 lr=2.994e-04 k=2048 noise=0.000000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:28:58] validation step=160 loss=1.273083 eligible=True best=True
+[2026-09-03T04:29:06Z] Output 1: --- noise_005 ---
+[2026-09-03T04:29:06Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-03T04:29:06Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 14790.15it/s]
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:24:32] ready train=170300 val=120 steps=31932/31932 trainable=75,497,472
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:24:34] epoch=1/3 step=1/31932 loss=12.382193 lr=3.000e-06 k=2048 noise=0.050000 peak=23.17GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:24:50] epoch=1/3 step=10/31932 loss=11.480633 lr=3.000e-05 k=2048 noise=0.050000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:06] epoch=1/3 step=20/31932 loss=8.937520 lr=6.000e-05 k=2048 noise=0.050000 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:24] epoch=1/3 step=30/31932 loss=7.003159 lr=9.000e-05 k=2048 noise=0.049999 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:40] epoch=1/3 step=40/31932 loss=5.740371 lr=1.200e-04 k=2048 noise=0.049999 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:25:56] epoch=1/3 step=50/31932 loss=4.951407 lr=1.500e-04 k=2048 noise=0.049998 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:13] epoch=1/3 step=60/31932 loss=4.410958 lr=1.800e-04 k=2048 noise=0.049997 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:29] epoch=1/3 step=70/31932 loss=3.427889 lr=2.100e-04 k=2048 noise=0.049996 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:47] epoch=1/3 step=80/31932 loss=2.540728 lr=2.400e-04 k=2048 noise=0.049995 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:26:51] validation step=80 loss=1.978316 eligible=True best=True
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:07] epoch=1/3 step=90/31932 loss=1.862631 lr=2.700e-04 k=2048 noise=0.049994 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:25] epoch=1/3 step=100/31932 loss=1.776909 lr=3.000e-04 k=2048 noise=0.049992 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:42] epoch=1/3 step=110/31932 loss=1.464969 lr=2.999e-04 k=2048 noise=0.049991 peak=23.75GiB
+[2026-09-03T04:29:06Z] Output 1: [2026-09-03 04:27:59] epoch=1/3 step=120/31932 loss=1.362352 lr=2.998e-04 k=2048 noise=0.049989 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:16] epoch=1/3 step=130/31932 loss=1.404152 lr=2.997e-04 k=2048 noise=0.049987 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:34] epoch=1/3 step=140/31932 loss=1.454227 lr=2.996e-04 k=2048 noise=0.049985 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:50] epoch=1/3 step=150/31932 loss=1.320069 lr=2.995e-04 k=2048 noise=0.049983 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: --- noise_020 ---
+[2026-09-03T04:29:07Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-03T04:29:07Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 23155.80it/s]
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:24:32] ready train=170300 val=120 steps=31932/31932 trainable=75,497,472
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:24:34] epoch=1/3 step=1/31932 loss=12.386199 lr=3.000e-06 k=2048 noise=0.200000 peak=23.17GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:24:49] epoch=1/3 step=10/31932 loss=11.536472 lr=3.000e-05 k=2048 noise=0.200000 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:06] epoch=1/3 step=20/31932 loss=8.917395 lr=6.000e-05 k=2048 noise=0.199999 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:23] epoch=1/3 step=30/31932 loss=6.992648 lr=9.000e-05 k=2048 noise=0.199997 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:39] epoch=1/3 step=40/31932 loss=5.821846 lr=1.200e-04 k=2048 noise=0.199995 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:55] epoch=1/3 step=50/31932 loss=4.987905 lr=1.500e-04 k=2048 noise=0.199992 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:12] epoch=1/3 step=60/31932 loss=4.440896 lr=1.800e-04 k=2048 noise=0.199989 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:29] epoch=1/3 step=70/31932 loss=3.308550 lr=2.100e-04 k=2048 noise=0.199985 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:46] epoch=1/3 step=80/31932 loss=2.309656 lr=2.400e-04 k=2048 noise=0.199981 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:50] validation step=80 loss=1.799314 eligible=True best=True
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:07] epoch=1/3 step=90/31932 loss=1.775049 lr=2.700e-04 k=2048 noise=0.199976 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:24] epoch=1/3 step=100/31932 loss=1.753749 lr=3.000e-04 k=2048 noise=0.199970 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:41] epoch=1/3 step=110/31932 loss=1.438913 lr=2.999e-04 k=2048 noise=0.199963 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:57] epoch=1/3 step=120/31932 loss=1.336623 lr=2.998e-04 k=2048 noise=0.199956 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:15] epoch=1/3 step=130/31932 loss=1.400643 lr=2.997e-04 k=2048 noise=0.199949 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:32] epoch=1/3 step=140/31932 loss=1.445299 lr=2.996e-04 k=2048 noise=0.199941 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:49] epoch=1/3 step=150/31932 loss=1.315095 lr=2.995e-04 k=2048 noise=0.199932 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: --- noise_040 ---
+[2026-09-03T04:29:07Z] Output 1: [transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-03T04:29:07Z] Output 1: Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights: 100%|██████████| 291/291 [00:00<00:00, 11141.42it/s]
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:24:32] ready train=170300 val=120 steps=31932/31932 trainable=75,497,472
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:24:34] epoch=1/3 step=1/31932 loss=12.361570 lr=3.000e-06 k=2048 noise=0.400000 peak=23.17GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:24:49] epoch=1/3 step=10/31932 loss=11.523302 lr=3.000e-05 k=2048 noise=0.399999 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:06] epoch=1/3 step=20/31932 loss=9.110878 lr=6.000e-05 k=2048 noise=0.399998 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:23] epoch=1/3 step=30/31932 loss=7.105984 lr=9.000e-05 k=2048 noise=0.399995 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:40] epoch=1/3 step=40/31932 loss=5.963901 lr=1.200e-04 k=2048 noise=0.399990 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:25:55] epoch=1/3 step=50/31932 loss=5.335688 lr=1.500e-04 k=2048 noise=0.399985 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:12] epoch=1/3 step=60/31932 loss=4.781840 lr=1.800e-04 k=2048 noise=0.399978 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:29] epoch=1/3 step=70/31932 loss=3.548581 lr=2.100e-04 k=2048 noise=0.399970 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:47] epoch=1/3 step=80/31932 loss=2.489966 lr=2.400e-04 k=2048 noise=0.399961 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:26:51] validation step=80 loss=1.896511 eligible=True best=True
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:07] epoch=1/3 step=90/31932 loss=1.838270 lr=2.700e-04 k=2048 noise=0.399951 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:24] epoch=1/3 step=100/31932 loss=1.768299 lr=3.000e-04 k=2048 noise=0.399940 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:42] epoch=1/3 step=110/31932 loss=1.467144 lr=2.999e-04 k=2048 noise=0.399927 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:27:58] epoch=1/3 step=120/31932 loss=1.355970 lr=2.998e-04 k=2048 noise=0.399913 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:16] epoch=1/3 step=130/31932 loss=1.413234 lr=2.997e-04 k=2048 noise=0.399898 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:34] epoch=1/3 step=140/31932 loss=1.458809 lr=2.996e-04 k=2048 noise=0.399881 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [2026-09-03 04:28:50] epoch=1/3 step=150/31932 loss=1.326688 lr=2.995e-04 k=2048 noise=0.399864 peak=23.75GiB
+[2026-09-03T04:29:07Z] Output 1: [systemd-stderr]
+[2026-09-03T04:29:07Z] Output 1: [gpu]
+[2026-09-03T04:29:07Z] Output 1: 0, NVIDIA A100-PCIE-40GB, 28023 MiB, 40960 MiB, 100 %
+[2026-09-03T04:29:07Z] Output 1: 1, NVIDIA A100-PCIE-40GB, 28135 MiB, 40960 MiB, 100 %
+[2026-09-03T04:29:07Z] Output 1: 2, NVIDIA A100-PCIE-40GB, 28135 MiB, 40960 MiB, 100 %
+[2026-09-03T04:29:07Z] Output 1: 3, NVIDIA A100-PCIE-40GB, 28135 MiB, 40960 MiB, 100 %
+[2026-09-03T04:29:07Z] Output 1: [processes]
+[2026-09-03T04:29:07Z] Output 1: GPU-39a140e5-15d3-6883-cd2e-ae3d900446cc, 1710142, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28014 MiB
+[2026-09-03T04:29:07Z] Output 1: GPU-4890048f-3c3c-a99f-76b6-f740705a5800, 1710143, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28126 MiB
+[2026-09-03T04:29:07Z] Output 1: GPU-c80bb428-0dc1-1c85-75d6-b2821e17236f, 1710144, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28126 MiB
+[2026-09-03T04:29:07Z] Output 1: GPU-9b26b854-4d93-9226-8d7c-3550edbe4728, 1710145, /home/huyihan/runs/moc_llama31_8b_winogrande_lora_env_20260804/venv/bin/python, 28126 MiB
+[2026-09-03T04:29:07Z] Output 1: [disk]
+[2026-09-03T04:29:07Z] Output 1: Filesystem      Size  Used Avail Use% Mounted on
+[2026-09-03T04:29:07Z] Output 1: /dev/sda2       879G  583G  252G  70% /
+[2026-09-03T04:29:07Z] Exit 1: 0
+[2026-09-03T04:29:07Z] Commands cleared.
