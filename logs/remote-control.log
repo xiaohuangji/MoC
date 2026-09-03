@@ -287386,3 +287386,338 @@
 [2026-09-03T02:22:37Z] Output 1: /dev/sda2       879G  582G  252G  70% /
 [2026-09-03T02:22:37Z] Exit 1: 0
 [2026-09-03T02:22:37Z] Commands cleared.
+[2026-09-03T02:23:22Z] No remote updates.
+[2026-09-03T02:23:22Z] No commands to run.
+[2026-09-03T02:23:52Z] Not due yet; next check at 2026-09-03T02:24:16Z.
+[2026-09-03T02:24:29Z] No remote updates.
+[2026-09-03T02:24:29Z] No commands to run.
+[2026-09-03T02:24:59Z] Not due yet; next check at 2026-09-03T02:26:22Z.
+[2026-09-03T02:25:29Z] Not due yet; next check at 2026-09-03T02:26:22Z.
+[2026-09-03T02:25:59Z] Not due yet; next check at 2026-09-03T02:26:22Z.
+[2026-09-03T02:26:34Z] No remote updates.
+[2026-09-03T02:26:34Z] No commands to run.
+[2026-09-03T02:27:04Z] Not due yet; next check at 2026-09-03T02:29:29Z.
+[2026-09-03T02:27:34Z] Not due yet; next check at 2026-09-03T02:29:29Z.
+[2026-09-03T02:28:04Z] Not due yet; next check at 2026-09-03T02:29:29Z.
+[2026-09-03T02:28:34Z] Not due yet; next check at 2026-09-03T02:29:29Z.
+[2026-09-03T02:29:04Z] Not due yet; next check at 2026-09-03T02:29:29Z.
+[2026-09-03T02:29:39Z] No remote updates.
+[2026-09-03T02:29:39Z] No commands to run.
+[2026-09-03T02:30:09Z] Not due yet; next check at 2026-09-03T02:33:34Z.
+[2026-09-03T02:30:39Z] Not due yet; next check at 2026-09-03T02:33:34Z.
+[2026-09-03T02:31:09Z] Not due yet; next check at 2026-09-03T02:33:34Z.
+[2026-09-03T02:31:39Z] Not due yet; next check at 2026-09-03T02:33:34Z.
+[2026-09-03T02:32:09Z] Not due yet; next check at 2026-09-03T02:33:34Z.
+[2026-09-03T02:32:39Z] Not due yet; next check at 2026-09-03T02:33:34Z.
+[2026-09-03T02:33:09Z] Not due yet; next check at 2026-09-03T02:33:34Z.
+[2026-09-03T02:33:44Z] No remote updates.
+[2026-09-03T02:33:44Z] No commands to run.
+[2026-09-03T02:34:15Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:34:45Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:35:15Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:35:45Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:36:15Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:36:45Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:37:15Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:37:45Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:38:15Z] Not due yet; next check at 2026-09-03T02:38:39Z.
+[2026-09-03T02:38:50Z] No remote updates.
+[2026-09-03T02:38:50Z] No commands to run.
+[2026-09-03T02:39:20Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:39:50Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:40:20Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:40:50Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:41:20Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:41:50Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:42:20Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:42:50Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:43:20Z] Not due yet; next check at 2026-09-03T02:43:45Z.
+[2026-09-03T02:43:55Z] No remote updates.
+[2026-09-03T02:43:55Z] No commands to run.
+[2026-09-03T02:44:26Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:44:56Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:45:26Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:45:56Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:46:26Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:46:56Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:47:26Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:47:56Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:48:26Z] Not due yet; next check at 2026-09-03T02:48:50Z.
+[2026-09-03T02:49:03Z] No remote updates.
+[2026-09-03T02:49:03Z] No commands to run.
+[2026-09-03T02:49:33Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:50:03Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:50:34Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:51:04Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:51:34Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:52:04Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:52:34Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:53:04Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:53:34Z] Not due yet; next check at 2026-09-03T02:53:56Z.
+[2026-09-03T02:54:09Z] No remote updates.
+[2026-09-03T02:54:09Z] No commands to run.
+[2026-09-03T02:54:39Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:55:09Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:55:39Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:56:09Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:56:39Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:57:09Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:57:39Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:58:09Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:58:39Z] Not due yet; next check at 2026-09-03T02:59:04Z.
+[2026-09-03T02:59:14Z] No remote updates.
+[2026-09-03T02:59:14Z] No commands to run.
+[2026-09-03T02:59:44Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:00:14Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:00:44Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:01:14Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:01:44Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:02:14Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:02:44Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:03:14Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:03:44Z] Not due yet; next check at 2026-09-03T03:04:09Z.
+[2026-09-03T03:04:20Z] No remote updates.
+[2026-09-03T03:04:20Z] No commands to run.
+[2026-09-03T03:04:50Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:05:20Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:05:50Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:06:20Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:06:50Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:07:20Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:07:50Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:08:20Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:08:50Z] Not due yet; next check at 2026-09-03T03:09:14Z.
+[2026-09-03T03:09:26Z] No remote updates.
+[2026-09-03T03:09:26Z] No commands to run.
+[2026-09-03T03:09:56Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:10:26Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:10:56Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:11:26Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:11:56Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:12:26Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:12:56Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:13:26Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:13:56Z] Not due yet; next check at 2026-09-03T03:14:20Z.
+[2026-09-03T03:14:31Z] No remote updates.
+[2026-09-03T03:14:31Z] No commands to run.
+[2026-09-03T03:15:01Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:15:31Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:16:01Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:16:31Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:17:01Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:17:31Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:18:01Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:18:31Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:19:01Z] Not due yet; next check at 2026-09-03T03:19:26Z.
+[2026-09-03T03:19:36Z] No remote updates.
+[2026-09-03T03:19:36Z] No commands to run.
+[2026-09-03T03:20:06Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:20:36Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:21:07Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:21:37Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:22:07Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:22:37Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:23:07Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:23:37Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:24:07Z] Not due yet; next check at 2026-09-03T03:24:31Z.
+[2026-09-03T03:24:42Z] No remote updates.
+[2026-09-03T03:24:42Z] No commands to run.
+[2026-09-03T03:25:12Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:25:42Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:26:12Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:26:42Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:27:12Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:27:42Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:28:12Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:28:42Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:29:12Z] Not due yet; next check at 2026-09-03T03:29:37Z.
+[2026-09-03T03:29:49Z] No remote updates.
+[2026-09-03T03:29:49Z] No commands to run.
+[2026-09-03T03:30:19Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:30:49Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:31:19Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:31:49Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:32:19Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:32:49Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:33:19Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:33:49Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:34:19Z] Not due yet; next check at 2026-09-03T03:34:42Z.
+[2026-09-03T03:34:54Z] No remote updates.
+[2026-09-03T03:34:54Z] No commands to run.
+[2026-09-03T03:35:24Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:35:54Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:36:24Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:36:54Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:37:24Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:37:54Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:38:24Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:38:54Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:39:24Z] Not due yet; next check at 2026-09-03T03:39:49Z.
+[2026-09-03T03:40:00Z] No remote updates.
+[2026-09-03T03:40:00Z] No commands to run.
+[2026-09-03T03:40:30Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:41:00Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:41:30Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:42:00Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:42:30Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:43:00Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:43:30Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:44:00Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:44:30Z] Not due yet; next check at 2026-09-03T03:44:54Z.
+[2026-09-03T03:45:06Z] Pulling updates from origin/remote-control-setup: 831c1061f2907c525f8fea764415851710db00bf -> 60ae3ad29e62c9a4166d53c47bd16b04462a48e8
+[2026-09-03T03:45:13Z] Executing commands from /home/huyihan/MoC/control/commands.txt
+[2026-09-03T03:45:13Z] Command 1: echo '[time]'; date -Is; echo '[known-services]'; systemctl --user show moc-llama31-8b-gate-lora-bf16-20260902-r1.service moc-native-1b-downstream-lora-20260902-r1.service -p Id -p ActiveState -p SubState -p Result -p ExecMainStatus -p MainPID; echo '[running-moc-services]'; systemctl --user list-units --type=service --state=running --no-legend --no-pager | grep -i moc || true; echo '[8b-markers]'; for f in /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/DONE /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/suite_summary.json; do stat -c '%y %s %n' "$f" 2>/dev/null || echo "MISSING $f"; done; cat /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/suite_summary.json 2>/dev/null || true; echo '[1b-markers]'; for f in /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/DONE /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/suite_summary.json; do stat -c '%y %s %n' "$f" 2>/dev/null || echo "MISSING $f"; done; cat /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/suite_summary.json 2>/dev/null || true; echo '[errors]'; journalctl --user -u moc-llama31-8b-gate-lora-bf16-20260902-r1.service -n 10 --no-pager; journalctl --user -u moc-native-1b-downstream-lora-20260902-r1.service -n 10 --no-pager; echo '[gpu]'; nvidia-smi --query-gpu=index,name,memory.used,memory.total,utilization.gpu --format=csv,noheader; echo '[gpu-processes]'; nvidia-smi --query-compute-apps=gpu_uuid,pid,process_name,used_memory --format=csv,noheader 2>/dev/null || true; echo '[disk]'; df -h /
+[2026-09-03T03:45:23Z] Output 1: [time]
+[2026-09-03T03:45:23Z] Output 1: 2026-09-03T03:45:13+00:00
+[2026-09-03T03:45:23Z] Output 1: [known-services]
+[2026-09-03T03:45:23Z] Output 1: MainPID=0
+[2026-09-03T03:45:23Z] Output 1: Result=success
+[2026-09-03T03:45:23Z] Output 1: ExecMainStatus=0
+[2026-09-03T03:45:23Z] Output 1: Id=moc-llama31-8b-gate-lora-bf16-20260902-r1.service
+[2026-09-03T03:45:23Z] Output 1: ActiveState=inactive
+[2026-09-03T03:45:23Z] Output 1: SubState=dead
+[2026-09-03T03:45:23Z] Output 1: 
+[2026-09-03T03:45:23Z] Output 1: MainPID=0
+[2026-09-03T03:45:23Z] Output 1: Result=success
+[2026-09-03T03:45:23Z] Output 1: ExecMainStatus=0
+[2026-09-03T03:45:23Z] Output 1: Id=moc-native-1b-downstream-lora-20260902-r1.service
+[2026-09-03T03:45:23Z] Output 1: ActiveState=inactive
+[2026-09-03T03:45:23Z] Output 1: SubState=dead
+[2026-09-03T03:45:23Z] Output 1: [running-moc-services]
+[2026-09-03T03:45:23Z] Output 1: [8b-markers]
+[2026-09-03T03:45:23Z] Output 1: 2026-09-02 21:57:05.176490613 +0000 9 /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/DONE
+[2026-09-03T03:45:23Z] Output 1: 2026-09-02 21:57:05.176490613 +0000 2087 /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/suite_summary.json
+[2026-09-03T03:45:23Z] Output 1: {
+[2026-09-03T03:45:23Z] Output 1:   "schema_version": 1,
+[2026-09-03T03:45:23Z] Output 1:   "complete": true,
+[2026-09-03T03:45:23Z] Output 1:   "protocol_invariants_verified": [
+[2026-09-03T03:45:23Z] Output 1:     "seed",
+[2026-09-03T03:45:23Z] Output 1:     "dtype",
+[2026-09-03T03:45:23Z] Output 1:     "data_manifest_sha256",
+[2026-09-03T03:45:23Z] Output 1:     "train_examples",
+[2026-09-03T03:45:23Z] Output 1:     "validation_examples",
+[2026-09-03T03:45:23Z] Output 1:     "epochs",
+[2026-09-03T03:45:23Z] Output 1:     "train_batch_size",
+[2026-09-03T03:45:23Z] Output 1:     "gradient_accumulation_steps",
+[2026-09-03T03:45:23Z] Output 1:     "effective_batch_size",
+[2026-09-03T03:45:23Z] Output 1:     "learning_rate",
+[2026-09-03T03:45:23Z] Output 1:     "warmup_steps",
+[2026-09-03T03:45:23Z] Output 1:     "validation_steps",
+[2026-09-03T03:45:23Z] Output 1:     "lora_r",
+[2026-09-03T03:45:23Z] Output 1:     "lora_alpha",
+[2026-09-03T03:45:23Z] Output 1:     "lora_dropout",
+[2026-09-03T03:45:23Z] Output 1:     "lora_target_modules",
+[2026-09-03T03:45:23Z] Output 1:     "planned_total_steps"
+[2026-09-03T03:45:23Z] Output 1:   ],
+[2026-09-03T03:45:23Z] Output 1:   "rows": [
+[2026-09-03T03:45:23Z] Output 1:     {
+[2026-09-03T03:45:23Z] Output 1:       "method": "dense",
+[2026-09-03T03:45:23Z] Output 1:       "average_accuracy": 0.8078799924602759,
+[2026-09-03T03:45:23Z] Output 1:       "best_step": 31040,
+[2026-09-03T03:45:23Z] Output 1:       "best_val_loss": 0.8773588061332702,
+[2026-09-03T03:45:23Z] Output 1:       "peak_allocated_gib": 23.750729084014893,
+[2026-09-03T03:45:23Z] Output 1:       "tasks": {
+[2026-09-03T03:45:23Z] Output 1:         "boolq": 0.6975535168195719,
+[2026-09-03T03:45:23Z] Output 1:         "piqa": 0.8465723612622416,
+[2026-09-03T03:45:23Z] Output 1:         "social_i_qa": 0.7958034800409417,
+[2026-09-03T03:45:23Z] Output 1:         "hellaswag": 0.91575383389763,
+[2026-09-03T03:45:23Z] Output 1:         "winogrande": 0.823993685872139,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Challenge": 0.712457337883959,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Easy": 0.8489057239057239,
+[2026-09-03T03:45:23Z] Output 1:         "openbookqa": 0.822
+[2026-09-03T03:45:23Z] Output 1:       }
+[2026-09-03T03:45:23Z] Output 1:     },
+[2026-09-03T03:45:23Z] Output 1:     {
+[2026-09-03T03:45:23Z] Output 1:       "method": "fixed_k",
+[2026-09-03T03:45:23Z] Output 1:       "average_accuracy": 0.6736215212093211,
+[2026-09-03T03:45:23Z] Output 1:       "best_step": 30880,
+[2026-09-03T03:45:23Z] Output 1:       "best_val_loss": 0.938979697227478,
+[2026-09-03T03:45:23Z] Output 1:       "peak_allocated_gib": 23.750973224639893,
+[2026-09-03T03:45:23Z] Output 1:       "tasks": {
+[2026-09-03T03:45:23Z] Output 1:         "boolq": 0.6513761467889908,
+[2026-09-03T03:45:23Z] Output 1:         "piqa": 0.7475516866158868,
+[2026-09-03T03:45:23Z] Output 1:         "social_i_qa": 0.740532241555783,
+[2026-09-03T03:45:23Z] Output 1:         "hellaswag": 0.6527584146584345,
+[2026-09-03T03:45:23Z] Output 1:         "winogrande": 0.7063930544593529,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Challenge": 0.5332764505119454,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Easy": 0.6750841750841751,
+[2026-09-03T03:45:23Z] Output 1:         "openbookqa": 0.682
+[2026-09-03T03:45:23Z] Output 1:       }
+[2026-09-03T03:45:23Z] Output 1:     },
+[2026-09-03T03:45:23Z] Output 1:     {
+[2026-09-03T03:45:23Z] Output 1:       "method": "k_anneal",
+[2026-09-03T03:45:23Z] Output 1:       "average_accuracy": 0.695344989204095,
+[2026-09-03T03:45:23Z] Output 1:       "best_step": 30880,
+[2026-09-03T03:45:23Z] Output 1:       "best_val_loss": 0.9267175118128459,
+[2026-09-03T03:45:23Z] Output 1:       "peak_allocated_gib": 23.749508380889893,
+[2026-09-03T03:45:23Z] Output 1:       "tasks": {
+[2026-09-03T03:45:23Z] Output 1:         "boolq": 0.6519877675840978,
+[2026-09-03T03:45:23Z] Output 1:         "piqa": 0.7725788900979326,
+[2026-09-03T03:45:23Z] Output 1:         "social_i_qa": 0.7420675537359263,
+[2026-09-03T03:45:23Z] Output 1:         "hellaswag": 0.7167894841665007,
+[2026-09-03T03:45:23Z] Output 1:         "winogrande": 0.745067087608524,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Challenge": 0.5349829351535836,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Easy": 0.6952861952861953,
+[2026-09-03T03:45:23Z] Output 1:         "openbookqa": 0.704
+[2026-09-03T03:45:23Z] Output 1:       }
+[2026-09-03T03:45:23Z] Output 1:     }
+[2026-09-03T03:45:23Z] Output 1:   ]
+[2026-09-03T03:45:23Z] Output 1: }
+[2026-09-03T03:45:23Z] Output 1: [1b-markers]
+[2026-09-03T03:45:23Z] Output 1: 2026-09-02 14:29:18.730581323 +0000 9 /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/DONE
+[2026-09-03T03:45:23Z] Output 1: 2026-09-02 14:29:18.730581323 +0000 1114 /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/suite_summary.json
+[2026-09-03T03:45:23Z] Output 1: {
+[2026-09-03T03:45:23Z] Output 1:   "complete": true,
+[2026-09-03T03:45:23Z] Output 1:   "rows": [
+[2026-09-03T03:45:23Z] Output 1:     {
+[2026-09-03T03:45:23Z] Output 1:       "method": "dense",
+[2026-09-03T03:45:23Z] Output 1:       "average_accuracy": 0.38369683196766025,
+[2026-09-03T03:45:23Z] Output 1:       "best_step": 28320,
+[2026-09-03T03:45:23Z] Output 1:       "best_val_loss": 0.9810460646947224,
+[2026-09-03T03:45:23Z] Output 1:       "peak_allocated_gib": 10.899312973022461,
+[2026-09-03T03:45:23Z] Output 1:       "tasks": {
+[2026-09-03T03:45:23Z] Output 1:         "boolq": 0.6238532110091743,
+[2026-09-03T03:45:23Z] Output 1:         "piqa": 0.5108813928182807,
+[2026-09-03T03:45:23Z] Output 1:         "social_i_qa": 0.3592630501535312,
+[2026-09-03T03:45:23Z] Output 1:         "hellaswag": 0.25363473411670984,
+[2026-09-03T03:45:23Z] Output 1:         "winogrande": 0.5011838989739542,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Challenge": 0.29180887372013653,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Easy": 0.24494949494949494,
+[2026-09-03T03:45:23Z] Output 1:         "openbookqa": 0.284
+[2026-09-03T03:45:23Z] Output 1:       }
+[2026-09-03T03:45:23Z] Output 1:     },
+[2026-09-03T03:45:23Z] Output 1:     {
+[2026-09-03T03:45:23Z] Output 1:       "method": "moc",
+[2026-09-03T03:45:23Z] Output 1:       "average_accuracy": 0.385910427454914,
+[2026-09-03T03:45:23Z] Output 1:       "best_step": 29680,
+[2026-09-03T03:45:23Z] Output 1:       "best_val_loss": 0.99010355869929,
+[2026-09-03T03:45:23Z] Output 1:       "peak_allocated_gib": 9.303606033325195,
+[2026-09-03T03:45:23Z] Output 1:       "tasks": {
+[2026-09-03T03:45:23Z] Output 1:         "boolq": 0.6275229357798165,
+[2026-09-03T03:45:23Z] Output 1:         "piqa": 0.5081610446137106,
+[2026-09-03T03:45:23Z] Output 1:         "social_i_qa": 0.38945752302968273,
+[2026-09-03T03:45:23Z] Output 1:         "hellaswag": 0.2634933280223063,
+[2026-09-03T03:45:23Z] Output 1:         "winogrande": 0.5074980268350434,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Challenge": 0.257679180887372,
+[2026-09-03T03:45:23Z] Output 1:         "ARC-Easy": 0.25547138047138046,
+[2026-09-03T03:45:23Z] Output 1:         "openbookqa": 0.278
+[2026-09-03T03:45:23Z] Output 1:       }
+[2026-09-03T03:45:23Z] Output 1:     }
+[2026-09-03T03:45:23Z] Output 1:   ]
+[2026-09-03T03:45:23Z] Output 1: }
+[2026-09-03T03:45:23Z] Output 1: [errors]
+[2026-09-03T03:45:23Z] Output 1: Sep 02 04:54:41 user systemd[2719]: Started /usr/bin/env bash /home/huyihan/runs/moc_llama31_8b_gate_lora_bf16_20260902_r1/repo/run_suite.sh.
+[2026-09-03T03:45:23Z] Output 1: Sep 02 21:57:10 user systemd[2719]: moc-llama31-8b-gate-lora-bf16-20260902-r1.service: Consumed 2d 2h 7min 2.425s CPU time.
+[2026-09-03T03:45:23Z] Output 1: Sep 02 05:23:32 user systemd[2719]: Started /usr/bin/env bash /home/huyihan/runs/moc_native_1b_downstream_lora_20260902_r1/repo/run_suite.sh.
+[2026-09-03T03:45:23Z] Output 1: Sep 02 14:29:18 user systemd[2719]: moc-native-1b-downstream-lora-20260902-r1.service: Consumed 9h 11min 11.335s CPU time.
+[2026-09-03T03:45:23Z] Output 1: [gpu]
+[2026-09-03T03:45:23Z] Output 1: 0, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 0 %
+[2026-09-03T03:45:23Z] Output 1: 1, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 0 %
+[2026-09-03T03:45:23Z] Output 1: 2, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 0 %
+[2026-09-03T03:45:23Z] Output 1: 3, NVIDIA A100-PCIE-40GB, 1 MiB, 40960 MiB, 4 %
+[2026-09-03T03:45:23Z] Output 1: [gpu-processes]
+[2026-09-03T03:45:23Z] Output 1: [disk]
+[2026-09-03T03:45:23Z] Output 1: Filesystem      Size  Used Avail Use% Mounted on
+[2026-09-03T03:45:23Z] Output 1: /dev/sda2       879G  582G  252G  70% /
+[2026-09-03T03:45:23Z] Exit 1: 0
+[2026-09-03T03:45:23Z] Commands cleared.
