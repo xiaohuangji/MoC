@@ -112,12 +112,12 @@ __global__ void cub_topk_idx_i32_bf16_kernel(
     }
   }
 
-  BlockSort(temp_storage).SortDescending(keys, idxs, 0, 16);
+  BlockSort(temp_storage).SortDescendingBlockedToStriped(keys, idxs, 0, 16);
   __syncthreads();
 
   #pragma unroll
   for (int item = 0; item < ITEMS_PER_THREAD; ++item) {
-    const int rank = tid * ITEMS_PER_THREAD + item;
+    const int rank = item * BLOCK_THREADS + tid;
     if (rank < K) {
       out_i[rank] = static_cast<int32_t>(idxs[item]);
     }
@@ -324,50 +324,45 @@ __global__ void selected_down_i32_tile_kernel(
   }
 }
 
-template <int BLOCK_H, int WARPS_K, int MAX_K>
-__global__ void selected_down_i32_cached_idx_tile_kernel(
-    const uint16_t* __restrict__ sparse_z,
-    const int32_t* __restrict__ idx,
-    const uint16_t* __restrict__ w_down_t,
-    uint16_t* __restrict__ out,
-    int B,
-    int K,
-    int H,
-    int I) {
-  const int b = blockIdx.x;
-  const int h0 = blockIdx.y * BLOCK_H;
-  const int h_lane = threadIdx.x;
-  const int k_lane = threadIdx.y;
-  const int h = h0 + h_lane;
-  const int linear_thread = k_lane * BLOCK_H + h_lane;
-
-  __shared__ int32_t idx_cache[MAX_K];
-  for (int kk = linear_thread; kk < K; kk += BLOCK_H * WARPS_K) {
-    idx_cache[kk] = idx[static_cast<int64_t>(b) * K + kk];
+__global__ void selected_down_i32_cached_tile_kernel(
+    const uint16_t* z, const int32_t* idx, const uint16_t* weight,
+    uint16_t* out, int K, int H) {
+  constexpr int LANES_H = 16;
+  constexpr int KG = 16;
+  constexpr int WIDTH = 32;
+  const int b = blockIdx.x, lane = threadIdx.x, klane = threadIdx.y;
+  const int h = blockIdx.y * WIDTH + lane * 2;
+  const int tid = klane * LANES_H + lane;
+  __shared__ int32_t indices[1024];
+  __shared__ float values[1024];
+  for (int k = tid; k < K; k += LANES_H * KG) {
+    indices[k] = idx[static_cast<int64_t>(b) * K + k];
+    values[k] = bf16_bits_to_float(z[static_cast<int64_t>(b) * K + k]);
   }
   __syncthreads();
-
-  float acc = 0.0f;
+  float a0 = 0.0f, a1 = 0.0f;
   if (h < H) {
-    for (int k = k_lane; k < K; k += WARPS_K) {
-      const int row = static_cast<int>(idx_cache[k]);
-      const float z = bf16_bits_to_float(sparse_z[static_cast<int64_t>(b) * K + k]);
-      const float w = bf16_bits_to_float(w_down_t[static_cast<int64_t>(row) * H + h]);
-      acc += z * w;
+    for (int k = klane; k < K; k += KG) {
+      const auto* p = weight + static_cast<int64_t>(indices[k]) * H + h;
+      const float v = values[k];
+      const uint32_t packed = *reinterpret_cast<const uint32_t*>(p);
+      a0 += v * bf16_bits_to_float(static_cast<uint16_t>(packed));
+      a1 += v * bf16_bits_to_float(static_cast<uint16_t>(packed >> 16));
     }
   }
-
-  __shared__ float partial[WARPS_K][BLOCK_H];
-  partial[k_lane][h_lane] = acc;
+  __shared__ float partial[KG][WIDTH];
+  partial[klane][lane * 2] = a0;
+  partial[klane][lane * 2 + 1] = a1;
   __syncthreads();
-
-  if (k_lane == 0 && h < H) {
-    float total = 0.0f;
+  if (klane == 0 && h < H) {
+    float s0 = 0.0f, s1 = 0.0f;
     #pragma unroll
-    for (int j = 0; j < WARPS_K; ++j) {
-      total += partial[j][h_lane];
+    for (int j = 0; j < KG; ++j) {
+      s0 += partial[j][lane * 2];
+      s1 += partial[j][lane * 2 + 1];
     }
-    out[static_cast<int64_t>(b) * H + h] = float_to_bf16_bits(total);
+    out[static_cast<int64_t>(b) * H + h] = float_to_bf16_bits(s0);
+    out[static_cast<int64_t>(b) * H + h + 1] = float_to_bf16_bits(s1);
   }
 }
 
@@ -454,22 +449,19 @@ torch::Tensor selected_down_bf16_h32_k16_cuda(
   return out;
 }
 
-torch::Tensor optimized_global_after_gate_bf16_cuda(
+void optimized_global_after_gate_bf16_out_cuda(
     torch::Tensor x,
     torch::Tensor gate_scores,
     torch::Tensor up_weight,
     torch::Tensor down_weight_t,
+    torch::Tensor idx,
+    torch::Tensor sparse_z,
+    torch::Tensor out,
     int64_t k) {
   const int B = static_cast<int>(x.size(0));
   const int H = static_cast<int>(x.size(1));
   const int I = static_cast<int>(gate_scores.size(1));
   const int K = static_cast<int>(k);
-
-  auto idx = torch::empty(
-      {x.size(0), k},
-      torch::TensorOptions().device(x.device()).dtype(torch::kInt32));
-  auto sparse_z = torch::empty({x.size(0), k}, x.options());
-  auto out = torch::empty({x.size(0), down_weight_t.size(1)}, x.options());
 
   auto stream = at::cuda::getCurrentCUDAStream();
   constexpr int TOPK_THREADS = 512;
@@ -480,9 +472,7 @@ torch::Tensor optimized_global_after_gate_bf16_cuda(
       B,
       I,
       K);
-  C10_CUDA_KERNEL_LAUNCH_CHECK();
-
-  constexpr int UP_THREADS = 256;
+  constexpr int UP_THREADS = 512;
   const int total_warps = B * K;
   const int up_blocks = (total_warps * 32 + UP_THREADS - 1) / UP_THREADS;
   if (H <= 2048 && K % (UP_THREADS / 32) == 0) {
@@ -508,22 +498,18 @@ torch::Tensor optimized_global_after_gate_bf16_cuda(
         I,
         K);
   }
-  C10_CUDA_KERNEL_LAUNCH_CHECK();
-
   constexpr int BLOCK_H = 32;
   constexpr int WARPS_K = 16;
   const dim3 down_grid(static_cast<unsigned int>(B), static_cast<unsigned int>((H + BLOCK_H - 1) / BLOCK_H));
   const dim3 down_block(BLOCK_H, WARPS_K);
-  if (K <= 1024) {
-    selected_down_i32_cached_idx_tile_kernel<BLOCK_H, WARPS_K, 1024><<<down_grid, down_block, 0, stream>>>(
+  if (K <= 1024 && H % 2 == 0) {
+    selected_down_i32_cached_tile_kernel<<<down_grid, dim3(16, 16), 0, stream>>>(
         reinterpret_cast<const uint16_t*>(sparse_z.data_ptr<at::BFloat16>()),
         idx.data_ptr<int32_t>(),
         reinterpret_cast<const uint16_t*>(down_weight_t.data_ptr<at::BFloat16>()),
         reinterpret_cast<uint16_t*>(out.data_ptr<at::BFloat16>()),
-        B,
         K,
-        H,
-        I);
+        H);
   } else {
     selected_down_i32_tile_kernel<BLOCK_H, WARPS_K><<<down_grid, down_block, 0, stream>>>(
         reinterpret_cast<const uint16_t*>(sparse_z.data_ptr<at::BFloat16>()),
@@ -536,6 +522,5 @@ torch::Tensor optimized_global_after_gate_bf16_cuda(
         I);
   }
   C10_CUDA_KERNEL_LAUNCH_CHECK();
-  return out;
 }
 

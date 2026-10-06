@@ -109,6 +109,7 @@ def run_method(args, method: str, batches):
         "param_dtype": args.param_dtype,
         "batch_size": args.batch_size,
         "seq_len": args.seq_len,
+        "warmup_steps": args.warmup_steps,
         "measure_steps": args.measure_steps,
         "elapsed_seconds": elapsed,
         "tokens_per_second": tokens / elapsed,
@@ -132,8 +133,8 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--batch-size", type=int, default=None)
     parser.add_argument("--seq-len", type=int, default=256)
-    parser.add_argument("--warmup-steps", type=int, default=5)
-    parser.add_argument("--measure-steps", type=int, default=1000)
+    parser.add_argument("--warmup-steps", type=int, default=10)
+    parser.add_argument("--measure-steps", type=int, default=100)
     parser.add_argument("--lr", type=float, default=None)
     parser.add_argument("--out", default="results/training_throughput.json")
     return parser.parse_args()

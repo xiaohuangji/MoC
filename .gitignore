@@ -12,6 +12,8 @@ dist/
 data/c4/
 data/checkpoints/
 data/tokenizer/
+data/models/
+data/commonsense/
 results/*.json
 results/raw/
 

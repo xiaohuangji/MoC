@@ -1,4 +1,6 @@
-# C4 Configs
+# Benchmark Configs
+
+## C4 Pretraining
 
 These YAML files provide the C4 pretraining defaults for the four public model presets. The executable preset definitions live in `moc/config.py`; the YAML files repeat the main shape fields so a run configuration is readable on its own.
 
@@ -12,3 +14,11 @@ These YAML files provide the C4 pretraining defaults for the four public model p
 All configs use local C4, a local `t5-base` tokenizer, per-document padding/truncation to length `256`, model seed `0`, C4 shuffle seed `42`, and cosine decay to `0`.
 
 The `1b` preset uses `num_hidden_layers: 24` and `num_attention_heads: 32`, matching the executable configuration used by the codebase.
+
+## Commonsense Fine-Tuning
+
+`llama31_8b_commonsense.yaml` defines the separate Llama-3.1-8B fixed-K recipe:
+K2048, batch16, length256, 10,240 downstream updates, and an explicit common
+Dense SFT adapter SHA256. MoC and its Dense baseline use this configuration.
+Paths are resolved relative to the repository root unless absolute. See
+[the fine-tuning guide](../docs/finetuning.md) for prerequisites and resource controls.

@@ -28,10 +28,7 @@ class InferenceMoCConfig:
 
 
 class InferenceMoCSwiGLUFFN(nn.Module):
-    """Inference-only MoC FFN benchmark helper.
-
-    This module keeps the training paths in src/ffn.py untouched.
-    It exposes three forward modes using shared weights:
+    """Inference-only SwiGLU projections with shared weights.
 
     - dense_baseline: standard dense SwiGLU FFN
     - masked_reference: dense MoC masking reference that materializes full U/Z
@@ -186,7 +183,7 @@ class InferenceMoCSwiGLUFFN(nn.Module):
         self._ensure_down_weight_t()
         x_2d, original_shape = self._flatten_decode_input(x)
         gate_full = self.gate_proj(x_2d).contiguous()
-        y_2d = torch.ops.moc_native.optimized_global_after_gate_bf16.default(
+        y_2d = optimized_global_moc_ops.optimized_global_after_gate_bf16(
             x_2d.contiguous(),
             gate_full,
             self.up_proj.weight,

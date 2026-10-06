@@ -18,6 +18,15 @@ dependencies = [
     "huggingface_hub>=0.20",
 ]
 
+[project.optional-dependencies]
+finetuning = [
+    "transformers==5.10.2",
+    "peft==0.20.0",
+    "accelerate==1.14.0",
+    "safetensors>=0.6",
+    "numpy>=1.26",
+]
+
 [tool.setuptools]
 packages = ["moc", "moc.training", "moc.inference"]
 

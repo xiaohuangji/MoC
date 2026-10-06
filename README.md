@@ -7,7 +7,8 @@ This repository provides the PyTorch implementation of **Mixture-of-Channels (Mo
 - training-step throughput;
 - C4 validation perplexity;
 - single-layer FFN inference latency;
-- end-to-end decode latency.
+- end-to-end decode latency;
+- fixed-low-K Llama-3.1-8B commonsense fine-tuning.
 
 ## Method
 
@@ -146,7 +147,11 @@ See [results/training_latency.md](results/training_latency.md).
 
 ### Training Throughput
 
-The training-throughput benchmark measures C4 training-step throughput after prefetching batches to CPU, so the reported number focuses on model computation rather than gzip/tokenizer IO.
+The training-throughput benchmark measures C4 training steps after prefetching
+batches to CPU. On A800 80GB PCIe, MoC retains **95.26%** of Dense throughput at
+350M and **98.10%** at 1B, with **21.26%** and **20.65%** lower peak allocated
+memory in the same measurement windows. Each method uses 10 warmup steps followed
+by 100 measured steps, with FP32 parameters and BF16 autocast compute.
 
 See [results/training_speed.md](results/training_speed.md).
 
@@ -165,16 +170,36 @@ See [results/inference_ffn.md](results/inference_ffn.md).
 
 ### End-to-End Decode
 
-End-to-end decode measures the full single-token generation loop with compiled model execution.
+End-to-end decode measures the full single-token generation loop. On A800 80GB
+PCIe, MoC achieves **1.113x** the throughput of Dense with both methods using
+the same TorchInductor C++ wrapper: **2.965** versus **3.299 ms/token**.
 
 See [results/decode.md](results/decode.md).
+
+### Commonsense Fine-Tuning
+
+Starting from a common Dense SFT adapter, sequential FFN reconstruction improves
+fixed-K MoC at `K=2048/14336`. The eight-task macro accuracy is **77.02%**, versus
+**80.80%** for Dense at the same 10,240 downstream updates. MoC uses compact
+selected-activation storage. With both methods using attention-only gradient
+checkpointing and micro batch8, the optimized MoC implementation uses **26.28%
+less** training peak memory and retains **97.80%** of the original Dense
+implementation's throughput. This compares three-run aggregates from separate
+measurement batches with the same settings; it excludes reconstruction. These
+implementation-level results do not establish a universal memory or speed
+advantage, particularly under full-block checkpointing.
+
+See [results/finetuning.md](results/finetuning.md) for the full comparisons and costs,
+and [docs/finetuning.md](docs/finetuning.md) for setup and commands. The measured
+source SFT adapter is an explicit prerequisite and is not bundled in this repository.
+This benchmark is separate from the C4 presets and does not modify their kernels.
 
 ## Repository Layout
 
 ```text
 moc/                     Core modules and kernels
 benchmarks/              Benchmark entry points
-configs/                 Model and C4 training configs
+configs/                 Model, C4 training and fine-tuning configs
 scripts/                 One-command benchmark launchers
 results/                 Concise benchmark summaries
 docs/                    Method and benchmark notes

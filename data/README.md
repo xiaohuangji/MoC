@@ -24,3 +24,8 @@ If the dataset or tokenizer is stored on another disk, create symbolic links at
 `data/c4` and `data/tokenizer`.
 
 Long-running C4 checkpoints should be stored under `data/checkpoints/`.
+
+The independent 8B commonsense benchmark uses `data/models/`, `data/commonsense/`,
+and `data/checkpoints/`, all ignored by Git. See the exact layout and source-adapter
+prerequisite in [docs/finetuning.md](../docs/finetuning.md). Do not substitute C4
+or `t5-base` for its data or tokenizer.

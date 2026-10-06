@@ -1,4 +1,5 @@
 #include <torch/extension.h>
+#include <c10/cuda/CUDAGuard.h>
 
 #include <vector>
 
@@ -15,11 +16,14 @@ torch::Tensor selected_down_bf16_h32_k16_cuda(
     torch::Tensor idx,
     torch::Tensor w_down_t);
 
-torch::Tensor optimized_global_after_gate_bf16_cuda(
+void optimized_global_after_gate_bf16_out_cuda(
     torch::Tensor x,
     torch::Tensor gate_scores,
     torch::Tensor up_weight,
     torch::Tensor down_weight_t,
+    torch::Tensor idx,
+    torch::Tensor sparse_z,
+    torch::Tensor out,
     int64_t k);
 
 std::vector<torch::Tensor> cub_topk_bf16_512x11(torch::Tensor scores, int64_t k) {
@@ -58,21 +62,34 @@ torch::Tensor selected_down_bf16_h32_k16(
   return selected_down_bf16_h32_k16_cuda(sparse_z, idx, w_down_t);
 }
 
-torch::Tensor optimized_global_after_gate_bf16(
+void optimized_global_after_gate_bf16_out(
     torch::Tensor x,
     torch::Tensor gate_scores,
     torch::Tensor up_weight,
     torch::Tensor down_weight_t,
+    torch::Tensor idx,
+    torch::Tensor sparse_z,
+    torch::Tensor out,
     int64_t k) {
-  TORCH_CHECK(x.is_cuda() && gate_scores.is_cuda() && up_weight.is_cuda() && down_weight_t.is_cuda(), "all tensors must be CUDA");
-  TORCH_CHECK(x.scalar_type() == torch::kBFloat16, "x must be BF16");
-  TORCH_CHECK(gate_scores.scalar_type() == torch::kBFloat16, "gate_scores must be BF16");
-  TORCH_CHECK(up_weight.scalar_type() == torch::kBFloat16, "up_weight must be BF16");
-  TORCH_CHECK(down_weight_t.scalar_type() == torch::kBFloat16, "down_weight_t must be BF16");
-  TORCH_CHECK(x.is_contiguous() && gate_scores.is_contiguous() && up_weight.is_contiguous() && down_weight_t.is_contiguous(), "inputs must be contiguous");
+  TORCH_CHECK(x.is_cuda(), "x must be CUDA");
+  for (const auto& tensor : {x, gate_scores, up_weight, down_weight_t, sparse_z, out}) {
+    TORCH_CHECK(tensor.device() == x.device(), "all tensors must be on the same device");
+    TORCH_CHECK(tensor.dim() == 2 && tensor.is_contiguous(), "tensors must be contiguous matrices");
+    TORCH_CHECK(tensor.scalar_type() == torch::kBFloat16, "tensors must be BF16");
+  }
+  TORCH_CHECK(idx.device() == x.device() && idx.scalar_type() == torch::kInt32 &&
+              idx.dim() == 2 && idx.is_contiguous(), "idx must be a contiguous int32 matrix on the same device");
+  TORCH_CHECK(x.size(1) > 0, "hidden size must be positive");
+  TORCH_CHECK(gate_scores.size(0) == x.size(0), "gate batch size mismatch");
+  TORCH_CHECK(up_weight.size(0) == gate_scores.size(1) && up_weight.size(1) == x.size(1), "up weight shape mismatch");
+  TORCH_CHECK(down_weight_t.sizes() == up_weight.sizes(), "down weight shape mismatch");
+  TORCH_CHECK(idx.size(0) == x.size(0) && idx.size(1) == k, "idx shape mismatch");
+  TORCH_CHECK(sparse_z.sizes() == idx.sizes() && out.sizes() == x.sizes(), "output shape mismatch");
   TORCH_CHECK(k > 0 && k <= gate_scores.size(1), "invalid k");
   TORCH_CHECK(gate_scores.size(1) <= 5632, "after-gate CUB path supports I <= 5632");
-  return optimized_global_after_gate_bf16_cuda(x, gate_scores, up_weight, down_weight_t, k);
+  if (x.size(0) == 0) return;
+  const c10::cuda::CUDAGuard guard(x.device());
+  optimized_global_after_gate_bf16_out_cuda(x, gate_scores, up_weight, down_weight_t, idx, sparse_z, out, k);
 }
 
 PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
@@ -82,20 +99,13 @@ PYBIND11_MODULE(TORCH_EXTENSION_NAME, m) {
       "Fixed-shape BF16 global Top-K via CUB BlockRadixSort, 512 threads x 11 items");
   m.def("selected_up_silu_bf16", &selected_up_silu_bf16, "Warp-level selected Up + SiLU");
   m.def("selected_down_bf16_h32_k16", &selected_down_bf16_h32_k16, "Tiled selected Down, BLOCK_H=32, WARPS_K=16");
-  m.def("optimized_global_after_gate_bf16", &optimized_global_after_gate_bf16, "Global MoC after gate as one dispatcher op");
 }
 
 TORCH_LIBRARY(moc_native, m) {
-  m.def("optimized_global_topk_bf16(Tensor scores, int k) -> Tensor[]");
-  m.def("optimized_global_selected_up_silu_bf16(Tensor x, Tensor topk_vals, Tensor topk_idx, Tensor up_weight) -> Tensor");
-  m.def("optimized_global_selected_down_bf16(Tensor sparse_z, Tensor topk_idx, Tensor down_weight_t) -> Tensor");
-  m.def("optimized_global_after_gate_bf16(Tensor x, Tensor gate_scores, Tensor up_weight, Tensor down_weight_t, int k) -> Tensor");
+  m.def("optimized_global_after_gate_bf16_out(Tensor x, Tensor gate_scores, Tensor up_weight, Tensor down_weight_t, Tensor(a!) idx, Tensor(b!) sparse_z, Tensor(c!) out, int k) -> ()");
 }
 
 TORCH_LIBRARY_IMPL(moc_native, CUDA, m) {
-  m.impl("optimized_global_topk_bf16", &cub_topk_bf16_512x11);
-  m.impl("optimized_global_selected_up_silu_bf16", &selected_up_silu_bf16);
-  m.impl("optimized_global_selected_down_bf16", &selected_down_bf16_h32_k16);
-  m.impl("optimized_global_after_gate_bf16", &optimized_global_after_gate_bf16);
+  m.impl("optimized_global_after_gate_bf16_out", &optimized_global_after_gate_bf16_out);
 }
 

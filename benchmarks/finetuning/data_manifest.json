@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "source_repository": "AGI-Edgerunners/LLM-Adapters",
+  "source_commit": "816657208af4db747803f87ba40a4c71383fed7a",
+  "training": {
+    "path": "commonsense_170k.json",
+    "bytes": 97552243,
+    "sha256": "687b018be6b4665590772b03d96ceec63926a99573a174f4c8891cce0af53b73",
+    "rows": 170420
+  },
+  "evaluations": {
+    "boolq": {
+      "path": "eval/boolq/test.json",
+      "bytes": 918772,
+      "sha256": "779a192226b6fa2840340abacc46f9584b895c39d3c47b7aaf4d8585dda3ebc1",
+      "rows": 3270
+    },
+    "piqa": {
+      "path": "eval/piqa/test.json",
+      "bytes": 924186,
+      "sha256": "63cf5b5d088a06aceffc014cd76045e3c03d713ba0d4974260052956fe1e4234",
+      "rows": 1838
+    },
+    "social_i_qa": {
+      "path": "eval/social_i_qa/test.json",
+      "bytes": 855473,
+      "sha256": "2318ddcfb429f35cbcb3f4b4f5caeccf9b9b4a51b9e2d0624c2771ee98c9f3a7",
+      "rows": 1954
+    },
+    "hellaswag": {
+      "path": "eval/hellaswag/test.json",
+      "bytes": 11159299,
+      "sha256": "a1bfd0f1729c7e62ba1d1a211c283d459ff6c40476e3d1dcc2941ff338e7d207",
+      "rows": 10042
+    },
+    "winogrande": {
+      "path": "eval/winogrande/test.json",
+      "bytes": 505012,
+      "sha256": "5a9db0e2ea6fddd05f8e1f71b0dd285f1377b210041d11853fc2fe7f7a06ac77",
+      "rows": 1267
+    },
+    "ARC-Challenge": {
+      "path": "eval/ARC-Challenge/test.json",
+      "bytes": 629543,
+      "sha256": "2ff5c51f145fd602a081fe3b6452dc1c0f5ecc43c1a3d213e62f9c528d35d10c",
+      "rows": 1172
+    },
+    "ARC-Easy": {
+      "path": "eval/ARC-Easy/test.json",
+      "bytes": 1171473,
+      "sha256": "95d411e393f56adb47e431104b7df45fd5ca62c6c01b321075378e157c16c7ec",
+      "rows": 2376
+    },
+    "openbookqa": {
+      "path": "eval/openbookqa/test.json",
+      "bytes": 205546,
+      "sha256": "3edf2c3acf92cbef8c196b731af433c25f2b253d6f45644d0ffc149d5bcac1bf",
+      "rows": 500
+    }
+  }
+}
