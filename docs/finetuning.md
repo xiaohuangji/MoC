@@ -5,8 +5,25 @@ MoC, reconstructs its FFNs, and continues LoRA training. It is separate from C4
 pretraining and the custom `moc/` training kernels. Results are in
 [results/finetuning.md](../results/finetuning.md).
 
-`moc` denotes this complete method, including reconstruction and compact
-activation storage. `dense` is the comparison baseline.
+The result table distinguishes three routes:
+
+| Route | FFN initialization before downstream LoRA | Reconstruction |
+| --- | --- | --- |
+| Dense | Unchanged Dense FFNs | None |
+| Direct MoC | Dense weights with fixed-K selection enabled | None |
+| Reconstructed MoC | Fixed-K FFNs fitted to original Dense block outputs | Sequential FFN fitting |
+
+All three start from the same already eight-task-SFT Dense adapter and receive
+10240 downstream updates. Direct MoC transfers those weights without fitting
+them to sparse execution first. Reconstructed MoC performs that fitting after
+the architecture switch and before downstream training; it is not a separately
+pretrained MoC base model. Their macro accuracies are 80.80%, 73.14%, and 77.02%,
+respectively, with reconstruction cost reported separately.
+
+The launcher implements `dense` and `moc`; `moc` selects **Reconstructed MoC**,
+including compact activation storage, and requires its FFN overlay. Direct MoC
+is the no-reconstruction control in the result table, not a fallback when that
+overlay is absent.
 
 ## Prerequisites
 
@@ -175,6 +192,15 @@ The loader verifies identities and restores the split-rank layout. A standalone
 `PeftModel.from_pretrained` call on the final adapter is not sufficient.
 
 ## Resource Measurement
+
+The resource table separates Dense fine-tuning, one-time FFN reconstruction,
+and MoC fine-tuning with reconstructed weights. Only the fine-tuning rows share
+a matched training configuration and define the reported memory-saving and
+throughput ratios. Reconstruction reports its own peak, including model loading
+and fresh teacher capture; its single-layer fitting throughput is not comparable
+to full-model training. Its GPU-hours are included separately in the total-cost
+table. Phase peaks are not summed, and the reported downstream memory saving
+is not a measured full-pipeline saving.
 
 To measure the resource-table configuration, use `STAGE=resources`, fixed
 `CHECKPOINT_POLICY=attention`, and `MICRO_BATCH_SIZE=8`. For example:

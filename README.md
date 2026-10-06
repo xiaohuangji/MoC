@@ -178,14 +178,20 @@ See [results/decode.md](results/decode.md).
 
 ### Commonsense Fine-Tuning
 
-Starting from a common Dense SFT adapter, sequential FFN reconstruction improves
-fixed-K MoC at `K=2048/14336`. The eight-task macro accuracy is **77.02%**, versus
-**80.80%** for Dense at the same 10,240 downstream updates. MoC uses compact
-selected-activation storage. With both methods using attention-only gradient
+Starting from a common Dense SFT adapter, the eight-task comparison reports
+**Dense: 80.80%**, **Direct MoC: 73.14%**, and **Reconstructed MoC: 77.02%**
+macro accuracy at the same 10,240 downstream updates. Both MoC routes use
+`K=2048/14336`. Direct MoC immediately fine-tunes the converted model;
+Reconstructed MoC first fits its FFNs to Dense block outputs, then fine-tunes.
+The reconstructed route improves by **3.88 percentage points**, with an additional
+one-time reconstruction cost. Reconstructed MoC uses compact selected-activation
+storage. With Dense and Reconstructed MoC both using attention-only gradient
 checkpointing and micro batch8, the optimized MoC implementation uses **26.28%
 less** training peak memory and retains **97.80%** of the original Dense
 implementation's throughput. This compares three-run aggregates from separate
-measurement batches with the same settings; it excludes reconstruction. These
+measurement batches with the same settings; it excludes reconstruction. The
+one-time reconstruction phase separately requires **18.24 GiB** peak GPU memory
+and about **2.81 GPU-hours**, including fresh teacher capture. These
 implementation-level results do not establish a universal memory or speed
 advantage, particularly under full-block checkpointing.
 
