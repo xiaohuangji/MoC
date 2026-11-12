@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: "MoC: Mixture-of-Channels"
+message: "If you use this repository, please cite MoC."
+type: software
+license: Apache-2.0
+repository-code: "https://github.com/xiaohuangji/MoC"

@@ -1,0 +1,87 @@
+{
+  "base": {
+    "config.json": "54acfad3cffe057640904ca8a1e83525e6551c70c7a04c641f5a9eda0bbf64bd",
+    "model-00001-of-00004.safetensors": "f8b9704ab09cdeb097aa4a0a24bca96f906eec36bad63ab495bc21475058601b",
+    "model-00002-of-00004.safetensors": "c28b25e7541751056ee126627e007f8d4288319733285e9f7b17b9ff6eb313f0",
+    "model-00003-of-00004.safetensors": "d8e9504dd4e4a146d484c52a97584ec14dac92237c46b064934af67a85e7d383",
+    "model-00004-of-00004.safetensors": "e4486f35c040f683f7d790354f66c169c109eb9fa0954a4a35d7c458a108405d",
+    "model.safetensors.index.json": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+    "tokenizer.json": "76e48799b099d43365bd24ccd8ecc5aedac831718da780552f03b0a6eb4412aa",
+    "tokenizer_config.json": "8004530facf809ac432114de2a4dcc65fcb632da5ec16d666091aeb6a2ee444a"
+  },
+  "c4_shards": [
+    [
+      "c4-train.00228-of-01024.json.gz",
+      "8b27f2fbb0233802229fc776cfcb0b6b43af3149d217d0ab00cca0f1286482e4"
+    ],
+    [
+      "c4-train.00051-of-01024.json.gz",
+      "ac2beee992c2b1ae8b1f162054e843e2b971bbd7cec45a0a7a7b7795fcdc7c26"
+    ],
+    [
+      "c4-train.00563-of-01024.json.gz",
+      "e3032365b9b86883c24bfe387d810c2d9fd1d0a55ff88acd1f5b5357246b13ba"
+    ],
+    [
+      "c4-train.00501-of-01024.json.gz",
+      "38829434c8539bb9fa9ea32bfba3c6732c5021ffb60c16fc502fe61de83906ce"
+    ],
+    [
+      "c4-train.00457-of-01024.json.gz",
+      "a74dd51c3c490458ea0e61196d7e0085aff80d50cd149a673f54f661b364a671"
+    ],
+    [
+      "c4-train.00285-of-01024.json.gz",
+      "c5df1f2e2dad46d71f8aadf856a5139020da8afc2ee010d53c0372ea09b2362d"
+    ],
+    [
+      "c4-train.00209-of-01024.json.gz",
+      "8b74e5f1780c4bf12936ac3a86be7a3d11287866522da8275aa4232c1e3d8898"
+    ],
+    [
+      "c4-train.00178-of-01024.json.gz",
+      "a3aa38083c85baada29b207240bcca1a0d562a93971b420428d039092e58bd31"
+    ]
+  ],
+  "partitions": {
+    "fit": "dc4d73304237f206182eb10781d6ba974171127115257262f942ba48d6c8d5f4",
+    "heldout": "ce9e032850bcee30eba8d418ebe561adafd8d4ca6db5b51c8bfb0fe942debe45",
+    "audit": "c7ec5d9bd5a57fb2ea6512d672293d440162bd3d3e0b741533ac6c36df58617e"
+  },
+  "glue_revision": "bcdcba79d07bc864c1c254ccfcedcce55bcc9a8c",
+  "glue": {
+    "mrpc": {
+      "train-00000-of-00001.parquet": "61fd41301e0e244b0420c4350a170c8e7cf64740335fc875a4af2d79af0df0af",
+      "validation-00000-of-00001.parquet": "33c007dbf5bfa8463d87a13e6226df8c0fcf2596c2cd39d0f3bb79754e00f50f"
+    },
+    "rte": {
+      "train-00000-of-00001.parquet": "a6252ab17015d718f6de1effe0980f7b158df63e3d16207cd8bd396b608e5147",
+      "validation-00000-of-00001.parquet": "fb2aa2e04f551133ba663617a15ae133dc22b0f6a969bc0629b5ea6003ee9cf8"
+    },
+    "cola": {
+      "train-00000-of-00001.parquet": "2e7538afa2000e63f5343f16a758d75c452661a384208399d2035cd2fce45c33",
+      "validation-00000-of-00001.parquet": "c14b7219a7d9f9fe3dd291fd000f6623ee413805eb108c9c49578ed50873e4ba"
+    },
+    "stsb": {
+      "train-00000-of-00001.parquet": "bbd93bbb988fd18437e02185fe3b2bd9a18350376c392e7820de9df1b247ed1f",
+      "validation-00000-of-00001.parquet": "152de7cf1fa34ee4df1c243bd209b02ade21a1d5c4fb3b7da5240f78e4000aa9"
+    },
+    "sst2": {
+      "train-00000-of-00001.parquet": "66a253e67968acfabcbe49dbe9da964b42ac1c851c40ab760e8c8942efdb3229",
+      "validation-00000-of-00001.parquet": "a1371f3b3a7b0bcefa8388799a9359dc3ce76c349cc0079507a7991364fd2a9b"
+    },
+    "qnli": {
+      "train-00000-of-00001.parquet": "ebc7cb70a5bbde0b0336c3d51f31bb4df4673e908e8874b090b52169b1365c6c",
+      "validation-00000-of-00001.parquet": "e69311b81dc65589286091d9905a27617a90436dd215c7a59832fa8f4f336169"
+    },
+    "qqp": {
+      "train-00000-of-00001.parquet": "4d6f02e643f7c36e9a4f7d4971a5ee9bd74063a319452fe6c87850c739774cd7",
+      "validation-00000-of-00001.parquet": "efd86a539c412d74874ee451573d7bd142f56c47fe36de033b9f367d8bb0fa71"
+    },
+    "mnli": {
+      "train-00000-of-00001.parquet": "49a4a5508b89b8fed2c6e81d2c47d00f4759050a7048c6cc5d95d31122ced3c1",
+      "validation_matched-00000-of-00001.parquet": "7f918c09d9c35446b8e8f06a5672f8ab704e2897fecbf52e2e154141f3d7c421",
+      "validation_mismatched-00000-of-00001.parquet": "04aba92823a954be36fe1b69b61eed334c9eb1009daba0dd79f69d77b87c535c"
+    }
+  }
+}
